@@ -1,0 +1,182 @@
+{
+  "sourceRoots": [
+    "core",
+    "config",
+    "data",
+    "tests/ui/pages",
+    "tests/ui/actions",
+    "tests/ui/step-definitions",
+    "tests/ui/support",
+    "tests/api"
+  ],
+  "placementRules": [
+    {
+      "id": "page-placement",
+      "fileRegex": "Page\\.ts$",
+      "mustBeUnder": "tests/ui/pages",
+      "message": "Page objects must live in tests/ui/pages"
+    },
+    {
+      "id": "action-placement",
+      "fileRegex": "Actions\\.ts$",
+      "mustBeUnder": "tests/ui/actions",
+      "message": "Action classes must live in tests/ui/actions"
+    },
+    {
+      "id": "steps-placement",
+      "fileRegex": "\\.steps\\.ts$",
+      "mustBeUnder": "tests/ui/step-definitions",
+      "message": "Step definitions must live in tests/ui/step-definitions"
+    },
+    {
+      "id": "feature-placement",
+      "fileRegex": "\\.feature$",
+      "mustBeUnder": "tests/ui/features",
+      "message": "Feature files must live in tests/ui/features"
+    },
+    {
+      "id": "api-client-placement",
+      "fileRegex": "\\.client\\.ts$",
+      "mustBeUnder": "tests/api/restful/clients",
+      "message": "API clients must live in tests/api/restful/clients"
+    },
+    {
+      "id": "api-model-placement",
+      "fileRegex": "\\.models\\.ts$",
+      "mustBeUnder": "tests/api/restful/data",
+      "message": "API models must live in tests/api/restful/data"
+    },
+    {
+      "id": "props-placement",
+      "fileRegex": "\\.props\\.ts$",
+      "mustBeUnder": "data/props",
+      "message": "Props/type files must live in data/props"
+    }
+  ],
+  "folderNamingRules": [
+    {
+      "id": "pages-filename",
+      "folder": "tests/ui/pages",
+      "allowedFileRegex": [
+        "^[A-Z][A-Za-z0-9]*Page\\.ts$",
+        "^BasePage\\.ts$",
+        "^index\\.ts$"
+      ],
+      "message": "Only *Page.ts, BasePage.ts, or index.ts are allowed in tests/ui/pages"
+    },
+    {
+      "id": "actions-filename",
+      "folder": "tests/ui/actions",
+      "allowedFileRegex": [
+        "^[A-Z][A-Za-z0-9]*Actions\\.ts$",
+        "^CatalogueActionContext\\.ts$",
+        "^index\\.ts$"
+      ],
+      "message": "Only *Actions.ts, CatalogueActionContext.ts, or index.ts are allowed in tests/ui/actions"
+    },
+    {
+      "id": "steps-filename",
+      "folder": "tests/ui/step-definitions",
+      "allowedFileRegex": [
+        "^[a-z][a-z0-9-]*\\.steps\\.ts$",
+        "^index\\.ts$"
+      ],
+      "message": "Step definition files must use kebab-case *.steps.ts naming"
+    },
+    {
+      "id": "api-clients-filename",
+      "folder": "tests/api/restful/clients",
+      "allowedFileRegex": [
+        "^[a-z][a-z0-9-]*\\.client\\.ts$",
+        "^index\\.ts$"
+      ],
+      "message": "API clients must use kebab-case *.client.ts naming"
+    }
+  ],
+  "contentRules": [
+    {
+      "id": "pages-no-business-logic",
+      "folder": "tests/ui/pages",
+      "fileRegex": "^[A-Z].*Page\\.ts$",
+      "forbidRegex": [
+        "\\bif\\s*\\(",
+        "\\bswitch\\s*\\(",
+        "\\bfor\\s*\\(",
+        "\\bwhile\\s*\\("
+      ],
+      "message": "Page objects should only contain locators, not business logic (if/switch/loops)"
+    },
+    {
+      "id": "steps-no-direct-locator",
+      "folder": "tests/ui/step-definitions",
+      "fileRegex": "\\.steps\\.ts$",
+      "forbidRegex": [
+        "\\.locator\\(",
+        "\\.getByRole\\(",
+        "\\.getByText\\("
+      ],
+      "message": "Step definitions should call Action methods, not use locators directly"
+    },
+    {
+      "id": "actions-no-page-locator",
+      "folder": "tests/ui/actions",
+      "fileRegex": "Actions\\.ts$",
+      "forbidRegex": [
+        "page\\.locator\\(",
+        "page\\.getByRole\\(",
+        "page\\.getByText\\("
+      ],
+      "message": "Actions should use Page Object locators, not call page.locator() directly"
+    },
+    {
+      "id": "actions-no-procedural-ui-layer",
+      "folder": "tests/ui/actions",
+      "fileRegex": "Actions\\.ts$",
+      "forbidRegex": [
+        "this\\.ui\\.(click|fill|clear|clearAndFill|hover|press|check|uncheck|selectOption|setInputFiles|waitForVisible|waitForHidden|scrollIntoView)\\(",
+        "this\\.assert\\.(visible|hidden|enabled|disabled|checked|notChecked|hasText|containsText|hasValue|hasAttribute|hasCount|editable)\\(",
+        "this\\.read\\.(text|attribute|count|isVisible|isEnabled|isChecked|isDisabled|isEditable)\\("
+      ],
+      "message": "Drive elements via their own methods (page.x.click(), page.x.expect.toBeVisible(), page.x.count()). The procedural ui/assert/read action layer was removed."
+    },
+    {
+      "id": "no-hardcoded-urls-in-steps",
+      "folder": "tests/ui/step-definitions",
+      "fileRegex": "\\.steps\\.ts$",
+      "forbidRegex": [
+        "https?://[a-zA-Z0-9].*\\.(com|in|io|org|net)"
+      ],
+      "message": "URLs should come from config/env.ts, not be hardcoded in step definitions"
+    }
+  ],
+  "warningRules": [
+    {
+      "id": "no-console-log",
+      "folder": "tests",
+      "fileRegex": "\\.ts$",
+      "forbidRegex": [
+        "console\\.log\\("
+      ],
+      "message": "Use the Logger fixture instead of console.log"
+    },
+    {
+      "id": "no-page-wait-for-timeout",
+      "folder": "tests",
+      "fileRegex": "\\.ts$",
+      "forbidRegex": [
+        "page\\.waitForTimeout\\(",
+        "\\.waitForTimeout\\("
+      ],
+      "message": "Avoid hardcoded waits; use element.waitForVisible(), element.expect.toBeVisible(), or WaitHelper"
+    },
+    {
+      "id": "no-force-click",
+      "folder": "tests",
+      "fileRegex": "\\.ts$",
+      "forbidRegex": [
+        "\\.click\\(\\{[^}]*force:\\s*true"
+      ],
+      "message": "Avoid force clicks; fix the underlying visibility/actionability issue"
+    }
+  ]
+}

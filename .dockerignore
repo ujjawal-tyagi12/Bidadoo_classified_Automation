@@ -1,0 +1,11 @@
+node_modules
+test-results
+reports
+allure-results
+logs
+.git
+.github
+.cursor
+.vscode
+.features-gen
+*.md

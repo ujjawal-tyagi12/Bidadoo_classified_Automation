@@ -1,0 +1,69 @@
+version: "3.8"
+
+services:
+  playwright-base:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - CI=true
+      - BASE_URL=${BASE_URL:-http://localhost:3000}
+      - API_URL=${API_URL:-http://localhost:3000/api}
+    volumes:
+      - ./test-results:/app/test-results
+      - ./reports:/app/reports
+
+  shard-1:
+    extends:
+      service: playwright-base
+    command: npx playwright test --shard=1/4 --reporter=list,json
+    container_name: pw-shard-1
+
+  shard-2:
+    extends:
+      service: playwright-base
+    command: npx playwright test --shard=2/4 --reporter=list,json
+    container_name: pw-shard-2
+
+  shard-3:
+    extends:
+      service: playwright-base
+    command: npx playwright test --shard=3/4 --reporter=list,json
+    container_name: pw-shard-3
+
+  shard-4:
+    extends:
+      service: playwright-base
+    command: npx playwright test --shard=4/4 --reporter=list,json
+    container_name: pw-shard-4
+
+  smoke:
+    extends:
+      service: playwright-base
+    command: npx playwright test --grep "@smoke" --project=bdd
+    container_name: pw-smoke
+
+  regression:
+    extends:
+      service: playwright-base
+    command: npx playwright test
+    container_name: pw-regression
+
+  merge-reports:
+    extends:
+      service: playwright-base
+    command: npx playwright merge-reports --reporter html ./test-results
+    container_name: pw-merge
+    depends_on:
+      shard-1:
+        condition: service_completed_successfully
+      shard-2:
+        condition: service_completed_successfully
+      shard-3:
+        condition: service_completed_successfully
+      shard-4:
+        condition: service_completed_successfully
+
+volumes:
+  test-results:
+  reports:

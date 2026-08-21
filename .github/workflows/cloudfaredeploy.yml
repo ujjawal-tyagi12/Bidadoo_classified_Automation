@@ -1,0 +1,196 @@
+name: Automation Framework
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_tag:
+        description: "Tag filter (e.g. @smoke, @SUP-01)"
+        required: false
+        default: ""
+
+env:
+  CI: true
+  NODE_VERSION: "20"
+
+jobs:
+  lint-rules:
+    name: Framework Rule Check
+    if: github.event_name != 'workflow_dispatch'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Framework Rule Checks
+        run: npm run lint:rules
+
+  test:
+    name: Run Playwright Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Setup Java (Allure CLI)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Generate BDD Specs
+        run: npm run bddgen
+
+      - name: Run Playwright Tests
+        run: |
+          if [ -n "${{ github.event.inputs.test_tag }}" ]; then
+            npx playwright test --grep "${{ github.event.inputs.test_tag }}"
+          else
+            npx playwright test
+          fi
+
+      - name: Generate Allure Report
+        if: always()
+        run: |
+          if [ -d allure-results ] && [ "$(ls -A allure-results)" ]; then
+            npm run allure:generate
+          else
+            echo "No Allure results found — skipping report generation."
+          fi
+
+      - name: Upload Playwright HTML Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+      - name: Upload Allure Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: reports/allure/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
+          retention-days: 30
+
+      - name: Upload Failure Screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-screenshots
+          path: test-results/**/*.png
+          retention-days: 7
+
+      - name: Publish Workflow Summary
+        if: always()
+        run: |
+          echo "## Playwright Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Reports will be deployed to Cloudflare after the test job completes." >> $GITHUB_STEP_SUMMARY
+
+  deploy-report:
+    name: Deploy Report to Cloudflare
+    if: always()
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Playwright HTML Report
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: playwright-report
+          path: playwright-report/
+
+      - name: Download Allure Report
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: allure-report
+          path: reports/allure/
+
+      - name: Prepare combined report site
+        run: |
+          mkdir -p site/playwright site/allure
+          if [ -d playwright-report ] && [ "$(ls -A playwright-report 2>/dev/null)" ]; then
+            cp -r playwright-report/* site/playwright/
+          fi
+          if [ -d reports/allure ] && [ "$(ls -A reports/allure 2>/dev/null)" ]; then
+            cp -r reports/allure/* site/allure/
+          fi
+          cat > site/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>Test Reports</title>
+              <style>
+                body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1rem; }
+                h1 { margin-bottom: 0.5rem; }
+                p { color: #555; }
+                ul { line-height: 2; font-size: 1.1rem; }
+              </style>
+            </head>
+            <body>
+              <h1>Test Reports</h1>
+              <p>Latest Playwright run artifacts.</p>
+              <ul>
+                <li><a href="./playwright/index.html">Playwright HTML Report</a></li>
+                <li><a href="./allure/index.html">Allure Report</a></li>
+              </ul>
+            </body>
+          </html>
+          EOF
+
+      - name: Deploy to Cloudflare Pages
+        id: cloudflare-deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site --project-name=playwright-report
+
+      - name: Publish Deployment URL
+        run: |
+          BASE_URL="${{ steps.cloudflare-deploy.outputs.deployment-url }}"
+          echo "## Report Deployment" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Report | URL |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
+          echo "| Landing page | ${BASE_URL} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Playwright | ${BASE_URL}/playwright/index.html |" >> $GITHUB_STEP_SUMMARY
+          echo "| Allure | ${BASE_URL}/allure/index.html |" >> $GITHUB_STEP_SUMMARY

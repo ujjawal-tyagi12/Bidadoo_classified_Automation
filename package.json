@@ -1,0 +1,36 @@
+{
+  "name": "automation-framework",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "npm run bddgen && playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:smoke": "playwright test --grep @smoke",
+    "bddgen": "bddgen",
+    "test:features": "npm run bddgen && playwright test --project=bdd",
+    "test:features:msite": "npm run bddgen && playwright test --project=bdd-msite",
+    "test:features:headed": "npm run bddgen && playwright test --project=bdd --headed",
+    "test:features:msite:headed": "npm run bddgen && playwright test --project=bdd-msite --headed",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report reports/html",
+    "allure:generate": "allure generate allure-results -o reports/allure --clean",
+    "allure:open": "allure open reports/allure",
+    "allure:serve": "allure serve allure-results",
+    "report:allure": "npm run allure:generate && npm run allure:open",
+    "lint:rules": "node scripts/rule-engine.cjs",
+    "lint:rules:staged": "node scripts/rule-engine.cjs --staged"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.2.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
+    "allure-commandline": "^2.38.0",
+    "allure-playwright": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "playwright-bdd": "^8.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {}
+}
