@@ -1,0 +1,39 @@
+{
+  "validAssetInformation": {
+    "title": "Automation Test Excavator",
+    "make": "Caterpillar",
+    "model": "320D",
+    "categoryPath": [
+      "Construction Equipment",
+      "Aerial Work Platforms",
+      "Boom Lifts - Articulating"
+    ],
+    "year": "2020",
+    "serial": "SER-AUTO-001",
+    "usageHours": "5000",
+    "usageType": "Hours"
+  },
+  "validLocation": {
+    "country": "United States",
+    "state": "Washington",
+    "city": "Seattle"
+  },
+  "validPricingContact": {
+    "price": "50000",
+    "currency": "USD",
+    "contactName": "John Doe",
+    "contactPhone": "2065551234",
+    "contactEmail": "john.doe@example.com"
+  },
+  "validDescriptionDetails": {
+    "description": "High-quality excavator in excellent working condition.",
+    "features": "Durable, low usage hours, well maintained.",
+    "specifications": "Model 320D, Year 2020, 5000 hours."
+  },
+  "mediaUpload": {
+    "validVideoLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "unsupportedDomainVideoLink": "https://www.tiktok.com/@someone/video/12345",
+    "videoLinkBaseUrl": "https://www.youtube.com/watch?v=max",
+    "malformedVideoLink": "not-a-url-at-all"
+  }
+}

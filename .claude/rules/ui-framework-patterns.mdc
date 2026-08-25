@@ -1,0 +1,46 @@
+---
+description: Enforce UI automation framework patterns (Actions/Pages/Typed Elements)
+globs: tests/ui/**/*.ts
+alwaysApply: false
+---
+
+# UI framework patterns (must follow)
+
+## Layered architecture
+
+- **Actions** go in `tests/ui/actions/*Actions.ts` and are constructed via the `action` fixture.
+- **Pages** go in `tests/ui/pages/*Page.ts` and expose **typed Element getters only** (no assertions, no business logic).
+- **Element behaviour lives on the element itself**, not in a procedural action layer.
+
+## Use the framework primitives
+
+- In **Pages**, build typed elements via the surface locator with a role:
+  ```ts
+  get nameInput() {
+    return surfaceLocator("Name input")
+      .asTextInput()
+      .desktop(p => p.locator("input[name='name']"))
+      .build(this.page, this.surface);
+  }
+  ```
+  Available roles: `.asButton()`, `.asTextInput()`, `.asCheckbox()`, `.asDropdown()`, `.asFileInput()`. Omit a role for spans/labels/toasts (defaults to `GenericElement`).
+- In **Actions**, drive the UI through the element directly:
+  - Interactions / waits: `page.btn.click()`, `page.input.clearAndFill(v)`, `page.cb.check()`, `page.x.waitForVisible()`, `page.x.hover()`, `page.x.scrollIntoView()`
+  - Reads: `page.list.count()`, `page.row.text()`, `page.x.attribute(name)`, `page.x.isVisible()`
+  - Assertions: `page.x.expect.toBeVisible()`, `page.x.expect.toHaveText(...)`, `page.x.expect.not.toBeChecked()`
+  - Escape hatch: `page.x.run("Label", loc => loc.exoticMethod(...))`
+- Page-/context-level helpers stay procedural in `ActionDeps`:
+  - `nav.goto(...)`, `nav.reload(...)`, `nav.waitForURL(...)`
+  - `pageAssert.urlContains(...)`, `pageAssert.titleIs(...)`
+  - `dialogs.*`, `frames.*`, `storage.*`
+
+## Boundaries (don't mix responsibilities)
+
+- **Do not** embed `expect(...)` assertions directly in Pages — use `element.expect.*` from the Action.
+- **Do not** use `page.locator(...)` directly inside Actions — extend the Page object with a typed element getter.
+- **Do not** add a procedural action wrapper layer (no `UIActions`-style classes, no `ui.click(element)` patterns). Drive elements through their own methods.
+- Keep Actions methods **task-level** (intent-based), not tiny "click this one selector" helpers unless reused.
+
+## Fixtures
+
+- When adding new Actions, register them in `tests/ui/support/action.fixture.ts`.

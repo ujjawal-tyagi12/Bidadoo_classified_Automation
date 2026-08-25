@@ -1,3 +1,10 @@
 // Re-export prop types here as you add {module}.props.ts files, e.g.:
 // export type { LoginProps } from "./login.props.js";
-export {};
+export type {
+  AssetInformationProps,
+  LocationProps,
+  PricingContactProps,
+  DescriptionDetailsProps,
+  MediaUploadProps,
+  CreateEquipmentProps,
+} from "./create-equipment.props.js";

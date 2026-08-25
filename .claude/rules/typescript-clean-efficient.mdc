@@ -1,0 +1,20 @@
+---
+description: TypeScript quality bar: clean, efficient, consistent
+globs: **/*.ts
+alwaysApply: false
+---
+
+# TypeScript standards (clean + efficient)
+
+- Prefer **explicit types at module boundaries** (exports, public methods); rely on inference internally.
+- Keep functions small and single-purpose; avoid “do-everything” methods.
+- Avoid dead code, empty statements, stray semicolons, and unused imports/vars.
+- Prefer `const`; don’t mutate unless necessary.
+- Use early returns to simplify nested conditionals.
+- No `any` unless there is no alternative; if used, constrain scope and justify in PR description (not inline narration).
+- Handle async flows explicitly:
+  - await waits/assertions before interacting
+  - avoid arbitrary timeouts; use framework waits/read/assert
+- Prefer stable data structures:
+  - use `satisfies` for object shape checks (already used in this repo)
+  - avoid duplicating string unions; centralize where already established

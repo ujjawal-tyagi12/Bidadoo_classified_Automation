@@ -1,0 +1,15 @@
+---
+description: UI test stability: avoid flake, keep selectors robust
+globs: tests/ui/**/*.ts
+alwaysApply: false
+---
+
+# UI test stability rules
+
+- Prefer **state-based waits** (`element.waitForVisible()`, `element.expect.toBeVisible/Hidden/Enabled/Disabled()`) over sleeps/timeouts.
+- Avoid brittle selectors (deep CSS chains, text-only selectors) unless the repo already uses them for that area.
+- Never log or assert secrets/tokens. Add URL assertions via `pageAssert` (e.g., "no token in URL") when relevant.
+- Make navigation deterministic:
+  - normalize base URLs (e.g., strip trailing slash) only if existing code does so
+  - assert the expected page state after navigation (header visible, step visible, etc.)
+- If an element may or may not appear (popups), guard with `await element.isVisible()` before interacting.

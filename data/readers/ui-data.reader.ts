@@ -8,10 +8,14 @@ function loadTestDataProps<T>(filename: string): T {
   return loadJson<T>(path);
 }
 
+import type { CreateEquipmentProps } from "../props/create-equipment.props.js";
+
 // Add loader functions here as you add {module}.props.ts + {module}.json files, e.g.:
 //
 // export function loadLoginProps(): LoginProps {
 //   return loadTestDataProps<LoginProps>("login.json");
 // }
 
-export {};
+export function loadCreateEquipmentProps(): CreateEquipmentProps {
+  return loadTestDataProps<CreateEquipmentProps>("create-equipment.json");
+}
