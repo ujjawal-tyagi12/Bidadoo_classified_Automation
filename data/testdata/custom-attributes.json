@@ -1,0 +1,6 @@
+{
+  "longAttributeName": "ThisNameIsWayTooLongToBeValidForSure",
+  "variedContentValue": "Good2 good",
+  "sqlInjectionString": "' OR '1'='1",
+  "xssString": "<script>alert('XSS')</script>"
+}

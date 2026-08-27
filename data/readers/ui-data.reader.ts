@@ -11,6 +11,7 @@ function loadTestDataProps<T>(filename: string): T {
 import type { CreateEquipmentStaticData } from "../props/create-equipment.props.js";
 import type { LoginProps } from "../props/login.props.js";
 import type { ListingsProps } from "../props/listings.props.js";
+import type { CustomAttributesProps } from "../props/custom-attributes.props.js";
 
 // Add loader functions here as you add {module}.props.ts + {module}.json files.
 
@@ -25,4 +26,8 @@ export function loadLoginProps(): LoginProps {
 
 export function loadListingsProps(): ListingsProps {
   return loadTestDataProps<ListingsProps>("listings.json");
+}
+
+export function loadCustomAttributesProps(): CustomAttributesProps {
+  return loadTestDataProps<CustomAttributesProps>("custom-attributes.json");
 }

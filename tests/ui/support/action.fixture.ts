@@ -14,6 +14,7 @@ import { DescriptionDetailsActions } from "../actions/DescriptionDetailsActions.
 import { MediaUploadActions } from "../actions/MediaUploadActions.js";
 import { SubmissionActions } from "../actions/SubmissionActions.js";
 import { ListingsActions } from "../actions/ListingsActions.js";
+import { CustomAttributesActions } from "../actions/CustomAttributesActions.js";
 
 export type { ActionDeps } from "./action-deps.js";
 
@@ -28,6 +29,7 @@ export type ActionFixtures = {
   mediaUploadActions: MediaUploadActions;
   submissionActions: SubmissionActions;
   listingsActions: ListingsActions;
+  customAttributesActions: CustomAttributesActions;
 };
 
 type FixtureDeps = {
@@ -121,5 +123,12 @@ export const actionFixture = {
   ) => {
     const deps = buildDeps({ page, logger, request, state, pageAssert, nav, uiSurface });
     await use(new ListingsActions(page, deps));
+  },
+  customAttributesActions: async (
+    { page, logger, request, state, pageAssert, nav, uiSurface }: FixtureDeps,
+    use: (a: CustomAttributesActions) => Promise<void>,
+  ) => {
+    const deps = buildDeps({ page, logger, request, state, pageAssert, nav, uiSurface });
+    await use(new CustomAttributesActions(page, deps));
   },
 };
