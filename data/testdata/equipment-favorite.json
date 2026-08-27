@@ -1,0 +1,7 @@
+{
+  "invalidEmail": "not-an-email",
+  "shortPassword": "short",
+  "wrongPassword": "definitelyWrongPassword123",
+  "nonExistentEmail": "no-such-account.automation@example.com",
+  "specialCharEmail": "automation+favorite.test@example.com"
+}

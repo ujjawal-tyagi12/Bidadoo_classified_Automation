@@ -1,0 +1,10 @@
+{
+  "validContactSeller": {
+    "firstName": "Automation",
+    "lastName": "Tester",
+    "email": "automation.tester@example.com",
+    "phone": "2065551234",
+    "message": "Automated test enquiry — please disregard."
+  },
+  "invalidEmail": "not-an-email"
+}

@@ -178,6 +178,15 @@ Then("Verify the new listing appears in the Listings table", async ({ sellerDash
   await sellerDashboardActions.assertListingVisible(validAssetInformation.title);
 });
 
+Then("Verify the seeded listing appears in the Listings table", async ({ sellerDashboardActions, state }) => {
+  const title = state.getSharedData<string>("seedListingTitle");
+  if (!title) {
+    throw new Error("Missing shared scenario data for key: seedListingTitle");
+  }
+  await sellerDashboardActions.searchListings(title);
+  await sellerDashboardActions.assertListingVisible(title);
+});
+
 Then("Verify the Next button is enabled", async ({ createEquipmentShellActions }) => {
   await createEquipmentShellActions.assertNextEnabled();
 });
@@ -205,6 +214,17 @@ When("Admin fills in Asset Information with a non-numeric Model Year", async ({ 
 When("Admin fills in Asset Information with a boundary Model Year of 1900", async ({ assetInformationActions }) => {
   const { validAssetInformation } = loadCreateEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, year: "1900" });
+});
+
+When("Admin fills in valid Asset Information with a unique title", async ({ assetInformationActions, state }) => {
+  const { validAssetInformation } = loadCreateEquipmentProps();
+  const title = `${validAssetInformation.title} ${Date.now()}`;
+  state.setSharedData("seedListingTitle", title);
+  await assetInformationActions.fillAssetInformation({ ...validAssetInformation, title });
+});
+
+When("Admin uploads {int} valid equipment images", async ({ mediaUploadActions }, count: number) => {
+  await mediaUploadActions.uploadImages(Array(count).fill(resolveTestAssetPath("equipment-photo.png")));
 });
 
 When("Admin fills in valid Asset Information with a unique Reference ID", async ({ assetInformationActions, state }) => {

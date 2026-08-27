@@ -8,3 +8,11 @@ export type {
   MediaUploadProps,
   CreateEquipmentProps,
 } from "./create-equipment.props.js";
+export type { ContactSellerFormProps, EquipmentDetailProps } from "./equipment-detail.props.js";
+export type { EquipmentFavoriteProps } from "./equipment-favorite.props.js";
+export type {
+  FilterCase,
+  EmailValidationCase,
+  MinLengthContactProps,
+  ContactSellerValidationProps,
+} from "./contact-seller.props.js";

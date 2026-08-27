@@ -9,6 +9,9 @@ function loadTestDataProps<T>(filename: string): T {
 }
 
 import type { CreateEquipmentProps } from "../props/create-equipment.props.js";
+import type { EquipmentDetailProps } from "../props/equipment-detail.props.js";
+import type { EquipmentFavoriteProps } from "../props/equipment-favorite.props.js";
+import type { ContactSellerValidationProps } from "../props/contact-seller.props.js";
 
 // Add loader functions here as you add {module}.props.ts + {module}.json files, e.g.:
 //
@@ -18,4 +21,16 @@ import type { CreateEquipmentProps } from "../props/create-equipment.props.js";
 
 export function loadCreateEquipmentProps(): CreateEquipmentProps {
   return loadTestDataProps<CreateEquipmentProps>("create-equipment.json");
+}
+
+export function loadEquipmentDetailProps(): EquipmentDetailProps {
+  return loadTestDataProps<EquipmentDetailProps>("equipment-detail.json");
+}
+
+export function loadEquipmentFavoriteProps(): EquipmentFavoriteProps {
+  return loadTestDataProps<EquipmentFavoriteProps>("equipment-favorite.json");
+}
+
+export function loadContactSellerValidationProps(): ContactSellerValidationProps {
+  return loadTestDataProps<ContactSellerValidationProps>("contact-seller.json");
 }

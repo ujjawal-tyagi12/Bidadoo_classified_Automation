@@ -22,6 +22,20 @@ const bddMsiteProject = defineBddProject({
   steps: [...bddSteps],
 });
 
+/**
+ * Cross-browser coverage for the Equipment Listing module (TC27 — "Web
+ * Testing: Cross-Browser Compatibility"). Scoped to just this one feature
+ * file, not the whole bdd suite, since that's the test case's actual scope.
+ * Firefox and WebKit are already installed locally (confirmed via
+ * `npx playwright install --dry-run firefox webkit`), so no new download is
+ * needed to run these.
+ */
+const bddEquipmentListingCrossBrowserProject = defineBddProject({
+  name: "bdd-equipment-listing-cross-browser",
+  features: "tests/ui/features/web/equipment-listing.feature",
+  steps: [...bddSteps],
+});
+
 export default defineConfig({
   globalSetup: "./config/test-run-log-global-setup.ts",
   globalTeardown: "./config/test-run-log-global-teardown.ts",
@@ -82,7 +96,14 @@ export default defineConfig({
       use: {
         ...devices["Desktop Chrome"],
         uiSurface: "desktop",
-        viewport: isCI ? { width: 1920, height: 1080 } : null,
+        // Always a concrete desktop size — `null` here previously let a
+        // headless local run fall back to Chromium's small headless default
+        // viewport (below this app's responsive breakpoints), silently
+        // flipping the sidebar filter panel into its mobile/tablet overlay
+        // layout instead of the desktop project's intended always-visible
+        // sidebar (confirmed live while building the equipment-listing
+        // module — see the build report for details).
+        viewport: isCI ? { width: 1920, height: 1080 } : { width: 1280, height: 800 },
         deviceScaleFactor: undefined,
         launchOptions: {
           args: isCI ? [] : ["--start-maximized"],
@@ -95,7 +116,14 @@ export default defineConfig({
       use: {
         ...devices["Desktop Chrome"],
         uiSurface: "desktop",
-        viewport: isCI ? { width: 1920, height: 1080 } : null,
+        // Always a concrete desktop size — `null` here previously let a
+        // headless local run fall back to Chromium's small headless default
+        // viewport (below this app's responsive breakpoints), silently
+        // flipping the sidebar filter panel into its mobile/tablet overlay
+        // layout instead of the desktop project's intended always-visible
+        // sidebar (confirmed live while building the equipment-listing
+        // module — see the build report for details).
+        viewport: isCI ? { width: 1920, height: 1080 } : { width: 1280, height: 800 },
         deviceScaleFactor: undefined,
         launchOptions: {
           args: isCI ? [] : ["--start-maximized"],
@@ -112,6 +140,24 @@ export default defineConfig({
         launchOptions: {
           args: [],
         },
+      },
+    },
+    {
+      ...bddEquipmentListingCrossBrowserProject,
+      name: "bdd-equipment-listing-firefox",
+      use: {
+        ...devices["Desktop Firefox"],
+        uiSurface: "desktop",
+        viewport: isCI ? { width: 1920, height: 1080 } : { width: 1280, height: 800 },
+      },
+    },
+    {
+      ...bddEquipmentListingCrossBrowserProject,
+      name: "bdd-equipment-listing-webkit",
+      use: {
+        ...devices["Desktop Safari"],
+        uiSurface: "desktop",
+        viewport: isCI ? { width: 1920, height: 1080 } : { width: 1280, height: 800 },
       },
     },
   ],

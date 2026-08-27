@@ -25,11 +25,15 @@ export class SellerDashboardActions {
    * tab races the app's router: two client-side navigations back-to-back can
    * leave the page frozen on the previous view even though the URL updates
    * (real app bug, see docs/requirements §2b). Waiting for the button to be
-   * positionally stable first — not an arbitrary sleep — reliably clears the
-   * race window (confirmed live: <500ms is flaky, ~630ms is reliable 7/7).
+   * positionally stable first — not an arbitrary sleep — clears the race
+   * window; the 600ms interval documented as "reliable 7/7" still hit the
+   * frozen-page state on a later full-suite headed run, so this uses the
+   * doc's own more conservative ~1s finding ("with a ~1 second pause...
+   * renders correctly 3/3 runs") for a larger safety margin against the
+   * underlying (still-real, app-side) race.
    */
   async startNewListing(): Promise<void> {
-    await this.wait.waitForElementStable(this.dashboard.newListingButton, { interval: 600 });
+    await this.wait.waitForElementStable(this.dashboard.newListingButton, { interval: 1000 });
     await this.dashboard.newListingButton.click();
   }
 

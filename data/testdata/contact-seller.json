@@ -1,0 +1,40 @@
+{
+  "firstNameFilterCases": [
+    { "input": "John.Doe", "expected": "JohnDoe" },
+    { "input": "John123", "expected": "John" },
+    { "input": "<b>John</b>", "expected": "bJohnb" },
+    { "input": "' OR '1'='1", "expected": " OR " },
+    { "input": "<script>alert('XSS')</script>", "expected": "scriptalertXSSscript" },
+    { "input": "Jöhn", "expected": "Jhn" },
+    { "input": "  John  ", "expected": "  John  " }
+  ],
+  "lastNameFilterCases": [
+    { "input": "Doe Jr.", "expected": "Doe Jr" },
+    { "input": "Doe@!", "expected": "Doe" },
+    { "input": "D'oe", "expected": "Doe" }
+  ],
+  "phoneFilterCases": [
+    { "input": "1234567890", "expected": "1234567890" },
+    { "input": "123-456-7890", "expected": "1234567890" },
+    { "input": "+441234567890", "expected": "441234567890" },
+    { "input": "12345abc", "expected": "12345" },
+    { "input": "  1234567890  ", "expected": "1234567890" }
+  ],
+  "emailWithSurroundingSpaces": {
+    "input": "  john.doe@example.com  ",
+    "expected": "john.doe@example.com"
+  },
+  "emailValidationCases": [
+    { "email": "john.doe@example.com", "expectError": false },
+    { "email": "john.doe@com", "expectError": true },
+    { "email": "john.doe@invalid_domain", "expectError": true },
+    { "email": "john.doe@mail.example.com", "expectError": false }
+  ],
+  "minLengthContact": {
+    "firstName": "J",
+    "lastName": "D",
+    "email": "j@d.co",
+    "phone": "1"
+  },
+  "modifiedMessage": "Custom enquiry text — please disregard."
+}

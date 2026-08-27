@@ -1,4 +1,4 @@
-@create-equipment @BIDC-280
+@create-equipment @BIDC-280 @smoke
 Feature: Create Equipment - Single Listing
 
   As a seller, I can create a new equipment listing through the 5-step
