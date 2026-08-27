@@ -48,3 +48,15 @@ export type CreateEquipmentProps = {
   validDescriptionDetails: DescriptionDetailsProps;
   mediaUpload: MediaUploadProps;
 };
+
+/**
+ * What actually still lives in the static `create-equipment.json` fixture:
+ * the Category tree path (not sourceable from a live API yet — see
+ * `data/factories/create-equipment.factory.ts`) and the video-link values
+ * (no config API found for the allowed-domain whitelist). Everything else
+ * `CreateEquipmentProps` has is generated live by the factory instead.
+ */
+export type CreateEquipmentStaticData = {
+  categoryPath: string[];
+  mediaUpload: MediaUploadProps;
+};

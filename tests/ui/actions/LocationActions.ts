@@ -1,5 +1,6 @@
 import type { Page } from "@playwright/test";
-import type { LocationProps } from "@data/props/index.js";
+import type { LocationProps, CreateEquipmentProps } from "@data/props/index.js";
+import { getOrCreateEquipmentProps } from "@data/factories/create-equipment.factory.js";
 import type { ActionDeps } from "../support/action-deps.js";
 import { LocationPage } from "../pages/LocationPage.js";
 
@@ -11,6 +12,11 @@ export class LocationActions {
     private readonly deps: ActionDeps,
   ) {
     this.location = new LocationPage(page, deps.uiSurface);
+  }
+
+  /** Generated once per scenario and cached on `state` — see `getOrCreateEquipmentProps`. */
+  async getEquipmentProps(): Promise<CreateEquipmentProps> {
+    return getOrCreateEquipmentProps(this.deps.state, { request: this.deps.request, logger: this.deps.logger });
   }
 
   /** Country → State → (optional) City, in that order — State/City are disabled until their predecessor is picked. */

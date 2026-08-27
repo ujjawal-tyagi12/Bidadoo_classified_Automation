@@ -7,4 +7,5 @@ export type {
   DescriptionDetailsProps,
   MediaUploadProps,
   CreateEquipmentProps,
+  CreateEquipmentStaticData,
 } from "./create-equipment.props.js";

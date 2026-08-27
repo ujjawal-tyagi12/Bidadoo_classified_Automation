@@ -8,7 +8,7 @@ function loadTestDataProps<T>(filename: string): T {
   return loadJson<T>(path);
 }
 
-import type { CreateEquipmentProps } from "../props/create-equipment.props.js";
+import type { CreateEquipmentStaticData } from "../props/create-equipment.props.js";
 
 // Add loader functions here as you add {module}.props.ts + {module}.json files, e.g.:
 //
@@ -16,6 +16,7 @@ import type { CreateEquipmentProps } from "../props/create-equipment.props.js";
 //   return loadTestDataProps<LoginProps>("login.json");
 // }
 
-export function loadCreateEquipmentProps(): CreateEquipmentProps {
-  return loadTestDataProps<CreateEquipmentProps>("create-equipment.json");
+/** Only the fields `data/factories/create-equipment.factory.ts` can't source live — see `CreateEquipmentStaticData`. */
+export function loadCreateEquipmentProps(): CreateEquipmentStaticData {
+  return loadTestDataProps<CreateEquipmentStaticData>("create-equipment.json");
 }

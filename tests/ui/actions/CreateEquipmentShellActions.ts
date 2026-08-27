@@ -27,13 +27,7 @@ export class CreateEquipmentShellActions {
     this.shell = new CreateEquipmentShellPage(page, deps.uiSurface);
   }
 
-  /**
-   * Deep-links straight to the wizard (a bookmarked link, a page refresh while
-   * on it) — deliberately independent of the Listings tab → New Listing click
-   * path, which has a separate, unrelated navigation bug (see docs/requirements
-   * §2b). Scenarios that verify in-wizard behavior (back button, form entry)
-   * use this so they test their own subject, not that bug.
-   */
+  /** Deep-links straight to the wizard — avoids the unrelated Listings → New Listing navigation bug (see requirements §2b). */
   async openDirectly(): Promise<void> {
     await this.deps.nav.goto("/dashboard/create-equipment?status=asset-information");
   }
@@ -46,15 +40,7 @@ export class CreateEquipmentShellActions {
     await this.deps.pageAssert.urlContains("/dashboard");
   }
 
-  /**
-   * The breadcrumb always reads "HOME | LISTINGS | CREATE NEW LISTING"
-   * visually, but the raw DOM text differs by entry route: reached via
-   * `openDirectly()` (a hard page load) it's mixed case ("Home | Listings |
-   * ..."), CSS-uppercased; reached via Listings tab → New Listing (a
-   * client-side navigation) it's literally uppercase in the DOM — confirmed
-   * live, see docs/requirements §2b/§11. Case-insensitive regexes make this
-   * assertion correct for either route instead of assuming one.
-   */
+  /** DOM case differs by entry route (mixed-case vs. literally uppercase) — case-insensitive regexes cover both. */
   async assertBreadcrumb(): Promise<void> {
     await this.shell.breadcrumb.expect.toContainText(/home/i);
     await this.shell.breadcrumb.expect.toContainText(/listings/i);
