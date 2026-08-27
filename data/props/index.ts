@@ -9,3 +9,4 @@ export type {
   CreateEquipmentProps,
   CreateEquipmentStaticData,
 } from "./create-equipment.props.js";
+export type { LoginProps } from "./login.props.js";
