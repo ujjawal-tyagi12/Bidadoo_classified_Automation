@@ -1,5 +1,6 @@
 import { expect, type Page } from "@playwright/test";
-import type { DescriptionDetailsProps } from "@data/props/index.js";
+import type { DescriptionDetailsProps, CreateEquipmentProps } from "@data/props/index.js";
+import { getOrCreateEquipmentProps } from "@data/factories/create-equipment.factory.js";
 import type { ActionDeps } from "../support/action-deps.js";
 import { DescriptionDetailsPage } from "../pages/DescriptionDetailsPage.js";
 
@@ -11,6 +12,11 @@ export class DescriptionDetailsActions {
     private readonly deps: ActionDeps,
   ) {
     this.descriptionDetails = new DescriptionDetailsPage(page, deps.uiSurface);
+  }
+
+  /** Generated once per scenario and cached on `state` — see `getOrCreateEquipmentProps`. */
+  async getEquipmentProps(): Promise<CreateEquipmentProps> {
+    return getOrCreateEquipmentProps(this.deps.state, { request: this.deps.request, logger: this.deps.logger });
   }
 
   async fillDescriptionDetails(props: DescriptionDetailsProps): Promise<void> {

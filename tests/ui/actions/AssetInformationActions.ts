@@ -1,5 +1,6 @@
 import type { Page } from "@playwright/test";
-import type { AssetInformationProps } from "@data/props/index.js";
+import type { AssetInformationProps, CreateEquipmentProps } from "@data/props/index.js";
+import { getOrCreateEquipmentProps } from "@data/factories/create-equipment.factory.js";
 import type { ActionDeps } from "../support/action-deps.js";
 import { AssetInformationPage } from "../pages/AssetInformationPage.js";
 
@@ -11,6 +12,11 @@ export class AssetInformationActions {
     private readonly deps: ActionDeps,
   ) {
     this.assetInfo = new AssetInformationPage(page, deps.uiSurface);
+  }
+
+  /** Generated once per scenario and cached on `state` — see `getOrCreateEquipmentProps`. */
+  async getEquipmentProps(): Promise<CreateEquipmentProps> {
+    return getOrCreateEquipmentProps(this.deps.state, { request: this.deps.request, logger: this.deps.logger });
   }
 
   /**
@@ -86,5 +92,20 @@ export class AssetInformationActions {
 
   async assertDuplicateReferenceIdError(): Promise<void> {
     await this.assetInfo.duplicateReferenceIdError.expect.toBeVisible();
+  }
+
+  /** Used to confirm Edit Listing opened the wizard pre-filled with the real listing's data. */
+  async assertTitleInputHasValue(expected: string): Promise<void> {
+    await this.assetInfo.titleInput.expect.toHaveValue(expected);
+  }
+
+  /** For editing an existing listing's title in place (BIDC-298 §11) — `fillAssetInformation` assumes a full fresh form. */
+  async updateTitle(title: string): Promise<void> {
+    await this.assetInfo.titleInput.clearAndFill(title);
+  }
+
+  /** Confirmed live (BIDC-298 §13): read-only View Equipment mode disables the Category control. */
+  async assertCategoryDisabled(): Promise<void> {
+    await this.assetInfo.categoryButton.expect.toBeDisabled();
   }
 }

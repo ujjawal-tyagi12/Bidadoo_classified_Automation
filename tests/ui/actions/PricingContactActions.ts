@@ -1,5 +1,6 @@
 import type { Page } from "@playwright/test";
-import type { PricingContactProps } from "@data/props/index.js";
+import type { PricingContactProps, CreateEquipmentProps } from "@data/props/index.js";
+import { getOrCreateEquipmentProps } from "@data/factories/create-equipment.factory.js";
 import type { ActionDeps } from "../support/action-deps.js";
 import { PricingContactPage } from "../pages/PricingContactPage.js";
 
@@ -11,6 +12,11 @@ export class PricingContactActions {
     private readonly deps: ActionDeps,
   ) {
     this.pricingContact = new PricingContactPage(page, deps.uiSurface);
+  }
+
+  /** Generated once per scenario and cached on `state` — see `getOrCreateEquipmentProps`. */
+  async getEquipmentProps(): Promise<CreateEquipmentProps> {
+    return getOrCreateEquipmentProps(this.deps.state, { request: this.deps.request, logger: this.deps.logger });
   }
 
   async fillPricingContact(props: PricingContactProps): Promise<void> {
@@ -27,5 +33,10 @@ export class PricingContactActions {
 
   async assertContactNameDisabled(): Promise<void> {
     await this.pricingContact.contactNameInput.expect.toBeDisabled();
+  }
+
+  /** For editing an existing listing's price in place (BIDC-298 §11) — `fillPricingContact` assumes a full fresh form. */
+  async updatePrice(price: string): Promise<void> {
+    await this.pricingContact.priceInput.clearAndFill(price);
   }
 }

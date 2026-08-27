@@ -1,4 +1,6 @@
 import type { Page } from "@playwright/test";
+import type { CreateEquipmentProps } from "@data/props/index.js";
+import { getOrCreateEquipmentProps } from "@data/factories/create-equipment.factory.js";
 import type { ActionDeps } from "../support/action-deps.js";
 import { MediaUploadPage } from "../pages/MediaUploadPage.js";
 
@@ -10,6 +12,11 @@ export class MediaUploadActions {
     private readonly deps: ActionDeps,
   ) {
     this.mediaUpload = new MediaUploadPage(page, deps.uiSurface);
+  }
+
+  /** Generated once per scenario and cached on `state` — see `getOrCreateEquipmentProps`. */
+  async getEquipmentProps(): Promise<CreateEquipmentProps> {
+    return getOrCreateEquipmentProps(this.deps.state, { request: this.deps.request, logger: this.deps.logger });
   }
 
   async uploadImages(paths: string[]): Promise<void> {
