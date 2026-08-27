@@ -13,6 +13,7 @@ import { PricingContactActions } from "../actions/PricingContactActions.js";
 import { DescriptionDetailsActions } from "../actions/DescriptionDetailsActions.js";
 import { MediaUploadActions } from "../actions/MediaUploadActions.js";
 import { SubmissionActions } from "../actions/SubmissionActions.js";
+import { ListingsActions } from "../actions/ListingsActions.js";
 
 export type { ActionDeps } from "./action-deps.js";
 
@@ -26,6 +27,7 @@ export type ActionFixtures = {
   descriptionDetailsActions: DescriptionDetailsActions;
   mediaUploadActions: MediaUploadActions;
   submissionActions: SubmissionActions;
+  listingsActions: ListingsActions;
 };
 
 type FixtureDeps = {
@@ -112,5 +114,12 @@ export const actionFixture = {
   ) => {
     const deps = buildDeps({ page, logger, request, state, pageAssert, nav, uiSurface });
     await use(new SubmissionActions(page, deps));
+  },
+  listingsActions: async (
+    { page, logger, request, state, pageAssert, nav, uiSurface }: FixtureDeps,
+    use: (a: ListingsActions) => Promise<void>,
+  ) => {
+    const deps = buildDeps({ page, logger, request, state, pageAssert, nav, uiSurface });
+    await use(new ListingsActions(page, deps));
   },
 };

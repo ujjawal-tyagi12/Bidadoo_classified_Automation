@@ -34,4 +34,9 @@ export class PricingContactActions {
   async assertContactNameDisabled(): Promise<void> {
     await this.pricingContact.contactNameInput.expect.toBeDisabled();
   }
+
+  /** For editing an existing listing's price in place (BIDC-298 §11) — `fillPricingContact` assumes a full fresh form. */
+  async updatePrice(price: string): Promise<void> {
+    await this.pricingContact.priceInput.clearAndFill(price);
+  }
 }

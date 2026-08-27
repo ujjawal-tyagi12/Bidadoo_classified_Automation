@@ -73,6 +73,23 @@ export class AssetInformationPage extends BasePage {
       .build(this.page, this.surface);
   }
 
+  /**
+   * Same control as `categoryOpenButton`, but matched by structure (the label's
+   * next sibling) instead of placeholder text — needed once a category has
+   * already been selected, since the button then shows the category name
+   * instead of "Select Equipment Category" (e.g. read-only View Equipment mode).
+   */
+  get categoryButton() {
+    return surfaceLocator("Category/Type button")
+      .asButton()
+      .desktop(() =>
+        this.formSection
+          .locator("label", { hasText: "Category/Type" })
+          .locator("xpath=following-sibling::div[1]//button"),
+      )
+      .build(this.page, this.surface);
+  }
+
   categoryToggle(label: string) {
     return surfaceLocator(`Category tree toggle: ${label}`)
       .asButton()

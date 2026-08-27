@@ -88,4 +88,15 @@ export class LoginActions {
   async assertRememberMeChecked(): Promise<void> {
     await this.login.rememberMeCheckbox.expect.toBeChecked();
   }
+
+  /** Profile menu → Logout → Confirm Logout dialog → Logout; opens the mobile hamburger first if needed. */
+  async logout(): Promise<void> {
+    if (!(await this.login.profileMenuButton.isVisible())) {
+      await this.login.mobileMenuToggle.click();
+    }
+    await this.login.profileMenuButton.click();
+    await this.login.logoutMenuItem.click();
+    await this.login.confirmLogoutButton.click();
+    await this.deps.nav.waitForURL(/^https?:\/\/[^/]+\/$/);
+  }
 }

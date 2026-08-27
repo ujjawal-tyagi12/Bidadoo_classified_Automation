@@ -67,6 +67,32 @@ export class CreateEquipmentShellActions {
     }
   }
 
+  /**
+   * The step icon stays clickable for any already-reached step (bubbles to the
+   * parent button), but confirmed live it shares the same click race found
+   * throughout this app (see `ListingsActions.filterByStatus`) — the click can
+   * register without the step actually changing. Verifying against the target
+   * step's own heading (not the icon's tick/circle state, which stays
+   * "completed" for an already-valid step even while it's the one showing —
+   * confirmed live) and retrying is what makes this reliable.
+   */
+  async goToStep(stepName: WizardStepName): Promise<void> {
+    const index = STEP_ORDER.indexOf(stepName);
+    const icon = this.shell.stepIndicatorIcon(index + 1, stepName);
+    const heading = this.shell.stepHeading(stepName);
+    const maxAttempts = 3;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      const isLastAttempt = attempt === maxAttempts;
+      try {
+        await icon.click();
+        await heading.expect.toBeVisible({ timeout: isLastAttempt ? 6000 : 1500 });
+        return;
+      } catch (error) {
+        if (isLastAttempt) throw error;
+      }
+    }
+  }
+
   async saveAsDraft(): Promise<void> {
     await this.shell.saveAsDraftButton.click();
   }
@@ -93,5 +119,13 @@ export class CreateEquipmentShellActions {
 
   async assertSubmitEnabled(): Promise<void> {
     await this.shell.submitButton.expect.toBeEnabled();
+  }
+
+  async assertViewEquipmentHeadingVisible(): Promise<void> {
+    await this.shell.viewEquipmentHeading.expect.toBeVisible();
+  }
+
+  async clickEdit(): Promise<void> {
+    await this.shell.editButton.click();
   }
 }

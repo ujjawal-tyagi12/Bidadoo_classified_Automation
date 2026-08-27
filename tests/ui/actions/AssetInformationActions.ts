@@ -93,4 +93,19 @@ export class AssetInformationActions {
   async assertDuplicateReferenceIdError(): Promise<void> {
     await this.assetInfo.duplicateReferenceIdError.expect.toBeVisible();
   }
+
+  /** Used to confirm Edit Listing opened the wizard pre-filled with the real listing's data. */
+  async assertTitleInputHasValue(expected: string): Promise<void> {
+    await this.assetInfo.titleInput.expect.toHaveValue(expected);
+  }
+
+  /** For editing an existing listing's title in place (BIDC-298 §11) — `fillAssetInformation` assumes a full fresh form. */
+  async updateTitle(title: string): Promise<void> {
+    await this.assetInfo.titleInput.clearAndFill(title);
+  }
+
+  /** Confirmed live (BIDC-298 §13): read-only View Equipment mode disables the Category control. */
+  async assertCategoryDisabled(): Promise<void> {
+    await this.assetInfo.categoryButton.expect.toBeDisabled();
+  }
 }

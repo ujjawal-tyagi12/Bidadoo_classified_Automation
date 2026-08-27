@@ -77,4 +77,35 @@ export class LoginPage extends BasePage {
       .desktop((p) => p.getByText("This account doesn’t exist. Enter a different email address or Sign Up", { exact: true }))
       .build(this.page, this.surface);
   }
+
+  /** At narrow viewports (`viewport: null` → headless default ~800×600) the header collapses behind this hamburger. */
+  get mobileMenuToggle() {
+    return surfaceLocator("Mobile menu toggle")
+      .asButton()
+      .desktop((p) => p.getByRole("button", { name: "Toggle Menu" }))
+      .build(this.page, this.surface);
+  }
+
+  /** Present on every authenticated page's header, not just Login — housed here since it's the natural pair to logging in. */
+  get profileMenuButton() {
+    return surfaceLocator("Profile menu button")
+      .asButton()
+      .desktop((p) => p.getByRole("button", { name: "Profile menu" }))
+      .build(this.page, this.surface);
+  }
+
+  get logoutMenuItem() {
+    return surfaceLocator("Logout menu item")
+      .asButton()
+      .desktop((p) => p.getByRole("button", { name: "Logout", exact: false }))
+      .build(this.page, this.surface);
+  }
+
+  /** The "Confirm Logout" dialog's own Logout button — distinct from the profile menu's "Logout" item that opens it. */
+  get confirmLogoutButton() {
+    return surfaceLocator("Confirm Logout dialog button")
+      .asButton()
+      .desktop((p) => p.getByRole("dialog").getByRole("button", { name: "Logout", exact: true }))
+      .build(this.page, this.surface);
+  }
 }

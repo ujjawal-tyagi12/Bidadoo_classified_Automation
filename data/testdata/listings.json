@@ -1,0 +1,9 @@
+{
+  "specialCharsEquipmentName": "Excavator #1 (2020) — 50% off! @Best-Price$",
+  "longEquipmentName": "Heavy Duty Long Reach Crawler Excavator With An Extremely Long And Descriptive Equipment Name Used Purely To Test Table Layout Resilience Under Extreme Content Length",
+  "sqlInjectionSearchString": "' OR '1'='1",
+  "xssSearchString": "<script>alert('XSS')</script>",
+  "nonExistentSearchQuery": "zzz-no-such-equipment-exists-zzz",
+  "updatedEquipmentTitle": "Automation Updated Listing Title",
+  "updatedEquipmentPrice": "75000"
+}
