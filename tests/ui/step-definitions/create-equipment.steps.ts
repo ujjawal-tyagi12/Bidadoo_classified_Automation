@@ -1,6 +1,5 @@
 import { createBdd } from "playwright-bdd";
 import { test } from "../support/test.js";
-import { loadCreateEquipmentProps } from "@data/readers/index.js";
 import { resolveTestAssetPath } from "@core/utils/file-path.util.js";
 import type { WizardStepName } from "../actions/CreateEquipmentShellActions.js";
 
@@ -39,7 +38,7 @@ Then("Verify the stepper shows {string} as the active step", async ({ createEqui
 });
 
 When("Admin fills in valid Asset Information", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation(validAssetInformation);
 });
 
@@ -52,7 +51,7 @@ Then("Verify the Next button is disabled", async ({ createEquipmentShellActions 
 });
 
 When("Admin fills in valid Location details", async ({ locationActions }) => {
-  const { validLocation } = loadCreateEquipmentProps();
+  const { validLocation } = await locationActions.getEquipmentProps();
   await locationActions.fillLocation(validLocation);
 });
 
@@ -65,7 +64,7 @@ Then("Verify at least one previously saved location is available", async ({ loca
 });
 
 When("Admin fills in valid Pricing and Contact details", async ({ pricingContactActions }) => {
-  const { validPricingContact } = loadCreateEquipmentProps();
+  const { validPricingContact } = await pricingContactActions.getEquipmentProps();
   await pricingContactActions.fillPricingContact(validPricingContact);
 });
 
@@ -78,19 +77,19 @@ Then("Verify the Contact Name field is disabled", async ({ pricingContactActions
 });
 
 When("Admin fills in valid Description and Details", async ({ descriptionDetailsActions }) => {
-  const { validDescriptionDetails } = loadCreateEquipmentProps();
+  const { validDescriptionDetails } = await descriptionDetailsActions.getEquipmentProps();
   await descriptionDetailsActions.fillDescriptionDetails(validDescriptionDetails);
 });
 
 When("Admin fills in Description and Details with an empty Description", async ({ descriptionDetailsActions }) => {
-  const { validDescriptionDetails } = loadCreateEquipmentProps();
+  const { validDescriptionDetails } = await descriptionDetailsActions.getEquipmentProps();
   await descriptionDetailsActions.fillDescriptionDetails({ ...validDescriptionDetails, description: "" });
 });
 
 When(
   "Admin fills in Description and Details with a description under the minimum length",
   async ({ descriptionDetailsActions }) => {
-    const { validDescriptionDetails } = loadCreateEquipmentProps();
+    const { validDescriptionDetails } = await descriptionDetailsActions.getEquipmentProps();
     await descriptionDetailsActions.fillDescriptionDetails({
       ...validDescriptionDetails,
       description: "Valid description.",
@@ -123,12 +122,12 @@ Then("Verify the upload was rejected as an unsupported format", async ({ mediaUp
 });
 
 When("Admin adds a valid video link", async ({ mediaUploadActions }) => {
-  const { mediaUpload } = loadCreateEquipmentProps();
+  const { mediaUpload } = await mediaUploadActions.getEquipmentProps();
   await mediaUploadActions.addVideoLink(mediaUpload.validVideoLink);
 });
 
 When("Admin adds a video link from an unsupported domain", async ({ mediaUploadActions }) => {
-  const { mediaUpload } = loadCreateEquipmentProps();
+  const { mediaUpload } = await mediaUploadActions.getEquipmentProps();
   await mediaUploadActions.addVideoLink(mediaUpload.unsupportedDomainVideoLink);
 });
 
@@ -173,9 +172,7 @@ When("Admin confirms the submission", async ({ submissionActions }) => {
 });
 
 Then("Verify the new listing appears in the Listings table", async ({ sellerDashboardActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
-  await sellerDashboardActions.searchListings(validAssetInformation.title);
-  await sellerDashboardActions.assertListingVisible(validAssetInformation.title);
+  await sellerDashboardActions.assertGeneratedListingVisible();
 });
 
 Then("Verify the seeded listing appears in the Listings table", async ({ sellerDashboardActions, state }) => {
@@ -192,32 +189,32 @@ Then("Verify the Next button is enabled", async ({ createEquipmentShellActions }
 });
 
 When("Admin fills in Asset Information with an empty Listing Title", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, title: "" });
 });
 
 When("Admin fills in Asset Information with an empty Make", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, make: "" });
 });
 
 When("Admin fills in Asset Information with an empty Model", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, model: "" });
 });
 
 When("Admin fills in Asset Information with a non-numeric Model Year", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, year: "abcd" });
 });
 
 When("Admin fills in Asset Information with a boundary Model Year of 1900", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, year: "1900" });
 });
 
 When("Admin fills in valid Asset Information with a unique title", async ({ assetInformationActions, state }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   const title = `${validAssetInformation.title} ${Date.now()}`;
   state.setSharedData("seedListingTitle", title);
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, title });
@@ -227,37 +224,49 @@ When("Admin uploads {int} valid equipment images", async ({ mediaUploadActions }
   await mediaUploadActions.uploadImages(Array(count).fill(resolveTestAssetPath("equipment-photo.png")));
 });
 
-When("Admin fills in valid Asset Information with a unique Reference ID", async ({ assetInformationActions, state }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
-  const referenceId = `REF${Date.now()}`;
-  state.setSharedData("referenceId", referenceId);
-  await assetInformationActions.fillAssetInformation({ ...validAssetInformation, referenceId });
-});
+When(
+  "Admin fills in valid Asset Information with a unique Reference ID",
+  async ({ assetInformationActions, state }) => {
+    const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
+    const referenceId = `REF${Date.now()}`;
+    state.setSharedData("referenceId", referenceId);
+    await assetInformationActions.fillAssetInformation({ ...validAssetInformation, referenceId });
+  },
+);
 
-When("Admin fills in valid Asset Information with the same Reference ID again", async ({ assetInformationActions, state }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
-  const referenceId = state.getSharedData<string>("referenceId");
-  await assetInformationActions.fillAssetInformation({ ...validAssetInformation, referenceId });
-});
+When(
+  "Admin fills in valid Asset Information with the same Reference ID again",
+  async ({ assetInformationActions, state }) => {
+    const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
+    const referenceId = state.getSharedData<string>("referenceId");
+    await assetInformationActions.fillAssetInformation({ ...validAssetInformation, referenceId });
+  },
+);
 
 Then("Verify the duplicate Reference ID error is shown", async ({ assetInformationActions }) => {
   await assetInformationActions.assertDuplicateReferenceIdError();
 });
 
 When("Admin fills in Pricing and Contact details with no Currency selected", async ({ pricingContactActions }) => {
-  const { validPricingContact } = loadCreateEquipmentProps();
+  const { validPricingContact } = await pricingContactActions.getEquipmentProps();
   await pricingContactActions.fillPricingContact({ ...validPricingContact, currency: "" });
 });
 
-When("Admin fills in Pricing and Contact details with an invalid Contact Email", async ({ pricingContactActions }) => {
-  const { validPricingContact } = loadCreateEquipmentProps();
-  await pricingContactActions.fillPricingContact({ ...validPricingContact, contactEmail: "not-an-email" });
-});
+When(
+  "Admin fills in Pricing and Contact details with an invalid Contact Email",
+  async ({ pricingContactActions }) => {
+    const { validPricingContact } = await pricingContactActions.getEquipmentProps();
+    await pricingContactActions.fillPricingContact({ ...validPricingContact, contactEmail: "not-an-email" });
+  },
+);
 
-When("Admin fills in Pricing and Contact details with a short Contact Phone", async ({ pricingContactActions }) => {
-  const { validPricingContact } = loadCreateEquipmentProps();
-  await pricingContactActions.fillPricingContact({ ...validPricingContact, contactPhone: "12345" });
-});
+When(
+  "Admin fills in Pricing and Contact details with a short Contact Phone",
+  async ({ pricingContactActions }) => {
+    const { validPricingContact } = await pricingContactActions.getEquipmentProps();
+    await pricingContactActions.fillPricingContact({ ...validPricingContact, contactPhone: "12345" });
+  },
+);
 
 Then("Verify the Category button is disabled", async ({ assetInformationActions }) => {
   await assetInformationActions.assertCategoryButtonDisabled();
@@ -268,17 +277,17 @@ Then("Verify the Category button is enabled", async ({ assetInformationActions }
 });
 
 When("Admin fills in Asset Information without selecting a Category", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, categoryPath: [] });
 });
 
 When("Admin fills in Asset Information without selecting a Usage Type", async ({ assetInformationActions }) => {
-  const { validAssetInformation } = loadCreateEquipmentProps();
+  const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
   await assetInformationActions.fillAssetInformation({ ...validAssetInformation, usageType: undefined });
 });
 
 When("Admin fills in the maximum number of video links", async ({ mediaUploadActions }) => {
-  const { mediaUpload } = loadCreateEquipmentProps();
+  const { mediaUpload } = await mediaUploadActions.getEquipmentProps();
   await mediaUploadActions.fillMaximumVideoLinks(mediaUpload.videoLinkBaseUrl);
 });
 
@@ -299,7 +308,7 @@ Then("Verify the Bulk Upload menu shows its CSV actions", async ({ sellerDashboa
 });
 
 When("Admin adds a malformed video link", async ({ mediaUploadActions }) => {
-  const { mediaUpload } = loadCreateEquipmentProps();
+  const { mediaUpload } = await mediaUploadActions.getEquipmentProps();
   await mediaUploadActions.addVideoLink(mediaUpload.malformedVideoLink);
 });
 

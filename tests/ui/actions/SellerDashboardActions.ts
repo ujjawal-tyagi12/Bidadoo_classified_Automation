@@ -1,4 +1,6 @@
 import type { Page } from "@playwright/test";
+import type { CreateEquipmentProps } from "@data/props/index.js";
+import { getOrCreateEquipmentProps } from "@data/factories/create-equipment.factory.js";
 import type { ActionDeps } from "../support/action-deps.js";
 import { SellerDashboardPage } from "../pages/SellerDashboardPage.js";
 import { WaitHelper } from "@core/ui/wait/index.js";
@@ -13,6 +15,11 @@ export class SellerDashboardActions {
   ) {
     this.dashboard = new SellerDashboardPage(page, deps.uiSurface);
     this.wait = new WaitHelper(page);
+  }
+
+  /** Generated once per scenario and cached on `state` — see `getOrCreateEquipmentProps`. */
+  async getEquipmentProps(): Promise<CreateEquipmentProps> {
+    return getOrCreateEquipmentProps(this.deps.state, { request: this.deps.request, logger: this.deps.logger });
   }
 
   async openListingsTab(): Promise<void> {
@@ -47,6 +54,13 @@ export class SellerDashboardActions {
 
   async assertListingVisible(title: string): Promise<void> {
     await this.dashboard.listingRowByTitle(title).expect.toBeVisible();
+  }
+
+  /** Searches for and confirms the listing created earlier in this scenario, by its generated title. */
+  async assertGeneratedListingVisible(): Promise<void> {
+    const { validAssetInformation } = await this.getEquipmentProps();
+    await this.searchListings(validAssetInformation.title);
+    await this.assertListingVisible(validAssetInformation.title);
   }
 
   async assertNewListingAndBulkUploadActionsVisible(): Promise<void> {

@@ -13,15 +13,18 @@ export class UIPageAssertions {
     this.exec = new ActionExecutor(logger);
   }
 
-  async urlIs(url: string | RegExp) {
+  async urlIs(url: string | RegExp, options?: { timeout?: number }) {
     await this.exec.step(`Expect URL: ${String(url)}`, async () => {
-      await expect(this.page).toHaveURL(url);
+      await expect(this.page).toHaveURL(url, options);
     });
   }
 
-  async urlContains(partial: string) {
+  async urlContains(partial: string, options?: { timeout?: number }) {
     await this.exec.step(`Expect URL contains: ${partial}`, async () => {
-      await expect(this.page).toHaveURL(new RegExp(partial.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+      await expect(this.page).toHaveURL(
+        new RegExp(partial.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")),
+        options,
+      );
     });
   }
 

@@ -8,19 +8,31 @@ function loadTestDataProps<T>(filename: string): T {
   return loadJson<T>(path);
 }
 
-import type { CreateEquipmentProps } from "../props/create-equipment.props.js";
+import type { CreateEquipmentStaticData } from "../props/create-equipment.props.js";
 import type { EquipmentDetailProps } from "../props/equipment-detail.props.js";
 import type { EquipmentFavoriteProps } from "../props/equipment-favorite.props.js";
 import type { ContactSellerValidationProps } from "../props/contact-seller.props.js";
+import type { LoginProps } from "../props/login.props.js";
+import type { ListingsProps } from "../props/listings.props.js";
+import type { CustomAttributesProps } from "../props/custom-attributes.props.js";
 
-// Add loader functions here as you add {module}.props.ts + {module}.json files, e.g.:
-//
-// export function loadLoginProps(): LoginProps {
-//   return loadTestDataProps<LoginProps>("login.json");
-// }
+// Add loader functions here as you add {module}.props.ts + {module}.json files.
 
-export function loadCreateEquipmentProps(): CreateEquipmentProps {
-  return loadTestDataProps<CreateEquipmentProps>("create-equipment.json");
+/** Only the fields `data/factories/create-equipment.factory.ts` can't source live — see `CreateEquipmentStaticData`. */
+export function loadCreateEquipmentProps(): CreateEquipmentStaticData {
+  return loadTestDataProps<CreateEquipmentStaticData>("create-equipment.json");
+}
+
+export function loadLoginProps(): LoginProps {
+  return loadTestDataProps<LoginProps>("login.json");
+}
+
+export function loadListingsProps(): ListingsProps {
+  return loadTestDataProps<ListingsProps>("listings.json");
+}
+
+export function loadCustomAttributesProps(): CustomAttributesProps {
+  return loadTestDataProps<CustomAttributesProps>("custom-attributes.json");
 }
 
 export function loadEquipmentDetailProps(): EquipmentDetailProps {
