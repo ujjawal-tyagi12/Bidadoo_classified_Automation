@@ -229,6 +229,34 @@ automating the two confirmed end-states.
 
 ---
 
+## 4a. Regression confirmed: invalid categoryId no longer shows the empty state
+
+**TC30 (`openWithInvalidCategoryId`) now fails, and the failure is a genuine regression,
+not a mismatched test expectation.** This directly contradicts the finding this same
+section documented above ("a real 422 from the live backend when the URL was manipulated
+with a bogus categoryId... same empty-state fallback") — re-verified live during a later
+full-suite run and confirmed to now behave differently:
+
+- The **backend is unchanged**: a well-formed-but-nonexistent `categoryId`
+  (`bd-search/v1/equipments?categoryId=...`) still returns a genuine **422 Unprocessable
+  Entity**, confirmed via the real network response (not a mock), same as originally
+  documented.
+- What changed is the **frontend's handling of that 422**: instead of staying on the
+  filtered results view and showing the generic empty-state message (the original,
+  documented behavior), the app now silently **redirects to a bare `/search`** — the
+  `categoryId` query param is dropped from the URL entirely — and renders the full,
+  unfiltered catalog (confirmed live: 1083 results, "Showing 1 of 1083 results"). A user
+  who follows or bookmarks a link with a stale/invalid category id now sees *everything*
+  instead of a clear "not found" state.
+
+TC30 is automated against the **originally-confirmed, correct behavior** (stay on the
+filtered view, show the empty state) and is expected to stay red until the frontend's
+handling of this 422 is fixed back to what it was. This is a genuine regression worth
+filing, independent of this automation work — and worth flagging specifically as a
+regression (something that worked and broke), not merely an unverified assumption.
+
+---
+
 ## 5. Key discrepancies vs. the supplied test case sheet
 
 | Test case(s) | Sheet assumes | Real app does | Resolution |

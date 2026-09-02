@@ -1,0 +1,93 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - banner [ref=f6e3]:
+      - paragraph [ref=f6e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f6e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f6e7]:
+        - link [ref=f6e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f6e9]
+        - navigation [ref=f6e10]:
+          - link "Post a listing" [ref=f6e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f6e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f6e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f6e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f6e24]:
+          - link [ref=f6e80] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f6e81]
+          - button "Profile menu" [ref=f6e83] [cursor=pointer]:
+            - img "Account" [ref=f6e84]
+    - main [ref=f6e27]:
+      - generic [ref=f6e85]:
+        - navigation "Breadcrumb" [ref=f6e86]:
+          - link "Home" [ref=f6e87] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f6e88]: "|"
+          - link "Custom Attributes" [ref=f6e89] [cursor=pointer]:
+            - /url: /dashboard?tab=attributes
+          - generic [ref=f6e90]: "|"
+          - link "View Custom Attribute" [ref=f6e91] [cursor=pointer]:
+            - /url: "#"
+        - alert [ref=f6e134]:
+          - generic [ref=f6e135]: Attribute deactivated successfully
+        - generic [ref=f6e92]:
+          - generic [ref=f6e94]:
+            - generic [ref=f6e95]:
+              - img "Go back" [ref=f6e96] [cursor=pointer]
+              - heading "Custom Attribute" [level=5] [ref=f6e98]
+            - generic [ref=f6e99]:
+              - button "Deactivate" [ref=f6e100] [cursor=pointer]
+              - button "Edit" [ref=f6e101] [cursor=pointer]
+          - generic [ref=f6e103]:
+            - generic [ref=f6e104]:
+              - generic [ref=f6e105]: Attribute ID
+              - generic [ref=f6e106]: ATT-25GKHRUY1C7CMB0MUN
+            - generic [ref=f6e107]:
+              - generic [ref=f6e108]: Attribute Name
+              - generic [ref=f6e109]: Net Horsepower 2QCVEO
+            - generic [ref=f6e110]:
+              - generic [ref=f6e111]: Attribute Type
+              - generic [ref=f6e112]: DropDown
+            - generic [ref=f6e113]:
+              - generic [ref=f6e114]: Value 1
+              - generic [ref=f6e115]: Good
+            - generic [ref=f6e116]:
+              - generic [ref=f6e117]: Created on
+              - generic [ref=f6e118]: Sep 02, 2026
+            - generic [ref=f6e119]:
+              - generic [ref=f6e120]: Status
+              - generic [ref=f6e121]: Activated
+    - contentinfo "Site footer" [ref=f6e55]:
+      - generic [ref=f6e57]:
+        - generic [ref=f6e58]:
+          - paragraph [ref=f6e59]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f6e60] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f6e61]
+        - navigation "Footer navigation" [ref=f6e63]:
+          - link "Contact" [ref=f6e64] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f6e65] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f6e66] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f6e68]:
+          - heading "Support" [level=3] [ref=f6e69]
+          - generic [ref=f6e70]:
+            - img "Phone" [ref=f6e71]
+            - link "Call 2064429000" [ref=f6e72] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f6e73]:
+            - img "Email" [ref=f6e74]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f6e75] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f6e78]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f6e79]

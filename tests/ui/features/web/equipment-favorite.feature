@@ -26,7 +26,7 @@ Feature: Equipment Favorite Icon and Sign-In Prompt
   Scenario: A logged-in user can mark equipment as favorite from the detail page
     Given Admin logs in with valid credentials
     And Admin is on the search results page
-    And Admin opens the first result's detail page
+    And Admin opens a favoritable result's detail page
     When Admin clicks the favorite icon on the detail page
     Then Verify the detail page favorite icon shows as favorited
 

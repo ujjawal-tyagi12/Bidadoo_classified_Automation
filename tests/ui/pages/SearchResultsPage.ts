@@ -1,3 +1,4 @@
+import type { Page } from "@playwright/test";
 import { BasePage } from "./BasePage.js";
 import { surfaceLocator } from "@core/ui";
 
@@ -97,30 +98,6 @@ export class SearchResultsPage extends BasePage {
       .build(this.page, this.surface);
   }
 
-  /**
-   * Favorite icon on a result card, by 0-based index — confirmed live: real
-   * `aria-label="favourite"` (lowercase, British spelling; distinct from the
-   * detail page's `aria-label="Favorite"` button — see
-   * docs/requirements/equipment-favorite-automation-requirements.md §2).
-   */
-  favoriteButton(index = 0) {
-    return surfaceLocator(`Favorite button #${index}`)
-      .asButton()
-      .desktop((p) => p.getByRole("button", { name: "favourite" }).nth(index))
-      .build(this.page, this.surface);
-  }
-
-  /**
-   * The favorite button's inner `<img>` — the only real, assertable state
-   * signal (`src` contains `star-outline.svg` or `star-filled.svg`); no
-   * `aria-pressed` is ever set on the button itself (confirmed live).
-   */
-  favoriteIcon(index = 0) {
-    return surfaceLocator(`Favorite icon image #${index}`)
-      .desktop((p) => p.getByRole("button", { name: "favourite" }).nth(index).locator("img"))
-      .build(this.page, this.surface);
-  }
-
   /** Confirmed live: a mocked API failure on the favorites-toggle call surfaces this real toast, not a silent no-op. */
   get favoriteErrorToast() {
     return surfaceLocator("Favorite error toast")
@@ -140,6 +117,27 @@ export class SearchResultsPage extends BasePage {
   }
 
   /**
+   * A result card's thumbnail `alt` is the plain title for a photo-backed
+   * listing, but a video-backed listing's thumbnail appends " video
+   * thumbnail" to it (confirmed live) — matching both known real forms here
+   * so every exact-title lookup below works regardless of media type.
+   *
+   * `.first()`: confirmed live that this shared QA catalog can hold two
+   * genuinely separate listings with the identical title (e.g. two distinct
+   * "Genie 1932 Scissor Lift" records) — a real data duplicate, not a test
+   * bug. Every caller here only needs *a* card matching the title, not a
+   * specific one of several duplicates, so pinning to the first avoids a
+   * Playwright strict-mode violation when that happens.
+   */
+  private cardByExactTitle(p: Page, title: string) {
+    return p
+      .locator("div.rounded-2xl.shadow-sm", {
+        has: p.locator(`img[alt="${title}"], img[alt="${title} video thumbnail"]`),
+      })
+      .first();
+  }
+
+  /**
    * A result card's "View Details" button, found by the card's exact title
    * (via its photo `alt`) rather than positional index. Needed once several
    * near-duplicate titles can exist (e.g. repeated seeded test listings) —
@@ -151,11 +149,29 @@ export class SearchResultsPage extends BasePage {
   viewDetailsButtonForExactTitle(title: string) {
     return surfaceLocator(`View Details button for title: ${title}`)
       .asButton()
-      .desktop((p) =>
-        p
-          .locator("div.rounded-2xl.shadow-sm", { has: p.locator(`img[alt="${title}"]`) })
-          .getByRole("button", { name: "View Details" }),
-      )
+      .desktop((p) => this.cardByExactTitle(p, title).getByRole("button", { name: "View Details" }))
+      .build(this.page, this.surface);
+  }
+
+  /**
+   * A result card's favorite button, found by the card's exact title rather
+   * than positional index — same rationale as `viewDetailsButtonForExactTitle`,
+   * plus one more: favoriting/unfavoriting a card can itself change the
+   * "Recommended" sort order (confirmed live), so an index resolved once can
+   * silently point at a *different* card after the very toggle a scenario
+   * just performed. Title-scoping sidesteps that entirely.
+   */
+  favoriteButtonForExactTitle(title: string) {
+    return surfaceLocator(`Favorite button for title: ${title}`)
+      .asButton()
+      .desktop((p) => this.cardByExactTitle(p, title).getByRole("button", { name: "favourite" }))
+      .build(this.page, this.surface);
+  }
+
+  /** The favorite button's inner `<img>` for a result card found by exact title — see `favoriteButtonForExactTitle`. */
+  favoriteIconForExactTitle(title: string) {
+    return surfaceLocator(`Favorite icon for title: ${title}`)
+      .desktop((p) => this.cardByExactTitle(p, title).getByRole("button", { name: "favourite" }).locator("img"))
       .build(this.page, this.surface);
   }
 

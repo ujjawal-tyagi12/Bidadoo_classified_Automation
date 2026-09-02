@@ -89,11 +89,22 @@ export class LoginActions {
     await this.login.rememberMeCheckbox.expect.toBeChecked();
   }
 
-  /** Profile menu → Logout → Confirm Logout dialog → Logout; opens the mobile hamburger first if needed. */
+  /**
+   * Profile menu → Logout → Confirm Logout dialog → Logout.
+   *
+   * Confirmed live: its only caller runs exclusively under the `bdd` project's
+   * fixed desktop viewport (1280×800) — there is no scenario that exercises
+   * this at a narrow/msite width — so `profileMenuButton` is always the real
+   * desktop header control. An earlier version of this method guessed the
+   * layout at runtime via `profileMenuButton.isVisible()` (a one-shot check,
+   * not a wait) and fell back to a mobile hamburger toggle when that returned
+   * false; called too early after navigation, before the header finished
+   * rendering, that check could return a false negative and route to a
+   * hamburger button that doesn't exist at this viewport, hanging until
+   * timeout. Removed rather than papered over with a wait, since the surface
+   * this method actually runs on never needs the fallback.
+   */
   async logout(): Promise<void> {
-    if (!(await this.login.profileMenuButton.isVisible())) {
-      await this.login.mobileMenuToggle.click();
-    }
     await this.login.profileMenuButton.click();
     await this.login.logoutMenuItem.click();
     await this.login.confirmLogoutButton.click();

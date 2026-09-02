@@ -282,6 +282,18 @@ export class CustomAttributesActions {
    * the stale default opens an "Activate" dialog instead). Waiting for Status
    * to show one of its two real values first avoids clicking during that gap.
    */
+  /**
+   * Confirmed live: the confirm button's click handler fires a real
+   * `PATCH .../bd-equipment/v1/attributes/(activate|deactivate)/<id>` (same
+   * external-API-host exception as the favorites-toggle endpoint) and only
+   * then navigates away to the attributes list — it does not wait around for
+   * either. Immediately forcing this page back to the detail URL right after
+   * `.click()` resolves (which only confirms the click event fired, not that
+   * the mutation finished) can race ahead of that PATCH under load, landing
+   * back on the detail page before the server has actually persisted the new
+   * status — reads the stale, pre-toggle value. Waiting for that specific
+   * response here closes the race.
+   */
   async toggleStatus(confirmLabel: "Deactivate" | "Activate"): Promise<void> {
     const expectedStatus = confirmLabel === "Deactivate" ? "Deactivated" : "Activated";
     await this.attributes.detailStatus.expect.toHaveText(/^(Activated|Deactivated)$/);
@@ -299,7 +311,11 @@ export class CustomAttributesActions {
     }
 
     const detailUrl = this.page.url();
+    const toggleResponsePromise = this.page.waitForResponse(
+      (res) => /\/v1\/attributes\/(activate|deactivate)\//.test(res.url()) && res.request().method() === "PATCH",
+    );
     await this.attributes.statusConfirmDialogButton(confirmLabel).click();
+    await toggleResponsePromise;
     await this.deps.nav.goto(detailUrl);
     await this.attributes.detailStatus.expect.toHaveText(expectedStatus, { timeout: 10000 });
   }

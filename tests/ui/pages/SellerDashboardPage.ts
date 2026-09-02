@@ -53,6 +53,17 @@ export class SellerDashboardPage extends BasePage {
       .build(this.page, this.surface);
   }
 
+  /**
+   * Visibility check for the table's own "Showing X-Y From Z" summary —
+   * used to confirm the page's initial (unfiltered) fetch has actually
+   * settled before searching. See `SellerDashboardActions.searchAndAssertListingVisible`.
+   */
+  get paginationSummary() {
+    return surfaceLocator("Listings pagination summary")
+      .desktop((p) => p.getByText(/^Showing /))
+      .build(this.page, this.surface);
+  }
+
   /** `.first()` so repeated test runs that accumulate same-titled rows never hit a strict-mode ambiguity. */
   listingRowByTitle(title: string) {
     return surfaceLocator(`Listing row: ${title}`)

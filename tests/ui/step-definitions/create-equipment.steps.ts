@@ -171,17 +171,25 @@ When("Admin confirms the submission", async ({ submissionActions }) => {
   await submissionActions.confirmSubmission();
 });
 
+/**
+ * Confirmed live: a freshly created/published listing can take longer than
+ * the default 40s test budget to become searchable server-side (a real,
+ * variable-latency indexing race — see `searchAndAssertListingVisible`) —
+ * `test.slow()` triples the timeout for this test alone, giving the retry
+ * loop real breathing room instead of racing an unrelated global budget.
+ */
 Then("Verify the new listing appears in the Listings table", async ({ sellerDashboardActions }) => {
+  test.slow();
   await sellerDashboardActions.assertGeneratedListingVisible();
 });
 
 Then("Verify the seeded listing appears in the Listings table", async ({ sellerDashboardActions, state }) => {
+  test.slow();
   const title = state.getSharedData<string>("seedListingTitle");
   if (!title) {
     throw new Error("Missing shared scenario data for key: seedListingTitle");
   }
-  await sellerDashboardActions.searchListings(title);
-  await sellerDashboardActions.assertListingVisible(title);
+  await sellerDashboardActions.searchAndAssertListingVisible(title);
 });
 
 Then("Verify the Next button is enabled", async ({ createEquipmentShellActions }) => {

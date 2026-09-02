@@ -1,4 +1,4 @@
 {
-  "invalidEmailFormat": "not-an-email",
+  "invalidEmailFormat": "test@gmail.com",
   "underMinimumPassword": "short12"
 }

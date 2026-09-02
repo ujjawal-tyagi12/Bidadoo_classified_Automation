@@ -1,0 +1,112 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - banner [ref=f8e3]:
+      - paragraph [ref=f8e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f8e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f8e7]:
+        - link [ref=f8e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f8e9]
+        - navigation [ref=f8e10]:
+          - link "Post a listing" [ref=f8e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f8e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f8e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f8e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+    - main [ref=f8e27]:
+      - generic [ref=f8e28]:
+        - navigation "Breadcrumb" [ref=f8e29]:
+          - link "Home" [ref=f8e30] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f8e31]: "|"
+          - link "Listings" [ref=f8e32] [cursor=pointer]:
+            - /url: /dashboard?tab=listings
+        - generic [ref=f8e34]:
+          - generic [ref=f8e35]:
+            - heading "Seller Dashboard" [level=5] [ref=f8e37]
+            - paragraph [ref=f8e38]: Reach real buyers and manage your listings easily
+          - button "Visit Store" [ref=f8e40]:
+            - img "Location" [ref=f8e41]
+            - paragraph [ref=f8e42]: Visit Store
+        - generic [ref=f8e44]:
+          - button [ref=f8e45] [cursor=pointer]:
+            - img "Dashboard" [ref=f8e46]
+            - paragraph [ref=f8e47]: Dashboard
+          - button [ref=f8e48] [cursor=pointer]:
+            - img "Brand Info" [ref=f8e49]
+            - paragraph [ref=f8e50]: Brand Info
+          - button [ref=f8e51] [cursor=pointer]:
+            - img "Listings" [ref=f8e52]
+            - paragraph [ref=f8e53]: Listings
+          - button [ref=f8e54] [cursor=pointer]:
+            - img "Security" [ref=f8e55]
+            - paragraph [ref=f8e56]: Security
+          - button [ref=f8e57] [cursor=pointer]:
+            - img "Settings" [ref=f8e58]
+            - paragraph [ref=f8e59]: Settings
+          - button [ref=f8e60] [cursor=pointer]:
+            - img "Access Control" [ref=f8e61]
+            - paragraph [ref=f8e62]: Access Control
+          - button [ref=f8e63] [cursor=pointer]:
+            - img "Custom Attributes" [ref=f8e64]
+            - paragraph [ref=f8e65]: Custom Attributes
+          - button [ref=f8e66] [cursor=pointer]:
+            - img "API and Integrations" [ref=f8e67]
+            - paragraph [ref=f8e68]: API and Integrations
+          - button [ref=f8e69] [cursor=pointer]:
+            - img "My Inquiries" [ref=f8e70]
+            - paragraph [ref=f8e71]: My Inquiries
+        - generic [ref=f8e72]:
+          - generic [ref=f8e73]:
+            - img "Listing left border" [ref=f8e74]
+            - generic [ref=f8e75]:
+              - img "Location" [ref=f8e76]
+              - heading "Listing Management" [level=1] [ref=f8e77]
+            - generic [ref=f8e78]:
+              - button "Bulk Upload Chevron Down" [ref=f8e80] [cursor=pointer]:
+                - generic [ref=f8e81]:
+                  - generic [ref=f8e82]: Bulk Upload
+                  - img "Chevron Down" [ref=f8e83]
+              - button "Plus New Listing" [ref=f8e85] [cursor=pointer]:
+                - generic [ref=f8e86]:
+                  - img "Plus" [ref=f8e88]
+                  - generic [ref=f8e89]: New Listing
+          - generic [ref=f8e93]:
+            - generic [ref=f8e94]:
+              - img "Search"
+              - textbox "Search for equipment...." [ref=f8e95]
+            - button [ref=f8e97] [cursor=pointer]:
+              - img "Filter" [ref=f8e98]
+              - paragraph [ref=f8e99]: Filter
+    - contentinfo "Site footer" [ref=f8e216]:
+      - generic [ref=f8e218]:
+        - generic [ref=f8e219]:
+          - paragraph [ref=f8e220]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f8e221] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f8e222]
+        - navigation "Footer navigation" [ref=f8e224]:
+          - link "Contact" [ref=f8e225] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f8e226] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f8e227] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f8e229]:
+          - heading "Support" [level=3] [ref=f8e230]
+          - generic [ref=f8e231]:
+            - img "Phone" [ref=f8e232]
+            - link "Call 2064429000" [ref=f8e233] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f8e234]:
+            - img "Email" [ref=f8e235]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f8e236] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f8e239]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f8e240]

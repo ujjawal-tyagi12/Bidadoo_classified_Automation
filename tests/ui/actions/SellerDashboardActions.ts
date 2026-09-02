@@ -48,19 +48,58 @@ export class SellerDashboardActions {
     await this.dashboard.bulkUploadButton.click();
   }
 
+  /**
+   * Confirmed live: this app's search cancels whatever request is still in
+   * flight whenever a new one fires, and its abort-handling is broken — a
+   * cancelled request renders the literal text "signal is aborted without
+   * reason" into the results area instead of either a loading state or the
+   * real result (confirmed live, same defect documented for the Listings
+   * search box — see requirements doc §2b). This isn't limited to repeated
+   * searches: it also fires on the very first search, whenever the caller
+   * lands here fresh off a navigation whose own initial (unfiltered) fetch
+   * is still in flight — firing the search immediately cancels that request
+   * and trips the same broken abort-handling. Waiting for the table's own
+   * "Showing X-Y" summary first confirms that initial fetch has actually
+   * resolved before searching, so the search's own request is never racing
+   * one already in flight.
+   */
   async searchListings(query: string): Promise<void> {
+    await this.dashboard.paginationSummary.expect.toBeVisible();
     await this.dashboard.searchInput.fill(query);
   }
 
-  async assertListingVisible(title: string): Promise<void> {
-    await this.dashboard.listingRowByTitle(title).expect.toBeVisible();
+  async assertListingVisible(title: string, options?: { timeout?: number }): Promise<void> {
+    await this.dashboard.listingRowByTitle(title).expect.toBeVisible(options);
+  }
+
+  /**
+   * Confirmed live: a freshly created/published listing can take a beat to
+   * become searchable server-side — the search query fires once, and if it
+   * lands before the backend finishes indexing, the table just stays on that
+   * (empty) result until something re-queries. An earlier version of this
+   * method retried by re-calling `searchListings` in a loop — that only made
+   * things worse, since each retry's new search cancels the previous one and
+   * trips the same abort-handling defect `searchListings` now guards against
+   * on every call. Searching once and giving Playwright's own polling a
+   * single, longer window to wait out any remaining indexing lag is what
+   * actually resolves it; the caller marks its test `slow()` (tripling the
+   * timeout to 120s) to give this real room.
+   *
+   * Takes the search term and the expected row text separately — some
+   * callers search on one string but the row displays a different one (e.g.
+   * a sanitized/safe search term vs. the real special-characters name, or
+   * the full name typed vs. its table-truncated display form). Defaults to
+   * the same string for both when the caller has just one.
+   */
+  async searchAndAssertListingVisible(searchTerm: string, expectedRowText: string = searchTerm): Promise<void> {
+    await this.searchListings(searchTerm);
+    await this.assertListingVisible(expectedRowText, { timeout: 60000 });
   }
 
   /** Searches for and confirms the listing created earlier in this scenario, by its generated title. */
   async assertGeneratedListingVisible(): Promise<void> {
     const { validAssetInformation } = await this.getEquipmentProps();
-    await this.searchListings(validAssetInformation.title);
-    await this.assertListingVisible(validAssetInformation.title);
+    await this.searchAndAssertListingVisible(validAssetInformation.title);
   }
 
   async assertNewListingAndBulkUploadActionsVisible(): Promise<void> {

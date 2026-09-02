@@ -1,0 +1,48 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - banner [ref=f3e3]:
+      - paragraph [ref=f3e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f3e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f3e7]:
+        - link [ref=f3e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f3e9]
+        - navigation [ref=f3e10]:
+          - link "Post a listing" [ref=f3e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f3e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f3e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f3e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+    - main [ref=f3e27]
+    - contentinfo "Site footer" [ref=f3e142]:
+      - generic [ref=f3e144]:
+        - generic [ref=f3e145]:
+          - paragraph [ref=f3e146]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f3e147] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f3e148]
+        - navigation "Footer navigation" [ref=f3e150]:
+          - link "Contact" [ref=f3e151] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f3e152] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f3e153] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f3e155]:
+          - heading "Support" [level=3] [ref=f3e156]
+          - generic [ref=f3e157]:
+            - img "Phone" [ref=f3e158]
+            - link "Call 2064429000" [ref=f3e159] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f3e160]:
+            - img "Email" [ref=f3e161]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f3e162] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f3e165]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f3e166]

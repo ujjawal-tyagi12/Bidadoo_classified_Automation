@@ -147,6 +147,53 @@ Sign-in modal (role="dialog", aria-labelledby="auth-modal-title", heading "Welco
 
 ---
 
+## 3a. Correction: not a dead click handler — a self-owned-listing business rule, fixed test-side
+
+**This section's earlier conclusion was wrong.** It read the listing-card favorite button's
+silent no-op on `index=0` as a broken click handler and recommended leaving TC1 (both
+variants), TC3, TC8, TC9, TC10, TC35, and TC36 deliberately red until the app fixed it.
+Further live investigation (comparing the listing card against the equipment **detail
+page**'s own favorite button for the same item) found the real mechanism: **this app
+correctly refuses to let an account favorite its own listing** — the detail page's button is
+even labeled `aria-label="Favorite disabled for own listing"` for exactly this case. The
+listing card just gives no equivalent signal (its icon `alt` is the generic
+`"favorite-disabled"`, and the button is neither `disabled` nor `aria-disabled` at the DOM
+level), so a click looks identical to a real, working one and silently sends no request.
+
+`/search`'s default sort ("Recommended") surfaces this shared QA account's **own**
+listings prominently, and this same account is the one every other module in this repo
+uses to create equipment — so `index=0` was reliably this account's own listing, not a
+representative "someone else's listing" case. That is a test-data-selection gap, not an
+application defect: nothing here needed the app to change.
+
+**Fix (test-side):** `FavoriteActions` now resolves a listing the current account does
+*not* own before any listing-card or detail-page interaction, instead of assuming
+`index=0` — via `AuthApiClient.getCurrentAccountId()` (decodes the `aid` claim off the real
+session JWT returned by NextAuth's own `/api/auth/session`, cookie-authenticated through
+`page.request`) cross-referenced against the equipment search API's per-item `seller`
+field. Two further, real environment quirks surfaced and were handled along the way:
+
+- Favoriting/unfavoriting a card can itself reorder the "Recommended" list (confirmed
+  live), so every listing-card lookup is title-scoped (`favoriteButtonForExactTitle`/
+  `favoriteIconForExactTitle`), not index-scoped — a reorder never breaks which card gets
+  interacted with. If the resolved title isn't rendered on the current page, the action
+  filters `/search?searchText=<title>` down to it first.
+- This shared QA catalog can hold two genuinely separate listings with an identical title
+  (confirmed live, e.g. two distinct "Genie 1932 Scissor Lift" records) — a real data
+  duplicate. Title-scoped locators pin to the first match rather than throwing a
+  Playwright strict-mode violation, since any one instance of the title works.
+- With `workers: 3` running scenarios concurrently against this same account, always
+  picking the *first* eligible (non-owned) item made concurrent scenarios race to toggle
+  the same real backend record. Each worker instead picks its own item, indexed by
+  `test.info().parallelIndex` into the eligible pool sorted by the item's stable `_id`
+  (not by "Recommended" rank, which can drift between two workers' calls).
+
+TC1 (both variants), TC3, TC8, TC9, TC10, TC35, and TC36 are automated against this
+resolved, genuinely-favoritable item and pass reliably (confirmed clean across multiple
+full-module re-runs, including runs that hit the duplicate-title item above).
+
+---
+
 ## 4. Test case decision matrix (all 44)
 
 Legend: **Automate-P0** (smoke), **Automate-P1** (regression), **Automate-P2** (edge/mocked-

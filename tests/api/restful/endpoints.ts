@@ -36,6 +36,8 @@ export const ENDPOINTS = {
    * usage in `FavoriteActions`), not the proxy-relative form.
    */
   addToFavoritesToggle: "/bd-equipment/v1/add-to-favorites/toggle",
+  /** NextAuth's own well-known session endpoint — returns the same `authToken` the app attaches to every authenticated call, including its `aid` (account id) claim. */
+  authSession: "/api/auth/session",
   auth: {
     login: `${root}/proxy/bd-auth/v1/accounts/login`,
   },

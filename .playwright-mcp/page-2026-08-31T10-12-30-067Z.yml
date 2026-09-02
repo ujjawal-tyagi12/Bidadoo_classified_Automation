@@ -1,0 +1,109 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - banner [ref=f9e3]:
+      - paragraph [ref=f9e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f9e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f9e7]:
+        - link [ref=f9e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f9e9]
+        - navigation [ref=f9e10]:
+          - link "Post a listing" [ref=f9e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f9e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f9e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f9e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+    - main [ref=f9e27]:
+      - main [ref=f9e28]:
+        - generic [ref=f9e30]:
+          - generic [ref=f9e31]:
+            - heading "Search Results" [level=2] [ref=f9e32]
+            - generic [ref=f9e33]: Showing 0 of 0 results
+          - generic [ref=f9e34]:
+            - generic [ref=f9e35]:
+              - img "Search"
+              - textbox "Search for equipment, make, model..." [ref=f9e36]
+            - 'button "Sort Sort by: Recommended" [ref=f9e38] [cursor=pointer]':
+              - img "Sort" [ref=f9e39]
+              - generic [ref=f9e40]: "Sort by: Recommended"
+        - generic [ref=f9e41]:
+          - complementary [ref=f9e43]:
+            - generic [ref=f9e44]:
+              - generic [ref=f9e46]:
+                - paragraph [ref=f9e47]: Filters
+                - button "Clear All" [ref=f9e48] [cursor=pointer]
+              - generic [ref=f9e50]:
+                - button "Category toggle" [ref=f9e52] [cursor=pointer]:
+                  - generic [ref=f9e53]: Category
+                  - img "toggle" [ref=f9e54]
+                - button "Model toggle" [ref=f9e56] [cursor=pointer]:
+                  - generic [ref=f9e57]: Model
+                  - img "toggle" [ref=f9e58]
+                - button "Location toggle" [ref=f9e60] [cursor=pointer]:
+                  - generic [ref=f9e61]: Location
+                  - img "toggle" [ref=f9e62]
+                - button "Price Range toggle" [ref=f9e64] [cursor=pointer]:
+                  - generic [ref=f9e65]: Price Range
+                  - img "toggle" [ref=f9e66]
+                - button "Year toggle" [ref=f9e68] [cursor=pointer]:
+                  - generic [ref=f9e69]: Year
+                  - img "toggle" [ref=f9e70]
+                - button "Hours / Miles / Kilometers toggle" [ref=f9e72] [cursor=pointer]:
+                  - generic [ref=f9e73]: Hours / Miles / Kilometers
+                  - img "toggle" [ref=f9e74]
+            - button "Apply Filters" [ref=f9e76] [cursor=pointer]
+          - generic [ref=f9e125]:
+            - generic [ref=f9e126]: Showing 0-0 From 0
+            - generic [ref=f9e128]:
+              - button [disabled] [ref=f9e129]:
+                - img "First" [ref=f9e130]
+              - button [disabled] [ref=f9e131]:
+                - img "Previous" [ref=f9e132]
+              - generic [ref=f9e133]:
+                - generic [ref=f9e134]: "1"
+                - generic [ref=f9e135]: Of 1
+              - button [disabled] [ref=f9e136]:
+                - img "Next" [ref=f9e137]
+              - button [disabled] [ref=f9e138]:
+                - img "Last" [ref=f9e139]
+            - generic [ref=f9e140]:
+              - generic [ref=f9e141]: Items per page
+              - generic [ref=f9e142]:
+                - combobox [ref=f9e143]:
+                  - option "5"
+                  - option "10" [selected]
+                  - option "25"
+                  - option "50"
+                - img "Dropdown"
+    - contentinfo "Site footer" [ref=f9e144]:
+      - generic [ref=f9e146]:
+        - generic [ref=f9e147]:
+          - paragraph [ref=f9e148]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f9e149] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f9e150]
+        - navigation "Footer navigation" [ref=f9e152]:
+          - link "Contact" [ref=f9e153] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f9e154] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f9e155] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f9e157]:
+          - heading "Support" [level=3] [ref=f9e158]
+          - generic [ref=f9e159]:
+            - img "Phone" [ref=f9e160]
+            - link "Call 2064429000" [ref=f9e161] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f9e162]:
+            - img "Email" [ref=f9e163]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f9e164] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f9e167]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f9e168]

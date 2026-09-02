@@ -1,0 +1,309 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - banner [ref=f4e3]:
+      - paragraph [ref=f4e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f4e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f4e7]:
+        - link [ref=f4e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f4e9]
+        - navigation [ref=f4e10]:
+          - link "Post a listing" [ref=f4e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f4e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f4e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f4e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f4e24]:
+          - link [ref=f4e169] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f4e170]
+          - button "Profile menu" [ref=f4e172] [cursor=pointer]:
+            - img "Account" [ref=f4e173]
+    - main [ref=f4e27]:
+      - main [ref=f4e28]:
+        - generic [ref=f4e30]:
+          - generic [ref=f4e31]:
+            - heading "Search Results" [level=2] [ref=f4e32]
+            - generic [ref=f4e33]: Showing 1 of 1136 results
+          - generic [ref=f4e34]:
+            - generic [ref=f4e35]:
+              - img "Search"
+              - textbox "Search for equipment, make, model..." [ref=f4e36]
+            - 'button "Sort Sort by: Recommended" [ref=f4e38] [cursor=pointer]':
+              - img "Sort" [ref=f4e39]
+              - generic [ref=f4e40]: "Sort by: Recommended"
+        - generic [ref=f4e41]:
+          - complementary [ref=f4e43]:
+            - generic [ref=f4e44]:
+              - generic [ref=f4e46]:
+                - paragraph [ref=f4e47]: Filters
+                - button "Clear All" [ref=f4e48] [cursor=pointer]
+              - generic [ref=f4e50]:
+                - button "Category toggle" [ref=f4e52] [cursor=pointer]:
+                  - generic [ref=f4e53]: Category
+                  - img "toggle" [ref=f4e54]
+                - button "Model toggle" [ref=f4e56] [cursor=pointer]:
+                  - generic [ref=f4e57]: Model
+                  - img "toggle" [ref=f4e58]
+                - button "Location toggle" [ref=f4e60] [cursor=pointer]:
+                  - generic [ref=f4e61]: Location
+                  - img "toggle" [ref=f4e62]
+                - button "Price Range toggle" [ref=f4e64] [cursor=pointer]:
+                  - generic [ref=f4e65]: Price Range
+                  - img "toggle" [ref=f4e66]
+                - button "Year toggle" [ref=f4e68] [cursor=pointer]:
+                  - generic [ref=f4e69]: Year
+                  - img "toggle" [ref=f4e70]
+                - button "Hours / Miles / Kilometers toggle" [ref=f4e72] [cursor=pointer]:
+                  - generic [ref=f4e73]: Hours / Miles / Kilometers
+                  - img "toggle" [ref=f4e74]
+            - button "Apply Filters" [ref=f4e76] [cursor=pointer]
+          - generic [ref=f4e77]:
+            - generic [ref=f4e80]:
+              - generic [ref=f4e174]:
+                - generic [ref=f4e176]:
+                  - generic [ref=f4e177]: Recently Added
+                  - img "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [ref=f4e179] [cursor=pointer]
+                  - button "favourite" [active] [ref=f4e181] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e182]
+                  - button "Previous Image" [disabled] [ref=f4e438] [cursor=pointer]:
+                    - img "Prev" [ref=f4e439]
+                  - button "Next Image" [ref=f4e440] [cursor=pointer]:
+                    - img "Next" [ref=f4e441]
+                - generic [ref=f4e194]:
+                  - heading "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [level=3] [ref=f4e195]
+                  - generic [ref=f4e196]:
+                    - img "Hours" [ref=f4e197]
+                    - generic [ref=f4e198]:
+                      - generic [ref=f4e199]: 17,113 miles
+                      - generic [ref=f4e200]: •
+                      - generic [ref=f4e201]: Newfoundland and Labrador, Newfoundland and Labrador
+                    - generic [ref=f4e202]: CAD $143,652
+                - generic [ref=f4e204]:
+                  - button "Contact Seller" [disabled] [ref=f4e206]
+                  - button "View Details" [ref=f4e207] [cursor=pointer]
+              - generic [ref=f4e208]:
+                - generic [ref=f4e210]:
+                  - generic [ref=f4e211]: Recently Added
+                  - img "Agracat 10320 SILVER - JC4QNA 1788157874190" [ref=f4e213] [cursor=pointer]
+                  - button "favourite" [ref=f4e215] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e216]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e228]:
+                  - heading "Agracat 10320 SILVER - JC4QNA 1788157874190" [level=3] [ref=f4e229]
+                  - generic [ref=f4e230]:
+                    - img "Hours" [ref=f4e231]
+                    - generic [ref=f4e232]:
+                      - generic [ref=f4e233]: 9,749 hours
+                      - generic [ref=f4e234]: •
+                      - generic [ref=f4e235]: Alaska, Alaska
+                    - generic [ref=f4e236]: USD $177,372
+                - generic [ref=f4e238]:
+                  - button "Contact Seller" [disabled] [ref=f4e240]
+                  - button "View Details" [ref=f4e241] [cursor=pointer]
+              - generic [ref=f4e242]:
+                - generic [ref=f4e244]:
+                  - generic [ref=f4e245]: Recently Added
+                  - img "Crary Bear Cat 11320VS - 5AQWIJ 1788153243120" [ref=f4e247] [cursor=pointer]
+                  - button "favourite" [ref=f4e249] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e250]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e262]:
+                  - heading "Crary Bear Cat 11320VS - 5AQWIJ 1788153243120" [level=3] [ref=f4e263]
+                  - generic [ref=f4e264]:
+                    - img "Hours" [ref=f4e265]
+                    - generic [ref=f4e266]:
+                      - generic [ref=f4e267]: 6,921 miles
+                      - generic [ref=f4e268]: •
+                      - generic [ref=f4e269]: Alberta, Alberta
+                    - generic [ref=f4e270]: CAD $47,304
+                - generic [ref=f4e272]:
+                  - button "Contact Seller" [disabled] [ref=f4e274]
+                  - button "View Details" [ref=f4e275] [cursor=pointer]
+              - generic [ref=f4e276]:
+                - generic [ref=f4e278]:
+                  - generic [ref=f4e279]: Popular
+                  - img "Tractor" [ref=f4e281] [cursor=pointer]
+                  - button "favourite" [ref=f4e283] [cursor=pointer]:
+                    - img "Favorite" [ref=f4e284]
+                - generic [ref=f4e285]:
+                  - heading "Tractor" [level=3] [ref=f4e286]
+                  - generic [ref=f4e287]:
+                    - generic [ref=f4e288]: Brooks, Alberta
+                    - generic [ref=f4e290]: CAD $100
+                - generic [ref=f4e292]:
+                  - button "Contact Seller" [ref=f4e294] [cursor=pointer]
+                  - button "View Details" [ref=f4e295] [cursor=pointer]
+              - generic [ref=f4e296]:
+                - generic [ref=f4e298]:
+                  - generic [ref=f4e299]: Recently Added
+                  - img "Crary Bear Cat 1320 - VNUEJX" [ref=f4e301] [cursor=pointer]
+                  - button "favourite" [ref=f4e303] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e304]
+                - generic [ref=f4e305]:
+                  - heading "Crary Bear Cat 1320 - VNUEJX" [level=3] [ref=f4e306]
+                  - generic [ref=f4e307]:
+                    - img "Hours" [ref=f4e308]
+                    - generic [ref=f4e309]:
+                      - generic [ref=f4e310]: 8,835 hours
+                      - generic [ref=f4e311]: •
+                      - generic [ref=f4e312]: Delaware, Delaware
+                    - generic [ref=f4e313]: USD $163,713
+                - generic [ref=f4e315]:
+                  - button "Contact Seller" [disabled] [ref=f4e317]
+                  - button "View Details" [ref=f4e318] [cursor=pointer]
+              - generic [ref=f4e319]:
+                - generic [ref=f4e321]:
+                  - generic [ref=f4e322]: Recently Added
+                  - img "Crary Bear Cat 11320 - 4VQHME" [ref=f4e324] [cursor=pointer]
+                  - button "favourite" [ref=f4e326] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e327]
+                - generic [ref=f4e328]:
+                  - heading "Crary Bear Cat 11320 - 4VQHME" [level=3] [ref=f4e329]
+                  - generic [ref=f4e330]:
+                    - img "Hours" [ref=f4e331]
+                    - generic [ref=f4e332]:
+                      - generic [ref=f4e333]: 9,777 kilometers
+                      - generic [ref=f4e334]: •
+                      - generic [ref=f4e335]: Alberta, Alberta
+                    - generic [ref=f4e336]: CAD $30,330
+                - generic [ref=f4e338]:
+                  - button "Contact Seller" [disabled] [ref=f4e340]
+                  - button "View Details" [ref=f4e341] [cursor=pointer]
+              - generic [ref=f4e342]:
+                - generic [ref=f4e344]:
+                  - generic [ref=f4e345]: Recently Added
+                  - img "Bocats 11320VS - FZ25W4 1788157815563" [ref=f4e347] [cursor=pointer]
+                  - button "favourite" [ref=f4e349] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e350]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e355]:
+                  - heading "Bocats 11320VS - FZ25W4 1788157815563" [level=3] [ref=f4e356]
+                  - generic [ref=f4e357]:
+                    - img "Hours" [ref=f4e358]
+                    - generic [ref=f4e359]:
+                      - generic [ref=f4e360]: 7,309 hours
+                      - generic [ref=f4e361]: •
+                      - generic [ref=f4e362]: Prince Edward Island, Prince Edward Island
+                    - generic [ref=f4e363]: CAD $166,985
+                - generic [ref=f4e365]:
+                  - button "Contact Seller" [disabled] [ref=f4e367]
+                  - button "View Details" [ref=f4e368] [cursor=pointer]
+              - generic [ref=f4e369]:
+                - generic [ref=f4e371]:
+                  - generic [ref=f4e372]: Recently Added
+                  - img "Bearcat 10320 - WSRUDU" [ref=f4e374] [cursor=pointer]
+                  - button "favourite" [ref=f4e376] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e377]
+                - generic [ref=f4e378]:
+                  - heading "Bearcat 10320 - WSRUDU" [level=3] [ref=f4e379]
+                  - generic [ref=f4e380]:
+                    - img "Hours" [ref=f4e381]
+                    - generic [ref=f4e382]:
+                      - generic [ref=f4e383]: 8,107 kilometers
+                      - generic [ref=f4e384]: •
+                      - generic [ref=f4e385]: Delaware, Delaware
+                    - generic [ref=f4e386]: USD $18,638
+                - generic [ref=f4e388]:
+                  - button "Contact Seller" [disabled] [ref=f4e390]
+                  - button "View Details" [ref=f4e391] [cursor=pointer]
+              - generic [ref=f4e392]:
+                - generic [ref=f4e394]:
+                  - generic [ref=f4e395]: Recently Added
+                  - img "Bocats 113-320 - PRJSWY" [ref=f4e397] [cursor=pointer]
+                  - button "favourite" [ref=f4e399] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e400]
+                - generic [ref=f4e401]:
+                  - heading "Bocats 113-320 - PRJSWY" [level=3] [ref=f4e402]
+                  - generic [ref=f4e403]:
+                    - img "Hours" [ref=f4e404]
+                    - generic [ref=f4e405]:
+                      - generic [ref=f4e406]: 12,318 miles
+                      - generic [ref=f4e407]: •
+                      - generic [ref=f4e408]: American Samoa, American Samoa
+                    - generic [ref=f4e409]: USD $68,903
+                - generic [ref=f4e411]:
+                  - button "Contact Seller" [disabled] [ref=f4e413]
+                  - button "View Details" [ref=f4e414] [cursor=pointer]
+              - generic [ref=f4e415]:
+                - generic [ref=f4e417]:
+                  - generic [ref=f4e418]: Recently Added
+                  - img "Cat 1320XT - WBQSBK" [ref=f4e420] [cursor=pointer]
+                  - button "favourite" [ref=f4e422] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e423]
+                - generic [ref=f4e424]:
+                  - heading "Cat 1320XT - WBQSBK" [level=3] [ref=f4e425]
+                  - generic [ref=f4e426]:
+                    - img "Hours" [ref=f4e427]
+                    - generic [ref=f4e428]:
+                      - generic [ref=f4e429]: 18,724 kilometers
+                      - generic [ref=f4e430]: •
+                      - generic [ref=f4e431]: Newfoundland and Labrador, Newfoundland and Labrador
+                    - generic [ref=f4e432]: CAD $8,432
+                - generic [ref=f4e434]:
+                  - button "Contact Seller" [disabled] [ref=f4e436]
+                  - button "View Details" [ref=f4e437] [cursor=pointer]
+            - generic [ref=f4e125]:
+              - generic [ref=f4e126]: Showing 1-10 From 1136
+              - generic [ref=f4e128]:
+                - button [disabled] [ref=f4e129]:
+                  - img "First" [ref=f4e130]
+                - button [disabled] [ref=f4e131]:
+                  - img "Previous" [ref=f4e132]
+                - generic [ref=f4e133]:
+                  - generic [ref=f4e134]: "1"
+                  - generic [ref=f4e135]: Of 114
+                - button [ref=f4e136] [cursor=pointer]:
+                  - img "Next" [ref=f4e137]
+                - button [ref=f4e138] [cursor=pointer]:
+                  - img "Last" [ref=f4e139]
+              - generic [ref=f4e140]:
+                - generic [ref=f4e141]: Items per page
+                - generic [ref=f4e142]:
+                  - combobox [ref=f4e143]:
+                    - option "5"
+                    - option "10" [selected]
+                    - option "25"
+                    - option "50"
+                  - img "Dropdown"
+    - contentinfo "Site footer" [ref=f4e144]:
+      - generic [ref=f4e146]:
+        - generic [ref=f4e147]:
+          - paragraph [ref=f4e148]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f4e149] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f4e150]
+        - navigation "Footer navigation" [ref=f4e152]:
+          - link "Contact" [ref=f4e153] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f4e154] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f4e155] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f4e157]:
+          - heading "Support" [level=3] [ref=f4e158]
+          - generic [ref=f4e159]:
+            - img "Phone" [ref=f4e160]
+            - link "Call 2064429000" [ref=f4e161] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f4e162]:
+            - img "Email" [ref=f4e163]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f4e164] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f4e167]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f4e168]

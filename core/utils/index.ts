@@ -6,3 +6,4 @@ export {
   clearAuthContext,
   type AuthContext,
 } from "./auth-context.js";
+export { decodeJwtPayload } from "./jwt.util.js";

@@ -1,0 +1,384 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - banner [ref=f9e3]:
+      - paragraph [ref=f9e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f9e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f9e7]:
+        - link [ref=f9e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f9e9]
+        - navigation [ref=f9e10]:
+          - link "Post a listing" [ref=f9e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f9e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f9e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f9e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+    - main [ref=f9e27]:
+      - generic [ref=f9e28]:
+        - generic [ref=f9e30]:
+          - img "Heavy Equipment" [ref=f9e32]
+          - generic [ref=f9e33]:
+            - heading "Find Quality Heavy Equipment at Unbeatable Pricess" [level=1] [ref=f9e34]
+            - paragraph [ref=f9e35]: Discover thousands of verified heavy equipment from trusted sellers nationwide. From construction to agriculture, find the perfect equipment for your business.
+            - generic [ref=f9e37]:
+              - generic [ref=f9e38]:
+                - img "Search"
+                - textbox "Search equipment" [ref=f9e39]:
+                  - /placeholder: Search for equipment, make, model..
+              - button [ref=f9e41] [cursor=pointer]:
+                - text: Location
+                - img "Chevron Down" [ref=f9e42]
+              - button "Search" [ref=f9e43] [cursor=pointer]:
+                - img "Search" [ref=f9e44]
+        - generic [ref=f9e46]:
+          - generic [ref=f9e47]:
+            - heading "Shop by Category" [level=2] [ref=f9e48]
+            - paragraph [ref=f9e49]: Find exactly what you need from our extensive selection of professional equipment
+          - generic [ref=f9e50]:
+            - link [ref=f9e51] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f7381d
+              - img "Agriculture" [ref=f9e53]
+              - paragraph [ref=f9e55]: Agriculture
+            - link [ref=f9e56] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f73829
+              - img "Transportation - Trailers" [ref=f9e58]
+              - paragraph [ref=f9e60]: Transportation - Trailers
+            - link [ref=f9e61] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f7381f
+              - img "Construction Equipment" [ref=f9e63]
+              - paragraph [ref=f9e65]: Construction Equipment
+            - link [ref=f9e66] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f73820
+              - img "Forestry" [ref=f9e68]
+              - paragraph [ref=f9e70]: Forestry
+            - link [ref=f9e71] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f73821
+              - img "HVAC & Climate Control" [ref=f9e73]
+              - paragraph [ref=f9e75]: HVAC & Climate Control
+            - link [ref=f9e76] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f73822
+              - img "Manufacturing Equipment" [ref=f9e78]
+              - paragraph [ref=f9e80]: Manufacturing Equipment
+            - link [ref=f9e81] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f73823
+              - img "Material Handling" [ref=f9e83]
+              - paragraph [ref=f9e85]: Material Handling
+            - link [ref=f9e86] [cursor=pointer]:
+              - /url: /search?categoryId=6a2943c8a017975768f7382a
+              - img "Transportation - Trucks" [ref=f9e88]
+              - paragraph [ref=f9e90]: Transportation - Trucks
+        - generic [ref=f9e92]:
+          - generic [ref=f9e94]:
+            - heading "Featured Sellers and Brands" [level=2] [ref=f9e95]
+            - paragraph [ref=f9e96]: Trusted partners in quality equipment
+          - generic [ref=f9e102]:
+            - button [ref=f9e103] [cursor=pointer]:
+              - img "https://www.bidadoo.com/ logo" [ref=f9e104]
+            - button [ref=f9e105] [cursor=pointer]:
+              - img "https://qa-website-bidadoocl.appskeeper.in/under-dev logo" [ref=f9e106]
+            - button [ref=f9e107] [cursor=pointer]:
+              - img "http://example.com logo" [ref=f9e108]
+            - button [ref=f9e109] [cursor=pointer]:
+              - img "http://examples.com logo" [ref=f9e110]
+            - button [ref=f9e111] [cursor=pointer]:
+              - img "https://www.bidadoo.com/caterpillar logo" [ref=f9e112]
+            - button [ref=f9e113] [cursor=pointer]:
+              - img "https://qa-website-bidadoocl.appskeeper.in/under-dev logo" [ref=f9e114]
+            - button [ref=f9e115] [cursor=pointer]:
+              - img "https://qa-website-bidadoocl.appskeeper.in/under-dev logo" [ref=f9e116]
+            - button [ref=f9e117] [cursor=pointer]:
+              - img "https://www.bidadoo.com/sunbelt-rentals logo" [ref=f9e118]
+        - generic [ref=f9e122]:
+          - generic [ref=f9e124]:
+            - generic [ref=f9e127]:
+              - img "The Best Deals on Equipments" [ref=f9e130]
+              - generic [ref=f9e131]:
+                - heading "The Best Deals on Equipments" [level=2] [ref=f9e132]
+                - paragraph [ref=f9e133]: We are committed to providing the best marketplace experience for equipment buyers & sellers
+                - button "Browse Equipment" [ref=f9e134] [cursor=pointer]
+            - generic [ref=f9e137]:
+              - img "The Best Deals on Equipment" [ref=f9e140]
+              - generic [ref=f9e141]:
+                - heading "The Best Deals on Equipment" [level=2] [ref=f9e142]
+                - paragraph [ref=f9e143]: We are committed to providing the best marketplace experience for equipment buyers & sellers
+                - button "Browse Equipment" [ref=f9e144] [cursor=pointer]
+            - generic [ref=f9e147]:
+              - img "Deal on Equipments" [ref=f9e150]
+              - generic [ref=f9e151]:
+                - heading "Deal on Equipments" [level=2] [ref=f9e152]
+                - paragraph [ref=f9e153]: We are committed to providing the best marketplace experience for equipment buyers & sellers
+                - button "Equipment" [ref=f9e154] [cursor=pointer]
+          - generic [ref=f9e155]:
+            - button "Dot 1" [ref=f9e156] [cursor=pointer]
+            - button "Dot 2" [ref=f9e157] [cursor=pointer]
+            - button "Dot 3" [ref=f9e158] [cursor=pointer]
+        - generic [ref=f9e160]:
+          - generic [ref=f9e162]:
+            - heading "Why Choose Fleet Exchange by bidadoo?" [level=2] [ref=f9e163]
+            - paragraph [ref=f9e164]: Equipment listings from trusted sellers, backed by two decades of bidadoo experience.
+          - generic [ref=f9e165]:
+            - generic [ref=f9e166]:
+              - img "Equipment from Trusted Sellers" [ref=f9e169]
+              - heading "Equipment from Trusted Sellers" [level=3] [ref=f9e170]
+              - paragraph [ref=f9e171]: Real sellers with real equipment — not anonymous classifieds
+            - generic [ref=f9e172]:
+              - img "Deal Direct with Sellers" [ref=f9e175]
+              - heading "Deal Direct with Sellers" [level=3] [ref=f9e176]
+              - paragraph [ref=f9e177]: Contact sellers directly to negotiate price and arrange pickup on your terms
+            - generic [ref=f9e178]:
+              - img "Find What You Need" [ref=f9e181]
+              - heading "Find What You Need" [level=3] [ref=f9e182]
+              - paragraph [ref=f9e183]: Listings from sellers across the US and Canada
+        - generic [ref=f9e185]:
+          - generic [ref=f9e187]:
+            - heading "Popular Equipment - Trending Now" [level=2] [ref=f9e188]
+            - paragraph [ref=f9e189]: Explore our most in-demand equipment — from excavators and tractors to trailers and generators — trusted by thousands of buyers every day on bidadoo.
+          - generic [ref=f9e190]:
+            - generic [ref=f9e192]:
+              - generic [ref=f9e195]:
+                - generic [ref=f9e197]:
+                  - generic [ref=f9e198]: Recently Added
+                  - img "Arctic Cat 113-320 - RUK83I 1788169170454" [ref=f9e200] [cursor=pointer]
+                  - button "favourite" [ref=f9e202] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e203]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f9e215]:
+                  - heading "Arctic Cat 113-320 - RUK83I 1788169170454" [level=3] [ref=f9e216]
+                  - generic [ref=f9e217]:
+                    - img "Hours" [ref=f9e218]
+                    - generic [ref=f9e219]:
+                      - generic [ref=f9e220]: 12,774 hours
+                      - generic [ref=f9e221]: •
+                      - generic [ref=f9e222]: Nova Scotia, Nova Scotia
+                    - generic [ref=f9e223]: USD $103,534
+                - generic [ref=f9e225]:
+                  - button "Contact Seller" [ref=f9e227] [cursor=pointer]
+                  - button "View Details" [ref=f9e228] [cursor=pointer]
+              - generic [ref=f9e231]:
+                - generic [ref=f9e233]:
+                  - generic [ref=f9e234]: Recently Added
+                  - img "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [ref=f9e236] [cursor=pointer]
+                  - button "favourite" [ref=f9e238] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e239]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f9e251]:
+                  - heading "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [level=3] [ref=f9e252]
+                  - generic [ref=f9e253]:
+                    - img "Hours" [ref=f9e254]
+                    - generic [ref=f9e255]:
+                      - generic [ref=f9e256]: 17,113 miles
+                      - generic [ref=f9e257]: •
+                      - generic [ref=f9e258]: Newfoundland and Labrador, Newfoundland and Labrador
+                    - generic [ref=f9e259]: USD $143,652
+                - generic [ref=f9e261]:
+                  - button "Contact Seller" [ref=f9e263] [cursor=pointer]
+                  - button "View Details" [ref=f9e264] [cursor=pointer]
+              - generic [ref=f9e267]:
+                - generic [ref=f9e269]:
+                  - generic [ref=f9e270]: Recently Added
+                  - img "Crary Bear Cat 11320VS - 5AQWIJ 1788153243120" [ref=f9e272] [cursor=pointer]
+                  - button "favourite" [ref=f9e274] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e275]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f9e287]:
+                  - heading "Crary Bear Cat 11320VS - 5AQWIJ 1788153243120" [level=3] [ref=f9e288]
+                  - generic [ref=f9e289]:
+                    - img "Hours" [ref=f9e290]
+                    - generic [ref=f9e291]:
+                      - generic [ref=f9e292]: 6,921 miles
+                      - generic [ref=f9e293]: •
+                      - generic [ref=f9e294]: Alberta, Alberta
+                    - generic [ref=f9e295]: USD $47,304
+                - generic [ref=f9e297]:
+                  - button "Contact Seller" [ref=f9e299] [cursor=pointer]
+                  - button "View Details" [ref=f9e300] [cursor=pointer]
+              - generic [ref=f9e303]:
+                - generic [ref=f9e305]:
+                  - generic [ref=f9e306]: Recently Added
+                  - img "Automation Test Excavator 1787760522070" [ref=f9e308] [cursor=pointer]
+                  - button "favourite" [ref=f9e310] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e311]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f9e323]:
+                  - heading "Automation Test Excavator 1787760522070" [level=3] [ref=f9e324]
+                  - generic [ref=f9e325]:
+                    - img "Hours" [ref=f9e326]
+                    - generic [ref=f9e327]:
+                      - generic [ref=f9e328]: 5,000 hours
+                      - generic [ref=f9e329]: •
+                      - generic [ref=f9e330]: Seattle, Washington
+                    - generic [ref=f9e331]: USD $50,000
+                - generic [ref=f9e333]:
+                  - button "Contact Seller" [ref=f9e335] [cursor=pointer]
+                  - button "View Details" [ref=f9e336] [cursor=pointer]
+              - generic [ref=f9e339]:
+                - generic [ref=f9e341]:
+                  - generic [ref=f9e342]: Recently Added
+                  - img "Automation Test Excavator 1787747220326" [ref=f9e344] [cursor=pointer]
+                  - button "favourite" [ref=f9e346] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e347]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f9e352]:
+                  - heading "Automation Test Excavator 1787747220326" [level=3] [ref=f9e353]
+                  - generic [ref=f9e354]:
+                    - img "Hours" [ref=f9e355]
+                    - generic [ref=f9e356]:
+                      - generic [ref=f9e357]: 5,000 hours
+                      - generic [ref=f9e358]: •
+                      - generic [ref=f9e359]: Seattle, Washington
+                    - generic [ref=f9e360]: USD $50,000
+                - generic [ref=f9e362]:
+                  - button "Contact Seller" [ref=f9e364] [cursor=pointer]
+                  - button "View Details" [ref=f9e365] [cursor=pointer]
+              - generic [ref=f9e368]:
+                - generic [ref=f9e370]:
+                  - generic [ref=f9e371]: Recently Added
+                  - img "Agracat 020/320 - TAYLFG" [ref=f9e373] [cursor=pointer]
+                  - button "favourite" [ref=f9e375] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e376]
+                - generic [ref=f9e377]:
+                  - heading "Agracat 020/320 - TAYLFG" [level=3] [ref=f9e378]
+                  - generic [ref=f9e379]:
+                    - img "Hours" [ref=f9e380]
+                    - generic [ref=f9e381]:
+                      - generic [ref=f9e382]: 19,162 hours
+                      - generic [ref=f9e383]: •
+                      - generic [ref=f9e384]: Alaska, Alaska
+                    - generic [ref=f9e385]: USD $36,130
+                - generic [ref=f9e387]:
+                  - button "Contact Seller" [ref=f9e389] [cursor=pointer]
+                  - button "View Details" [ref=f9e390] [cursor=pointer]
+              - generic [ref=f9e393]:
+                - generic [ref=f9e395]:
+                  - generic [ref=f9e396]: Popular
+                  - img "Automation Test Excavator" [ref=f9e398] [cursor=pointer]
+                  - button "favourite" [ref=f9e400] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e401]
+                - generic [ref=f9e402]:
+                  - heading "Automation Test Excavator" [level=3] [ref=f9e403]
+                  - generic [ref=f9e404]:
+                    - img "Hours" [ref=f9e405]
+                    - generic [ref=f9e406]:
+                      - generic [ref=f9e407]: 5,000 hours
+                      - generic [ref=f9e408]: •
+                      - generic [ref=f9e409]: Seattle, Washington
+                    - generic [ref=f9e410]: USD $50,000
+                - generic [ref=f9e412]:
+                  - button "Contact Seller" [ref=f9e414] [cursor=pointer]
+                  - button "View Details" [ref=f9e415] [cursor=pointer]
+              - generic [ref=f9e418]:
+                - generic [ref=f9e420]:
+                  - generic [ref=f9e421]: Popular
+                  - img "Automation Test Excavator" [ref=f9e423] [cursor=pointer]
+                  - button "favourite" [ref=f9e425] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e426]
+                - generic [ref=f9e427]:
+                  - heading "Automation Test Excavator" [level=3] [ref=f9e428]
+                  - generic [ref=f9e429]:
+                    - img "Hours" [ref=f9e430]
+                    - generic [ref=f9e431]:
+                      - generic [ref=f9e432]: 5,000 hours
+                      - generic [ref=f9e433]: •
+                      - generic [ref=f9e434]: Seattle, Washington
+                    - generic [ref=f9e435]: USD $50,000
+                - generic [ref=f9e437]:
+                  - button "Contact Seller" [ref=f9e439] [cursor=pointer]
+                  - button "View Details" [ref=f9e440] [cursor=pointer]
+              - generic [ref=f9e443]:
+                - generic [ref=f9e445]:
+                  - generic [ref=f9e446]: Popular
+                  - img "Automation Test Excavator" [ref=f9e448] [cursor=pointer]
+                  - button "favourite" [ref=f9e450] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e451]
+                - generic [ref=f9e452]:
+                  - heading "Automation Test Excavator" [level=3] [ref=f9e453]
+                  - generic [ref=f9e454]:
+                    - img "Hours" [ref=f9e455]
+                    - generic [ref=f9e456]:
+                      - generic [ref=f9e457]: 5,000 hours
+                      - generic [ref=f9e458]: •
+                      - generic [ref=f9e459]: Seattle, Washington
+                    - generic [ref=f9e460]: USD $50,000
+                - generic [ref=f9e462]:
+                  - button "Contact Seller" [ref=f9e464] [cursor=pointer]
+                  - button "View Details" [ref=f9e465] [cursor=pointer]
+              - generic [ref=f9e468]:
+                - generic [ref=f9e470]:
+                  - generic [ref=f9e471]: Popular
+                  - img "Automation Test Excavator" [ref=f9e473] [cursor=pointer]
+                  - button "favourite" [ref=f9e475] [cursor=pointer]:
+                    - img "Favorite" [ref=f9e476]
+                - generic [ref=f9e477]:
+                  - heading "Automation Test Excavator" [level=3] [ref=f9e478]
+                  - generic [ref=f9e479]:
+                    - img "Hours" [ref=f9e480]
+                    - generic [ref=f9e481]:
+                      - generic [ref=f9e482]: 5,000 hours
+                      - generic [ref=f9e483]: •
+                      - generic [ref=f9e484]: Seattle, Washington
+                    - generic [ref=f9e485]: USD $50,000
+                - generic [ref=f9e487]:
+                  - button "Contact Seller" [ref=f9e489] [cursor=pointer]
+                  - button "View Details" [ref=f9e490] [cursor=pointer]
+            - generic [ref=f9e491]:
+              - button "Dot 1" [ref=f9e492] [cursor=pointer]
+              - button "Dot 2" [ref=f9e493] [cursor=pointer]
+              - button "Dot 3" [ref=f9e494] [cursor=pointer]
+              - button "Dot 4" [ref=f9e495] [cursor=pointer]
+              - button "Dot 5" [ref=f9e496] [cursor=pointer]
+              - button "Dot 6" [ref=f9e497] [cursor=pointer]
+              - button "Dot 7" [ref=f9e498] [cursor=pointer]
+              - button "Dot 8" [ref=f9e499] [cursor=pointer]
+        - generic [ref=f9e503]:
+          - heading "Ready to Buy or List?" [level=2] [ref=f9e505]
+          - paragraph [ref=f9e507]: Browse equipment from sellers nationwide — quality machines at competitive prices. Have equipment to sell? List it in minutes and reach more buyers.
+          - generic [ref=f9e508]:
+            - button "Start Shopping" [ref=f9e510] [cursor=pointer]: Browse Inventory
+            - button "Start Selling Today" [ref=f9e512] [cursor=pointer]: Start Selling
+    - contentinfo "Site footer" [ref=f9e513]:
+      - generic [ref=f9e515]:
+        - generic [ref=f9e516]:
+          - paragraph [ref=f9e517]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f9e518] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f9e519]
+        - navigation "Footer navigation" [ref=f9e521]:
+          - link "Contact" [ref=f9e522] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f9e523] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f9e524] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f9e526]:
+          - heading "Support" [level=3] [ref=f9e527]
+          - generic [ref=f9e528]:
+            - img "Phone" [ref=f9e529]
+            - link "Call 2064429000" [ref=f9e530] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f9e531]:
+            - img "Email" [ref=f9e532]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f9e533] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f9e536]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f9e537]

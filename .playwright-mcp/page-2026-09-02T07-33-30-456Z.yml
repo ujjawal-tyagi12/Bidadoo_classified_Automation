@@ -1,0 +1,19 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - paragraph [ref=f10e4]:
+      - text: Looking for bidadoo Auctions? Go to
+      - link "www.bidadoo.com" [ref=f10e5] [cursor=pointer]:
+        - /url: https://www.bidadoo.com
+    - generic [ref=f10e6]:
+      - link [ref=f10e7] [cursor=pointer]:
+        - /url: /
+        - img "bidadoo logo" [ref=f10e8]
+      - navigation [ref=f10e9]:
+        - link "Post a listing" [ref=f10e11] [cursor=pointer]:
+          - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+        - button "Browse & Buy" [ref=f10e14] [cursor=pointer]
+        - link "bidadoo Auction" [ref=f10e17] [cursor=pointer]:
+          - /url: https://www.bidadoo.com/
+        - link "About" [ref=f10e20] [cursor=pointer]:
+          - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+  - alert [ref=f10e93]

@@ -1,0 +1,350 @@
+- generic [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - banner [ref=f6e3]:
+      - paragraph [ref=f6e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f6e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f6e7]:
+        - link [ref=f6e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f6e9]
+        - navigation [ref=f6e10]:
+          - link "Post a listing" [ref=f6e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f6e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f6e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f6e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f6e24]:
+          - link [ref=f6e241] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f6e242]
+          - button "Profile menu" [ref=f6e244] [cursor=pointer]:
+            - img "Account" [ref=f6e245]
+    - main [ref=f6e27]:
+      - generic [ref=f6e28]:
+        - navigation "Breadcrumb" [ref=f6e29]:
+          - link "Home" [ref=f6e30] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f6e31]: "|"
+          - link "Listings" [ref=f6e32] [cursor=pointer]:
+            - /url: /dashboard?tab=listings
+        - generic [ref=f6e34]:
+          - generic [ref=f6e35]:
+            - heading "Seller Dashboard" [level=5] [ref=f6e37]
+            - paragraph [ref=f6e38]: Reach real buyers and manage your listings easily
+          - button "Visit Store" [ref=f6e40]:
+            - img "Location" [ref=f6e41]
+            - paragraph [ref=f6e42]: Visit Store
+        - generic [ref=f6e44]:
+          - button [ref=f6e45] [cursor=pointer]:
+            - img "Dashboard" [ref=f6e46]
+            - paragraph [ref=f6e47]: Dashboard
+          - button [ref=f6e48] [cursor=pointer]:
+            - img "Brand Info" [ref=f6e49]
+            - paragraph [ref=f6e50]: Brand Info
+          - button [ref=f6e51] [cursor=pointer]:
+            - img "Listings" [ref=f6e52]
+            - paragraph [ref=f6e53]: Listings
+          - button [ref=f6e54] [cursor=pointer]:
+            - img "Security" [ref=f6e55]
+            - paragraph [ref=f6e56]: Security
+          - button [ref=f6e57] [cursor=pointer]:
+            - img "Settings" [ref=f6e58]
+            - paragraph [ref=f6e59]: Settings
+          - button [ref=f6e60] [cursor=pointer]:
+            - img "Access Control" [ref=f6e61]
+            - paragraph [ref=f6e62]: Access Control
+          - button [ref=f6e63] [cursor=pointer]:
+            - img "Custom Attributes" [ref=f6e64]
+            - paragraph [ref=f6e65]: Custom Attributes
+          - button [ref=f6e66] [cursor=pointer]:
+            - img "API and Integrations" [ref=f6e67]
+            - paragraph [ref=f6e68]: API and Integrations
+          - button [ref=f6e69] [cursor=pointer]:
+            - img "My Inquiries" [ref=f6e70]
+            - paragraph [ref=f6e71]: My Inquiries
+        - generic [ref=f6e72]:
+          - generic [ref=f6e73]:
+            - img "Listing left border" [ref=f6e74]
+            - generic [ref=f6e75]:
+              - img "Location" [ref=f6e76]
+              - heading "Listing Management" [level=1] [ref=f6e77]
+            - generic [ref=f6e78]:
+              - button "Bulk Upload Chevron Down" [ref=f6e80] [cursor=pointer]:
+                - generic [ref=f6e81]:
+                  - generic [ref=f6e82]: Bulk Upload
+                  - img "Chevron Down" [ref=f6e83]
+              - button "Plus New Listing" [ref=f6e85] [cursor=pointer]:
+                - generic [ref=f6e86]:
+                  - img "Plus" [ref=f6e88]
+                  - generic [ref=f6e89]: New Listing
+          - generic [ref=f6e92]:
+            - generic [ref=f6e93]:
+              - generic [ref=f6e94]:
+                - img "Search"
+                - textbox "Search for equipment...." [ref=f6e95]
+              - generic [ref=f6e96]:
+                - button [ref=f6e97] [cursor=pointer]:
+                  - img "Filter" [ref=f6e98]
+                  - paragraph [ref=f6e99]: Filter
+                - dialog [ref=f6e620]:
+                  - generic [ref=f6e621]:
+                    - generic [ref=f6e622]:
+                      - generic [ref=f6e623]: FILTER
+                      - button "Clear all" [ref=f6e624] [cursor=pointer]
+                    - generic [ref=f6e625]:
+                      - generic [ref=f6e626]:
+                        - generic [ref=f6e627]: Listed On
+                        - generic [ref=f6e628]:
+                          - generic [ref=f6e630] [cursor=pointer]:
+                            - textbox [active] [ref=f6e633]
+                            - generic: From
+                            - button "Open calendar" [ref=f6e634]
+                          - generic [ref=f6e636] [cursor=pointer]:
+                            - textbox [disabled] [ref=f6e639]
+                            - generic: To
+                            - button "Open calendar" [disabled] [ref=f6e640]
+                      - generic [ref=f6e641]:
+                        - generic [ref=f6e642]: Price
+                        - generic [ref=f6e643]:
+                          - slider: "434"
+                          - slider: "199419"
+                        - paragraph [ref=f6e645]:
+                          - text: "Price:"
+                          - generic [ref=f6e646]: $434
+                          - text: "-"
+                          - generic [ref=f6e647]: $199,419
+                      - generic [ref=f6e650]:
+                        - generic [ref=f6e651]: Status
+                        - button "Select Status Open" [ref=f6e652] [cursor=pointer]:
+                          - generic [ref=f6e653]: Select Status
+                          - generic [ref=f6e654]:
+                            - generic:
+                              - img "Open"
+                    - generic [ref=f6e655]:
+                      - button "Cancel" [ref=f6e656] [cursor=pointer]
+                      - button "Apply" [ref=f6e657] [cursor=pointer]
+            - generic [ref=f6e100]:
+              - table [ref=f6e249]:
+                - rowgroup [ref=f6e250]:
+                  - row [ref=f6e251]:
+                    - columnheader [ref=f6e252]:
+                      - checkbox [ref=f6e257]
+                    - columnheader "Reference ID" [ref=f6e259]
+                    - columnheader "Equipment Name" [ref=f6e261]
+                    - columnheader "Location" [ref=f6e263]
+                    - columnheader [ref=f6e265]:
+                      - button "Price Sort" [ref=f6e266] [cursor=pointer]:
+                        - generic [ref=f6e267]: Price
+                        - img "Sort" [ref=f6e268]
+                    - columnheader [ref=f6e269]:
+                      - button "Updated Date Sort" [ref=f6e270] [cursor=pointer]:
+                        - generic [ref=f6e271]: Updated Date
+                        - img "Sort" [ref=f6e272]
+                    - columnheader "Status" [ref=f6e273]
+                    - columnheader "Action" [ref=f6e275]
+                - rowgroup [ref=f6e277]:
+                  - row [ref=f6e278]:
+                    - cell [ref=f6e279]:
+                      - checkbox [disabled] [ref=f6e284]
+                    - cell [ref=f6e286]:
+                      - link "REF1788166665894" [ref=f6e287] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a95420fda3cada689ce5b0e
+                    - cell "Bearcat 1320PD-10 - 1SNRAM" [ref=f6e291]
+                    - cell "N/A" [ref=f6e295]
+                    - cell "N/A" [ref=f6e298]
+                    - cell "Aug-31-2026" [ref=f6e299]
+                    - cell [ref=f6e302]:
+                      - button "Draft" [ref=f6e304] [cursor=pointer]
+                    - cell [ref=f6e306]:
+                      - button [ref=f6e308] [cursor=pointer]:
+                        - img "More" [ref=f6e309]
+                  - row [ref=f6e310]:
+                    - cell [ref=f6e311]:
+                      - checkbox [disabled] [ref=f6e316]
+                    - cell [ref=f6e318]:
+                      - link "EQP-X4M199QK0ELN2VILKX" [ref=f6e319] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a9541feda3cada689ce5af4
+                    - cell "Bobcat 1320XT - HYBRPC" [ref=f6e323]
+                    - cell "N/A" [ref=f6e327]
+                    - cell "N/A" [ref=f6e330]
+                    - cell "Aug-31-2026" [ref=f6e331]
+                    - cell [ref=f6e334]:
+                      - button "Draft" [ref=f6e336] [cursor=pointer]
+                    - cell [ref=f6e338]:
+                      - button [ref=f6e340] [cursor=pointer]:
+                        - img "More" [ref=f6e341]
+                  - row [ref=f6e342]:
+                    - cell [ref=f6e343]:
+                      - checkbox [disabled] [ref=f6e348]
+                    - cell [ref=f6e350]:
+                      - link "REF1788166435155" [ref=f6e351] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a954126da3cada689ce5aa1
+                    - cell "Crary Bear Cat 1320XT - ATZF5W" [ref=f6e355]
+                    - cell "N/A" [ref=f6e359]
+                    - cell "N/A" [ref=f6e362]
+                    - cell "Aug-31-2026" [ref=f6e363]
+                    - cell [ref=f6e366]:
+                      - button "Draft" [ref=f6e368] [cursor=pointer]
+                    - cell [ref=f6e370]:
+                      - button [ref=f6e372] [cursor=pointer]:
+                        - img "More" [ref=f6e373]
+                  - row [ref=f6e374]:
+                    - cell [ref=f6e375]:
+                      - checkbox [disabled] [ref=f6e380]
+                    - cell [ref=f6e382]:
+                      - link "EQP-5DHMAZIYDZII6NN2IS" [ref=f6e383] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a9540c8da3cada689ce5a77
+                    - cell "Heavy Duty Long Reach Crawler Excavator With An Extremely Long And Descriptive Equipment Name Used P" [ref=f6e387]
+                    - cell "N/A" [ref=f6e391]
+                    - cell "N/A" [ref=f6e394]
+                    - cell "Aug-31-2026" [ref=f6e395]
+                    - cell [ref=f6e398]:
+                      - button "Draft" [ref=f6e400] [cursor=pointer]
+                    - cell [ref=f6e402]:
+                      - button [ref=f6e404] [cursor=pointer]:
+                        - img "More" [ref=f6e405]
+                  - row [ref=f6e406]:
+                    - cell [ref=f6e407]:
+                      - checkbox [disabled] [ref=f6e412]
+                    - cell [ref=f6e414]:
+                      - link "REF1788166309489" [ref=f6e415] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a9540a8da3cada689ce5a17
+                    - cell "Agracat 1320XT - VLLPPB" [ref=f6e419]
+                    - cell "N/A" [ref=f6e423]
+                    - cell "N/A" [ref=f6e426]
+                    - cell "Aug-31-2026" [ref=f6e427]
+                    - cell [ref=f6e430]:
+                      - button "Draft" [ref=f6e432] [cursor=pointer]
+                    - cell [ref=f6e434]:
+                      - button [ref=f6e436] [cursor=pointer]:
+                        - img "More" [ref=f6e437]
+                  - row [ref=f6e438]:
+                    - cell [ref=f6e439]:
+                      - checkbox [disabled] [ref=f6e444]
+                    - cell [ref=f6e446]:
+                      - link "EQP-L2PURP17RJLZ3WGQGH" [ref=f6e447] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a953520da3cada689ce5907
+                    - 'cell "Excavator #1 (2020) — 50% off! @Best-Price$" [ref=f6e451]'
+                    - cell "N/A" [ref=f6e455]
+                    - cell "N/A" [ref=f6e458]
+                    - cell "Aug-31-2026" [ref=f6e459]
+                    - cell [ref=f6e462]:
+                      - button "Draft" [ref=f6e464] [cursor=pointer]
+                    - cell [ref=f6e466]:
+                      - button [ref=f6e468] [cursor=pointer]:
+                        - img "More" [ref=f6e469]
+                  - row [ref=f6e470]:
+                    - cell [ref=f6e471]:
+                      - checkbox [disabled] [ref=f6e476]
+                    - cell [ref=f6e478]:
+                      - link "EQP-8JSVJM918X7JB5WOBX" [ref=f6e479] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a95351eda3cada689ce58f8
+                    - cell "Heavy Duty Long Reach Crawler Excavator With An Extremely Long And Descriptive Equipment Name Used P" [ref=f6e483]
+                    - cell "N/A" [ref=f6e487]
+                    - cell "N/A" [ref=f6e490]
+                    - cell "Aug-31-2026" [ref=f6e491]
+                    - cell [ref=f6e494]:
+                      - button "Draft" [ref=f6e496] [cursor=pointer]
+                    - cell [ref=f6e498]:
+                      - button [ref=f6e500] [cursor=pointer]:
+                        - img "More" [ref=f6e501]
+                  - row [ref=f6e502]:
+                    - cell [ref=f6e503]:
+                      - checkbox [disabled] [ref=f6e508]
+                    - cell [ref=f6e510]:
+                      - link "REF1788163332704" [ref=f6e511] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a95350ada3cada689ce584d
+                    - cell "Crary Bear Cat 1320 - OP58QR" [ref=f6e515]
+                    - cell "N/A" [ref=f6e519]
+                    - cell "N/A" [ref=f6e522]
+                    - cell "Aug-31-2026" [ref=f6e523]
+                    - cell [ref=f6e526]:
+                      - button "Draft" [ref=f6e528] [cursor=pointer]
+                    - cell [ref=f6e530]:
+                      - button [ref=f6e532] [cursor=pointer]:
+                        - img "More" [ref=f6e533]
+                  - row [ref=f6e534]:
+                    - cell [ref=f6e535]:
+                      - checkbox [disabled] [ref=f6e540]
+                    - cell [ref=f6e542]:
+                      - link "EQP-N0ISURLB37GRLIXLQO" [ref=f6e543] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a953500da3cada689ce57ef
+                    - cell "Bobcat 1320 - VRZBSN" [ref=f6e547]
+                    - cell "N/A" [ref=f6e551]
+                    - cell "N/A" [ref=f6e554]
+                    - cell "Aug-31-2026" [ref=f6e555]
+                    - cell [ref=f6e558]:
+                      - button "Draft" [ref=f6e560] [cursor=pointer]
+                    - cell [ref=f6e562]:
+                      - button [ref=f6e564] [cursor=pointer]:
+                        - img "More" [ref=f6e565]
+                  - row [ref=f6e566]:
+                    - cell [ref=f6e567]:
+                      - checkbox [disabled] [ref=f6e572]
+                    - cell [ref=f6e574]:
+                      - link "EQP-KEXBLYNABAGL7MG6IA" [ref=f6e575] [cursor=pointer]:
+                        - /url: /dashboard/create-equipment?view=6a9534e3da3cada689ce5782
+                    - cell "Automation Updated Listing Title" [ref=f6e579]
+                    - cell "Connecticut" [ref=f6e583]
+                    - cell "$75,000" [ref=f6e586]
+                    - cell "Aug-31-2026" [ref=f6e588]
+                    - cell [ref=f6e591]:
+                      - button "Draft" [ref=f6e593] [cursor=pointer]
+                    - cell [ref=f6e595]:
+                      - button [ref=f6e597] [cursor=pointer]:
+                        - img "More" [ref=f6e598]
+              - generic [ref=f6e600]:
+                - generic [ref=f6e601]: Showing 1-10 From 411
+                - generic [ref=f6e603]:
+                  - button [disabled] [ref=f6e604]:
+                    - img "First" [ref=f6e605]
+                  - button [disabled] [ref=f6e606]:
+                    - img "Previous" [ref=f6e607]
+                  - generic [ref=f6e608]:
+                    - generic [ref=f6e609]: "1"
+                    - generic [ref=f6e610]: Of 42
+                  - button [ref=f6e611] [cursor=pointer]:
+                    - img "Next" [ref=f6e612]
+                  - button [ref=f6e613] [cursor=pointer]:
+                    - img "Last" [ref=f6e614]
+                - generic [ref=f6e615]:
+                  - generic [ref=f6e616]: Rows per pages
+                  - generic [ref=f6e617]:
+                    - combobox [ref=f6e618]:
+                      - option "5"
+                      - option "10" [selected]
+                      - option "25"
+                      - option "50"
+                    - img "Dropdown"
+    - contentinfo "Site footer" [ref=f6e216]:
+      - generic [ref=f6e218]:
+        - generic [ref=f6e219]:
+          - paragraph [ref=f6e220]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f6e221] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f6e222]
+        - navigation "Footer navigation" [ref=f6e224]:
+          - link "Contact" [ref=f6e225] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f6e226] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f6e227] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f6e229]:
+          - heading "Support" [level=3] [ref=f6e230]
+          - generic [ref=f6e231]:
+            - img "Phone" [ref=f6e232]
+            - link "Call 2064429000" [ref=f6e233] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f6e234]:
+            - img "Email" [ref=f6e235]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f6e236] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f6e239]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f6e240]

@@ -1,0 +1,353 @@
+- generic [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - banner [ref=f7e3]:
+      - paragraph [ref=f7e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f7e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f7e7]:
+        - link [ref=f7e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f7e9]
+        - navigation [ref=f7e10]:
+          - link "Post a listing" [ref=f7e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f7e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f7e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f7e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f7e24]:
+          - link [ref=f7e169] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f7e170]
+          - button "Profile menu" [ref=f7e172] [cursor=pointer]:
+            - img "Account" [ref=f7e173]
+    - main [ref=f7e27]:
+      - main [ref=f7e28]:
+        - generic [ref=f7e30]:
+          - generic [ref=f7e31]:
+            - heading "Search Results" [level=2] [ref=f7e32]
+            - generic [ref=f7e33]: Showing 1 of 1166 results
+          - generic [ref=f7e34]:
+            - generic [ref=f7e35]:
+              - img "Search"
+              - textbox "Search for equipment, make, model..." [ref=f7e36]
+            - 'button "Sort Sort by: Recommended" [ref=f7e38] [cursor=pointer]':
+              - img "Sort" [ref=f7e39]
+              - generic [ref=f7e40]: "Sort by: Recommended"
+        - generic [ref=f7e41]:
+          - complementary [ref=f7e43]:
+            - generic [ref=f7e44]:
+              - generic [ref=f7e46]:
+                - paragraph [ref=f7e47]: Filters
+                - button "Clear All" [ref=f7e48] [cursor=pointer]
+              - generic [ref=f7e50]:
+                - button "Category toggle" [ref=f7e52] [cursor=pointer]:
+                  - generic [ref=f7e53]: Category
+                  - img "toggle" [ref=f7e54]
+                - button "Model toggle" [ref=f7e56] [cursor=pointer]:
+                  - generic [ref=f7e57]: Model
+                  - img "toggle" [ref=f7e58]
+                - generic [ref=f7e59]:
+                  - button "Location toggle" [active] [ref=f7e60] [cursor=pointer]:
+                    - generic [ref=f7e61]: Location
+                    - img "toggle" [ref=f7e62]
+                  - generic [ref=f7e479]:
+                    - generic [ref=f7e480]:
+                      - checkbox "Alabama" [ref=f7e484]
+                      - generic [ref=f7e486]: Alabama
+                    - generic [ref=f7e487]:
+                      - checkbox "Alaska" [ref=f7e491]
+                      - generic [ref=f7e493]: Alaska
+                    - generic [ref=f7e494]:
+                      - checkbox "Alberta" [ref=f7e498]
+                      - generic [ref=f7e500]: Alberta
+                    - generic [ref=f7e501]:
+                      - checkbox "American Samoa" [ref=f7e505]
+                      - generic [ref=f7e507]: American Samoa
+                    - generic [ref=f7e508]:
+                      - checkbox "Arizona" [ref=f7e512]
+                      - generic [ref=f7e514]: Arizona
+                    - generic [ref=f7e515]:
+                      - checkbox "Arkansas" [ref=f7e519]
+                      - generic [ref=f7e521]: Arkansas
+                    - generic [ref=f7e522]:
+                      - checkbox "Baker Island" [ref=f7e526]
+                      - generic [ref=f7e528]: Baker Island
+                    - generic [ref=f7e529]:
+                      - checkbox "British Columbia" [ref=f7e533]
+                      - generic [ref=f7e535]: British Columbia
+                    - generic [ref=f7e536]:
+                      - checkbox "California" [ref=f7e540]
+                      - generic [ref=f7e542]: California
+                    - generic [ref=f7e543]:
+                      - checkbox "Colorado" [ref=f7e547]
+                      - generic [ref=f7e549]: Colorado
+                - button "Price Range toggle" [ref=f7e64] [cursor=pointer]:
+                  - generic [ref=f7e65]: Price Range
+                  - img "toggle" [ref=f7e66]
+                - button "Year toggle" [ref=f7e68] [cursor=pointer]:
+                  - generic [ref=f7e69]: Year
+                  - img "toggle" [ref=f7e70]
+                - button "Hours / Miles / Kilometers toggle" [ref=f7e72] [cursor=pointer]:
+                  - generic [ref=f7e73]: Hours / Miles / Kilometers
+                  - img "toggle" [ref=f7e74]
+            - button "Apply Filters" [ref=f7e76] [cursor=pointer]
+          - generic [ref=f7e77]:
+            - generic [ref=f7e80]:
+              - generic [ref=f7e174]:
+                - generic [ref=f7e176]:
+                  - generic [ref=f7e177]: Recently Added
+                  - img "Arctic Cat 113-320 - RUK83I 1788169170454" [ref=f7e179] [cursor=pointer]
+                  - button "favourite" [ref=f7e181] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e182]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e194]:
+                  - heading "Arctic Cat 113-320 - RUK83I 1788169170454" [level=3] [ref=f7e195]
+                  - generic [ref=f7e196]:
+                    - img "Hours" [ref=f7e197]
+                    - generic [ref=f7e198]:
+                      - generic [ref=f7e199]: 12,774 hours
+                      - generic [ref=f7e200]: •
+                      - generic [ref=f7e201]: Nova Scotia, Nova Scotia
+                    - generic [ref=f7e202]: CAD $103,534
+                - generic [ref=f7e204]:
+                  - button "Contact Seller" [disabled] [ref=f7e206]
+                  - button "View Details" [ref=f7e207] [cursor=pointer]
+              - generic [ref=f7e208]:
+                - generic [ref=f7e210]:
+                  - generic [ref=f7e211]: Recently Added
+                  - img "Bearcat 1320 - VTYJHC 1788169164673" [ref=f7e213] [cursor=pointer]
+                  - button "favourite" [ref=f7e215] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e216]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e228]:
+                  - heading "Bearcat 1320 - VTYJHC 1788169164673" [level=3] [ref=f7e229]
+                  - generic [ref=f7e230]:
+                    - img "Hours" [ref=f7e231]
+                    - generic [ref=f7e232]:
+                      - generic [ref=f7e233]: 19,767 miles
+                      - generic [ref=f7e234]: •
+                      - generic [ref=f7e235]: Ontario, Ontario
+                    - generic [ref=f7e236]: CAD $142,691
+                - generic [ref=f7e238]:
+                  - button "Contact Seller" [disabled] [ref=f7e240]
+                  - button "View Details" [ref=f7e241] [cursor=pointer]
+              - generic [ref=f7e242]:
+                - generic [ref=f7e244]:
+                  - generic [ref=f7e245]: Recently Added
+                  - img "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [ref=f7e247] [cursor=pointer]
+                  - button "favourite" [ref=f7e249] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e250]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e262]:
+                  - heading "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [level=3] [ref=f7e263]
+                  - generic [ref=f7e264]:
+                    - img "Hours" [ref=f7e265]
+                    - generic [ref=f7e266]:
+                      - generic [ref=f7e267]: 17,113 miles
+                      - generic [ref=f7e268]: •
+                      - generic [ref=f7e269]: Newfoundland and Labrador, Newfoundland and Labrador
+                    - generic [ref=f7e270]: CAD $143,652
+                - generic [ref=f7e272]:
+                  - button "Contact Seller" [disabled] [ref=f7e274]
+                  - button "View Details" [ref=f7e275] [cursor=pointer]
+              - generic [ref=f7e276]:
+                - generic [ref=f7e278]:
+                  - generic [ref=f7e279]: Recently Added
+                  - img "Agracat 10320 SILVER - JC4QNA 1788157874190" [ref=f7e281] [cursor=pointer]
+                  - button "favourite" [ref=f7e283] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e284]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e296]:
+                  - heading "Agracat 10320 SILVER - JC4QNA 1788157874190" [level=3] [ref=f7e297]
+                  - generic [ref=f7e298]:
+                    - img "Hours" [ref=f7e299]
+                    - generic [ref=f7e300]:
+                      - generic [ref=f7e301]: 9,749 hours
+                      - generic [ref=f7e302]: •
+                      - generic [ref=f7e303]: Alaska, Alaska
+                    - generic [ref=f7e304]: USD $177,372
+                - generic [ref=f7e306]:
+                  - button "Contact Seller" [disabled] [ref=f7e308]
+                  - button "View Details" [ref=f7e309] [cursor=pointer]
+              - generic [ref=f7e310]:
+                - generic [ref=f7e312]:
+                  - generic [ref=f7e313]: Recently Added
+                  - img "Ducati 10320 - XXCFWT 1788162880346" [ref=f7e315] [cursor=pointer]
+                  - button "favourite" [ref=f7e317] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e318]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e330]:
+                  - heading "Ducati 10320 - XXCFWT 1788162880346" [level=3] [ref=f7e331]
+                  - generic [ref=f7e332]:
+                    - img "Hours" [ref=f7e333]
+                    - generic [ref=f7e334]:
+                      - generic [ref=f7e335]: 18,327 kilometers
+                      - generic [ref=f7e336]: •
+                      - generic [ref=f7e337]: California, California
+                    - generic [ref=f7e338]: USD $81,298
+                - generic [ref=f7e340]:
+                  - button "Contact Seller" [disabled] [ref=f7e342]
+                  - button "View Details" [ref=f7e343] [cursor=pointer]
+              - generic [ref=f7e344]:
+                - generic [ref=f7e346]:
+                  - generic [ref=f7e347]: Recently Added
+                  - img "Crary Bear Cat 11320VS - 5AQWIJ 1788153243120" [ref=f7e349] [cursor=pointer]
+                  - button "favourite" [ref=f7e351] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e352]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e364]:
+                  - heading "Crary Bear Cat 11320VS - 5AQWIJ 1788153243120" [level=3] [ref=f7e365]
+                  - generic [ref=f7e366]:
+                    - img "Hours" [ref=f7e367]
+                    - generic [ref=f7e368]:
+                      - generic [ref=f7e369]: 6,921 miles
+                      - generic [ref=f7e370]: •
+                      - generic [ref=f7e371]: Alberta, Alberta
+                    - generic [ref=f7e372]: CAD $47,304
+                - generic [ref=f7e374]:
+                  - button "Contact Seller" [disabled] [ref=f7e376]
+                  - button "View Details" [ref=f7e377] [cursor=pointer]
+              - generic [ref=f7e378]:
+                - generic [ref=f7e380]:
+                  - generic [ref=f7e381]: Recently Added
+                  - img "Caterpillar 1320H REAR TINE TILLER 13HP - WOWCGY 1788161187603" [ref=f7e383] [cursor=pointer]
+                  - button "favourite" [ref=f7e385] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e386]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f7e398]:
+                  - heading "Caterpillar 1320H REAR TINE TILLER 13HP - WOWCGY 1788161187603" [level=3] [ref=f7e399]
+                  - generic [ref=f7e400]:
+                    - img "Hours" [ref=f7e401]
+                    - generic [ref=f7e402]:
+                      - generic [ref=f7e403]: 19,643 miles
+                      - generic [ref=f7e404]: •
+                      - generic [ref=f7e405]: Manitoba, Manitoba
+                    - generic [ref=f7e406]: CAD $103,720
+                - generic [ref=f7e408]:
+                  - button "Contact Seller" [disabled] [ref=f7e410]
+                  - button "View Details" [ref=f7e411] [cursor=pointer]
+              - generic [ref=f7e412]:
+                - generic [ref=f7e414]:
+                  - generic [ref=f7e415]: Popular
+                  - img "Tractor" [ref=f7e417] [cursor=pointer]
+                  - button "favourite" [ref=f7e419] [cursor=pointer]:
+                    - img "Favorite" [ref=f7e420]
+                - generic [ref=f7e421]:
+                  - heading "Tractor" [level=3] [ref=f7e422]
+                  - generic [ref=f7e423]:
+                    - generic [ref=f7e424]: Brooks, Alberta
+                    - generic [ref=f7e426]: CAD $100
+                - generic [ref=f7e428]:
+                  - button "Contact Seller" [ref=f7e430] [cursor=pointer]
+                  - button "View Details" [ref=f7e431] [cursor=pointer]
+              - generic [ref=f7e432]:
+                - generic [ref=f7e434]:
+                  - generic [ref=f7e435]: Recently Added
+                  - img "Ducati 113-320 - OOIGIU" [ref=f7e437] [cursor=pointer]
+                  - button "favourite" [ref=f7e439] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e440]
+                - generic [ref=f7e441]:
+                  - heading "Ducati 113-320 - OOIGIU" [level=3] [ref=f7e442]
+                  - generic [ref=f7e443]:
+                    - img "Hours" [ref=f7e444]
+                    - generic [ref=f7e445]:
+                      - generic [ref=f7e446]: 14,678 kilometers
+                      - generic [ref=f7e447]: •
+                      - generic [ref=f7e448]: California, California
+                    - generic [ref=f7e449]: USD $136,700
+                - generic [ref=f7e451]:
+                  - button "Contact Seller" [disabled] [ref=f7e453]
+                  - button "View Details" [ref=f7e454] [cursor=pointer]
+              - generic [ref=f7e455]:
+                - generic [ref=f7e457]:
+                  - generic [ref=f7e458]: Recently Added
+                  - img "Crary Bear Cat 1320 - VNUEJX" [ref=f7e460] [cursor=pointer]
+                  - button "favourite" [ref=f7e462] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f7e463]
+                - generic [ref=f7e464]:
+                  - heading "Crary Bear Cat 1320 - VNUEJX" [level=3] [ref=f7e465]
+                  - generic [ref=f7e466]:
+                    - img "Hours" [ref=f7e467]
+                    - generic [ref=f7e468]:
+                      - generic [ref=f7e469]: 8,835 hours
+                      - generic [ref=f7e470]: •
+                      - generic [ref=f7e471]: Delaware, Delaware
+                    - generic [ref=f7e472]: USD $163,713
+                - generic [ref=f7e474]:
+                  - button "Contact Seller" [disabled] [ref=f7e476]
+                  - button "View Details" [ref=f7e477] [cursor=pointer]
+            - generic [ref=f7e125]:
+              - generic [ref=f7e126]: Showing 1-10 From 1166
+              - generic [ref=f7e128]:
+                - button [disabled] [ref=f7e129]:
+                  - img "First" [ref=f7e130]
+                - button [disabled] [ref=f7e131]:
+                  - img "Previous" [ref=f7e132]
+                - generic [ref=f7e133]:
+                  - generic [ref=f7e134]: "1"
+                  - generic [ref=f7e135]: Of 117
+                - button [ref=f7e136] [cursor=pointer]:
+                  - img "Next" [ref=f7e137]
+                - button [ref=f7e138] [cursor=pointer]:
+                  - img "Last" [ref=f7e139]
+              - generic [ref=f7e140]:
+                - generic [ref=f7e141]: Items per page
+                - generic [ref=f7e142]:
+                  - combobox [ref=f7e143]:
+                    - option "5"
+                    - option "10" [selected]
+                    - option "25"
+                    - option "50"
+                  - img "Dropdown"
+    - contentinfo "Site footer" [ref=f7e144]:
+      - generic [ref=f7e146]:
+        - generic [ref=f7e147]:
+          - paragraph [ref=f7e148]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f7e149] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f7e150]
+        - navigation "Footer navigation" [ref=f7e152]:
+          - link "Contact" [ref=f7e153] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f7e154] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f7e155] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f7e157]:
+          - heading "Support" [level=3] [ref=f7e158]
+          - generic [ref=f7e159]:
+            - img "Phone" [ref=f7e160]
+            - link "Call 2064429000" [ref=f7e161] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f7e162]:
+            - img "Email" [ref=f7e163]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f7e164] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f7e167]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f7e168]

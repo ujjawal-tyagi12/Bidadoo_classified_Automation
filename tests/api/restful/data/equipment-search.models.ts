@@ -74,6 +74,8 @@ export type EquipmentSearchResultItem = {
     model: string;
     year: number;
   };
+  /** The listing's owning account id — confirmed live to match `AuthApiClient.getCurrentAccountId()`'s JWT claim exactly. */
+  seller: string;
 };
 
 export type EquipmentSearchResponse = {

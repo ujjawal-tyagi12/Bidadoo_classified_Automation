@@ -82,9 +82,9 @@ When("Admin cancels the Sell with bidadoo confirmation", async ({ listingsAction
 });
 
 Then("Verify the new listing is still Active", async ({ assetInformationActions, sellerDashboardActions }) => {
+  test.slow();
   const { validAssetInformation } = await assetInformationActions.getEquipmentProps();
-  await sellerDashboardActions.searchListings(validAssetInformation.title);
-  await sellerDashboardActions.assertListingVisible(validAssetInformation.title);
+  await sellerDashboardActions.searchAndAssertListingVisible(validAssetInformation.title);
 });
 
 When("Admin clicks the Price sort button", async ({ listingsActions }) => {
@@ -189,9 +189,12 @@ When("Admin fills in Asset Information with a special-characters Equipment Name"
 });
 
 Then("Verify the special-characters listing name is displayed correctly", async ({ sellerDashboardActions }) => {
+  test.slow();
   const { specialCharsEquipmentName } = loadListingsProps();
-  await sellerDashboardActions.searchListings(extractSafeSearchTerm(specialCharsEquipmentName));
-  await sellerDashboardActions.assertListingVisible(specialCharsEquipmentName);
+  await sellerDashboardActions.searchAndAssertListingVisible(
+    extractSafeSearchTerm(specialCharsEquipmentName),
+    specialCharsEquipmentName,
+  );
 });
 
 When("Admin fills in Asset Information with a long Equipment Name", async ({ assetInformationActions }) => {
@@ -201,9 +204,9 @@ When("Admin fills in Asset Information with a long Equipment Name", async ({ ass
 });
 
 Then("Verify the long listing name is displayed correctly", async ({ sellerDashboardActions }) => {
+  test.slow();
   const { longEquipmentName } = loadListingsProps();
-  await sellerDashboardActions.searchListings(longEquipmentName);
-  await sellerDashboardActions.assertListingVisible(truncateForTableDisplay(longEquipmentName));
+  await sellerDashboardActions.searchAndAssertListingVisible(longEquipmentName, truncateForTableDisplay(longEquipmentName));
 });
 
 When("Admin clicks Clear all", async ({ listingsActions }) => {
@@ -253,9 +256,9 @@ When(
 );
 
 Then("Verify the listing reflects the updated name and price", async ({ listingsActions, sellerDashboardActions }) => {
+  test.slow();
   const { updatedEquipmentTitle, updatedEquipmentPrice } = loadListingsProps();
-  await sellerDashboardActions.searchListings(updatedEquipmentTitle);
-  await sellerDashboardActions.assertListingVisible(updatedEquipmentTitle);
+  await sellerDashboardActions.searchAndAssertListingVisible(updatedEquipmentTitle);
   await listingsActions.assertRowPriceIs(updatedEquipmentTitle, updatedEquipmentPrice);
 });
 

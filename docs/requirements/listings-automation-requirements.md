@@ -145,6 +145,42 @@ automation work.
 
 ---
 
+## 2b. App quirk found and worked around: aborted search requests render raw error text
+
+**Cancelling an in-flight search request can surface the literal JS error text
+`"signal is aborted without reason"` as a table row, instead of either a loading state or
+the intended result.** Confirmed live via `error-context.md` snapshots captured at the
+moment of failure, on TC20, TC35, TC36, and BIDC298-11.
+
+Root cause (confirmed, not assumed): this app's search cancels whatever request is still
+in flight whenever a new one fires — normal, expected behavior for a debounced search —
+but its abort-handling doesn't distinguish "this request was intentionally superseded"
+from a real failure, so the cancellation itself renders as if it were an API error. This
+reproduces even on a **single, first-time** search fired immediately after a page
+navigation, if the destination page's own initial (unfiltered) fetch is still in flight
+when the search query is issued — the search's request cancels that initial fetch, and
+the abort text renders in its place.
+
+**Correction to an earlier version of this section:** this was first documented as an
+unfixable app bug that TC20/TC35 would have to stay red against, on the reasoning that "a
+'no results' search against arbitrary text has no earlier state to wait for." That
+reasoning was wrong — every one of these scenarios still navigates to (or is already on)
+the Listings page before searching, so the same avoidance applies universally: waiting for
+the page's own "Showing X-Y" summary to appear — proving its initial fetch has already
+resolved — before ever calling `searchListings` means the search's request is never racing
+one already in flight, regardless of what's being searched for or why.
+`SellerDashboardActions.searchListings` now does that wait itself (not per-caller), so
+every caller gets it automatically. Re-verified live, 3/3 clean runs each, for all four
+previously-affected scenarios (TC20, TC35, TC36, BIDC298-11) after the fix — none are red
+anymore.
+
+The underlying app behavior (an aborted request's error text can still leak into the UI
+under different circumstances than the ones covered here) remains a real quirk worth
+flagging to the app team independent of this automation work, even though it no longer
+blocks any scenario in this suite.
+
+---
+
 ## 3. Verified element inventory
 
 | Element | Selector basis (to be used when building Page Objects) |

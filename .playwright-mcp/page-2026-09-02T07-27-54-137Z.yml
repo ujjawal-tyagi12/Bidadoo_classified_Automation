@@ -1,0 +1,68 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - banner [ref=f6e3]:
+      - paragraph [ref=f6e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f6e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f6e7]:
+        - link [ref=f6e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f6e9]
+        - navigation [ref=f6e10]:
+          - link "Post a listing" [ref=f6e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f6e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f6e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f6e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+    - main [ref=f6e27]:
+      - generic [ref=f6e28]:
+        - navigation "Breadcrumb" [ref=f6e29]:
+          - link "Home" [ref=f6e30] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f6e31]: "|"
+          - link "Custom Attributes" [ref=f6e32] [cursor=pointer]:
+            - /url: /dashboard?tab=attributes
+          - generic [ref=f6e33]: "|"
+          - link "View Custom Attribute" [ref=f6e34] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f6e35]:
+          - generic [ref=f6e39]:
+            - img "Go back" [ref=f6e40] [cursor=pointer]
+            - heading "Custom Attribute" [level=5] [ref=f6e42]
+          - generic [ref=f6e44]:
+            - generic [ref=f6e45]: Attribute ID
+            - generic [ref=f6e47]: Attribute Name
+            - generic [ref=f6e49]: Attribute Type
+            - generic [ref=f6e51]: Created on
+            - generic [ref=f6e53]: Status
+    - contentinfo "Site footer" [ref=f6e55]:
+      - generic [ref=f6e57]:
+        - generic [ref=f6e58]:
+          - paragraph [ref=f6e59]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f6e60] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f6e61]
+        - navigation "Footer navigation" [ref=f6e63]:
+          - link "Contact" [ref=f6e64] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f6e65] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f6e66] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f6e68]:
+          - heading "Support" [level=3] [ref=f6e69]
+          - generic [ref=f6e70]:
+            - img "Phone" [ref=f6e71]
+            - link "Call 2064429000" [ref=f6e72] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f6e73]:
+            - img "Email" [ref=f6e74]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f6e75] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f6e78]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f6e79]

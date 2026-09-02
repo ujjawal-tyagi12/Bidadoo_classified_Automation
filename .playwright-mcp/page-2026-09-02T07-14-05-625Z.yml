@@ -1,0 +1,104 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - paragraph [ref=e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=e7]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=e9]
+        - navigation [ref=e10]:
+          - link "Post a listing" [ref=e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+    - main [ref=e27]:
+      - generic [ref=e28]:
+        - navigation "Breadcrumb" [ref=e29]:
+          - link "Home" [ref=e30] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e31]: "|"
+          - link "Listings" [ref=e32] [cursor=pointer]:
+            - /url: /dashboard?tab=listings
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - heading "Seller Dashboard" [level=5] [ref=e37]
+            - paragraph [ref=e38]: Reach real buyers and manage your listings easily
+          - button "Visit Store" [ref=e40]:
+            - img "Location" [ref=e41]
+            - paragraph [ref=e42]: Visit Store
+        - generic [ref=e44]:
+          - button [ref=e45] [cursor=pointer]:
+            - img "Dashboard" [ref=e46]
+            - paragraph [ref=e47]: Dashboard
+          - button [ref=e48] [cursor=pointer]:
+            - img "Brand Info" [ref=e49]
+            - paragraph [ref=e50]: Brand Info
+          - button [ref=e51] [cursor=pointer]:
+            - img "Listings" [ref=e52]
+            - paragraph [ref=e53]: Listings
+          - button [ref=e54] [cursor=pointer]:
+            - img "Security" [ref=e55]
+            - paragraph [ref=e56]: Security
+          - button [ref=e57] [cursor=pointer]:
+            - img "Settings" [ref=e58]
+            - paragraph [ref=e59]: Settings
+          - button [ref=e60] [cursor=pointer]:
+            - img "Access Control" [ref=e61]
+            - paragraph [ref=e62]: Access Control
+          - button [ref=e63] [cursor=pointer]:
+            - img "Custom Attributes" [ref=e64]
+            - paragraph [ref=e65]: Custom Attributes
+          - button [ref=e66] [cursor=pointer]:
+            - img "My Inquiries" [ref=e67]
+            - paragraph [ref=e68]: My Inquiries
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - img "Listing left border" [ref=e71]
+            - generic [ref=e72]:
+              - img "Location" [ref=e73]
+              - heading "Listing Management" [level=1] [ref=e74]
+            - button "Bulk Upload Chevron Down" [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]:
+                - generic [ref=e79]: Bulk Upload
+                - img "Chevron Down" [ref=e80]
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - img "Search"
+              - textbox "Search for equipment...." [ref=e86]
+            - button [ref=e88] [cursor=pointer]:
+              - img "Filter" [ref=e89]
+              - paragraph [ref=e90]: Filter
+    - contentinfo "Site footer" [ref=e207]:
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - paragraph [ref=e211]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=e212] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=e213]
+        - navigation "Footer navigation" [ref=e215]:
+          - link "Contact" [ref=e216] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=e217] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=e218] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=e220]:
+          - heading "Support" [level=3] [ref=e221]
+          - generic [ref=e222]:
+            - img "Phone" [ref=e223]
+            - link "Call 2064429000" [ref=e224] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=e225]:
+            - img "Email" [ref=e226]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=e227] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=e230]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=e231]

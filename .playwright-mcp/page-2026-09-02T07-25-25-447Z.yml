@@ -1,0 +1,939 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - banner [ref=f4e3]:
+      - paragraph [ref=f4e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f4e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f4e7]:
+        - link [ref=f4e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f4e9]
+        - navigation [ref=f4e10]:
+          - link "Post a listing" [ref=f4e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f4e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f4e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f4e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f4e24]:
+          - link [ref=f4e169] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f4e170]
+          - button "Profile menu" [ref=f4e172] [cursor=pointer]:
+            - img "Account" [ref=f4e173]
+    - main [ref=f4e27]:
+      - main [ref=f4e28]:
+        - generic [ref=f4e29]:
+          - generic [ref=f4e30]:
+            - generic [ref=f4e31]:
+              - heading "Search Results" [level=2] [ref=f4e32]
+              - generic [ref=f4e33]: Showing 1 of 25 results
+            - generic [ref=f4e34]:
+              - generic [ref=f4e35]:
+                - img "Search"
+                - textbox "Search for equipment, make, model..." [ref=f4e36]
+              - 'button "Sort Sort by: Recommended" [ref=f4e38] [cursor=pointer]':
+                - img "Sort" [ref=f4e39]
+                - generic [ref=f4e40]: "Sort by: Recommended"
+          - generic [ref=f4e942]:
+            - generic [ref=f4e943]:
+              - generic [ref=f4e944]:
+                - generic [ref=f4e945]:
+                  - generic "Agriculture -> Feed Handling Equipment -> Grain Processing Equipment" [ref=f4e946]
+                  - button "Remove Agriculture -> Feed Handling Equipment -> Grain Processing Equipment" [ref=f4e947] [cursor=pointer]:
+                    - img "Close" [ref=f4e948]
+                - generic [aria-hidden] [ref=f4e949]:
+                  - generic [ref=f4e950]: Agriculture -> Feed Handling Equipment -> Grain Processing Equipment
+                  - generic [ref=f4e953]: Construction Equipment -> General Construction Equipment -> General Construction Equipment
+                  - generic [ref=f4e956]: 1 More
+              - button "1 More" [ref=f4e958] [cursor=pointer]
+            - button "Clear All" [ref=f4e959] [cursor=pointer]
+        - generic [ref=f4e41]:
+          - complementary [ref=f4e960]:
+            - generic [ref=f4e961]:
+              - generic [ref=f4e963]:
+                - paragraph [ref=f4e964]: Filters
+                - button "Clear All" [ref=f4e965] [cursor=pointer]
+              - generic [ref=f4e967]:
+                - generic [ref=f4e968]:
+                  - button "Category toggle" [ref=f4e969] [cursor=pointer]:
+                    - generic [ref=f4e970]: Category
+                    - img "toggle" [ref=f4e971]
+                  - generic [ref=f4e972]:
+                    - generic [ref=f4e974]:
+                      - checkbox "expand Agriculture 63" [ref=f4e978]
+                      - button [ref=f4e980] [cursor=pointer]:
+                        - img "expand" [ref=f4e981]
+                      - generic [ref=f4e982]: Agriculture
+                      - generic [ref=f4e983]: "63"
+                    - generic [ref=f4e985]:
+                      - checkbox "expand Air Compressors & Tools 0" [ref=f4e989]
+                      - button [ref=f4e991] [cursor=pointer]:
+                        - img "expand" [ref=f4e992]
+                      - generic [ref=f4e993]: Air Compressors & Tools
+                      - generic [ref=f4e994]: "0"
+                    - generic [ref=f4e995]:
+                      - generic [ref=f4e996]:
+                        - checkbox "expand Construction Equipment 316" [ref=f4e1000]
+                        - button [ref=f4e1002] [cursor=pointer]:
+                          - img "expand" [ref=f4e1003]
+                        - generic [ref=f4e1004]: Construction Equipment
+                        - generic [ref=f4e1005]: "316"
+                      - generic [ref=f4e1006]:
+                        - generic [ref=f4e1007]:
+                          - generic [ref=f4e1008]:
+                            - checkbox "expand Aerial Work Platforms 264" [ref=f4e1012]
+                            - button [ref=f4e1014] [cursor=pointer]:
+                              - img "expand" [ref=f4e1015]
+                            - generic [ref=f4e1016]: Aerial Work Platforms
+                            - generic [ref=f4e1017]: "264"
+                          - generic [ref=f4e1018]:
+                            - generic [ref=f4e1020]:
+                              - checkbox "Aerial Lift Attachments 1" [ref=f4e1024]
+                              - generic [ref=f4e1026]: Aerial Lift Attachments
+                              - generic [ref=f4e1027]: "1"
+                            - generic [ref=f4e1029]:
+                              - checkbox "Boom Lifts - Articulating 263" [ref=f4e1033]
+                              - generic [ref=f4e1035]: Boom Lifts - Articulating
+                              - generic [ref=f4e1036]: "263"
+                            - generic [ref=f4e1038]:
+                              - checkbox "Boom Lifts - Telescopic 0" [ref=f4e1042]
+                              - generic [ref=f4e1044]: Boom Lifts - Telescopic
+                              - generic [ref=f4e1045]: "0"
+                            - generic [ref=f4e1047]:
+                              - checkbox "Boom Lifts - Towable 0" [ref=f4e1051]
+                              - generic [ref=f4e1053]: Boom Lifts - Towable
+                              - generic [ref=f4e1054]: "0"
+                            - generic [ref=f4e1056]:
+                              - checkbox "Bucket Trucks 0" [ref=f4e1060]
+                              - generic [ref=f4e1062]: Bucket Trucks
+                              - generic [ref=f4e1063]: "0"
+                            - generic [ref=f4e1065]:
+                              - checkbox "Personnel / Mast Lifts 0" [ref=f4e1069]
+                              - generic [ref=f4e1071]: Personnel / Mast Lifts
+                              - generic [ref=f4e1072]: "0"
+                            - generic [ref=f4e1074]:
+                              - checkbox "Scissor Lifts - Electric 0" [ref=f4e1078]
+                              - generic [ref=f4e1080]: Scissor Lifts - Electric
+                              - generic [ref=f4e1081]: "0"
+                            - generic [ref=f4e1083]:
+                              - checkbox "Scissor Lifts - Rough Terrain 0" [ref=f4e1087]
+                              - generic [ref=f4e1089]: Scissor Lifts - Rough Terrain
+                              - generic [ref=f4e1090]: "0"
+                            - generic [ref=f4e1092]:
+                              - checkbox "Vertical Mast Lifts 0" [ref=f4e1096]
+                              - generic [ref=f4e1098]: Vertical Mast Lifts
+                              - generic [ref=f4e1099]: "0"
+                        - generic [ref=f4e1100]:
+                          - generic [ref=f4e1101]:
+                            - checkbox "expand Aggregate & Mining 0" [ref=f4e1105]
+                            - button [ref=f4e1107] [cursor=pointer]:
+                              - img "expand" [ref=f4e1108]
+                            - generic [ref=f4e1109]: Aggregate & Mining
+                            - generic [ref=f4e1110]: "0"
+                          - generic [ref=f4e1111]:
+                            - generic [ref=f4e1113]:
+                              - checkbox "Cone Crushers 0" [ref=f4e1117]
+                              - generic [ref=f4e1119]: Cone Crushers
+                              - generic [ref=f4e1120]: "0"
+                            - generic [ref=f4e1122]:
+                              - checkbox "Conveyors & Feeders 0" [ref=f4e1126]
+                              - generic [ref=f4e1128]: Conveyors & Feeders
+                              - generic [ref=f4e1129]: "0"
+                            - generic [ref=f4e1131]:
+                              - checkbox "Impact Crushers 0" [ref=f4e1135]
+                              - generic [ref=f4e1137]: Impact Crushers
+                              - generic [ref=f4e1138]: "0"
+                            - generic [ref=f4e1140]:
+                              - checkbox "Jaw Crushers 0" [ref=f4e1144]
+                              - generic [ref=f4e1146]: Jaw Crushers
+                              - generic [ref=f4e1147]: "0"
+                            - generic [ref=f4e1149]:
+                              - checkbox "Material Washers 0" [ref=f4e1153]
+                              - generic [ref=f4e1155]: Material Washers
+                              - generic [ref=f4e1156]: "0"
+                            - generic [ref=f4e1158]:
+                              - checkbox "Mobile Crushing Plants 0" [ref=f4e1162]
+                              - generic [ref=f4e1164]: Mobile Crushing Plants
+                              - generic [ref=f4e1165]: "0"
+                            - generic [ref=f4e1167]:
+                              - checkbox "Mobile Screening Plants 0" [ref=f4e1171]
+                              - generic [ref=f4e1173]: Mobile Screening Plants
+                              - generic [ref=f4e1174]: "0"
+                            - generic [ref=f4e1176]:
+                              - checkbox "Screeners 0" [ref=f4e1180]
+                              - generic [ref=f4e1182]: Screeners
+                              - generic [ref=f4e1183]: "0"
+                            - generic [ref=f4e1185]:
+                              - checkbox "Stationary Plants 0" [ref=f4e1189]
+                              - generic [ref=f4e1191]: Stationary Plants
+                              - generic [ref=f4e1192]: "0"
+                        - generic [ref=f4e1193]:
+                          - generic [ref=f4e1194]:
+                            - checkbox "expand Asphalt & Concrete Plants 0" [ref=f4e1198]
+                            - button [ref=f4e1200] [cursor=pointer]:
+                              - img "expand" [ref=f4e1201]
+                            - generic [ref=f4e1202]: Asphalt & Concrete Plants
+                            - generic [ref=f4e1203]: "0"
+                          - generic [ref=f4e1204]:
+                            - generic [ref=f4e1206]:
+                              - checkbox "Asphalt Batch Plants 0" [ref=f4e1210]
+                              - generic [ref=f4e1212]: Asphalt Batch Plants
+                              - generic [ref=f4e1213]: "0"
+                            - generic [ref=f4e1215]:
+                              - checkbox "Asphalt Plant Components 0" [ref=f4e1219]
+                              - generic [ref=f4e1221]: Asphalt Plant Components
+                              - generic [ref=f4e1222]: "0"
+                            - generic [ref=f4e1224]:
+                              - checkbox "Concrete Batch Plants 0" [ref=f4e1228]
+                              - generic [ref=f4e1230]: Concrete Batch Plants
+                              - generic [ref=f4e1231]: "0"
+                            - generic [ref=f4e1233]:
+                              - checkbox "Concrete Plant Components 0" [ref=f4e1237]
+                              - generic [ref=f4e1239]: Concrete Plant Components
+                              - generic [ref=f4e1240]: "0"
+                            - generic [ref=f4e1242]:
+                              - checkbox "Drum Mix Asphalt Plants 0" [ref=f4e1246]
+                              - generic [ref=f4e1248]: Drum Mix Asphalt Plants
+                              - generic [ref=f4e1249]: "0"
+                        - generic [ref=f4e1250]:
+                          - generic [ref=f4e1251]:
+                            - checkbox "expand Compaction & Paving 1" [ref=f4e1255]
+                            - button [ref=f4e1257] [cursor=pointer]:
+                              - img "expand" [ref=f4e1258]
+                            - generic [ref=f4e1259]: Compaction & Paving
+                            - generic [ref=f4e1260]: "1"
+                          - generic [ref=f4e1261]:
+                            - generic [ref=f4e1263]:
+                              - checkbox "3-Wheel Rollers 0" [ref=f4e1267]
+                              - generic [ref=f4e1269]: 3-Wheel Rollers
+                              - generic [ref=f4e1270]: "0"
+                            - generic [ref=f4e1272]:
+                              - checkbox "Asphalt Pavers - Tracked 0" [ref=f4e1276]
+                              - generic [ref=f4e1278]: Asphalt Pavers - Tracked
+                              - generic [ref=f4e1279]: "0"
+                            - generic [ref=f4e1281]:
+                              - checkbox "Asphalt Pavers - Wheeled 0" [ref=f4e1285]
+                              - generic [ref=f4e1287]: Asphalt Pavers - Wheeled
+                              - generic [ref=f4e1288]: "0"
+                            - generic [ref=f4e1290]:
+                              - checkbox "Asphalt Paving Accessories 0" [ref=f4e1294]
+                              - generic [ref=f4e1296]: Asphalt Paving Accessories
+                              - generic [ref=f4e1297]: "0"
+                            - generic [ref=f4e1299]:
+                              - checkbox "Combination Rollers 0" [ref=f4e1303]
+                              - generic [ref=f4e1305]: Combination Rollers
+                              - generic [ref=f4e1306]: "0"
+                            - generic [ref=f4e1308]:
+                              - checkbox "Landfill Compactors 0" [ref=f4e1312]
+                              - generic [ref=f4e1314]: Landfill Compactors
+                              - generic [ref=f4e1315]: "0"
+                            - generic [ref=f4e1317]:
+                              - checkbox "Pavement Brooms 0" [ref=f4e1321]
+                              - generic [ref=f4e1323]: Pavement Brooms
+                              - generic [ref=f4e1324]: "0"
+                            - generic [ref=f4e1326]:
+                              - checkbox "Pavement Millers / Cold Planers 0" [ref=f4e1330]
+                              - generic [ref=f4e1332]: Pavement Millers / Cold Planers
+                              - generic [ref=f4e1333]: "0"
+                            - generic [ref=f4e1335]:
+                              - checkbox "Plate Compactors 0" [ref=f4e1339]
+                              - generic [ref=f4e1341]: Plate Compactors
+                              - generic [ref=f4e1342]: "0"
+                            - generic [ref=f4e1344]:
+                              - checkbox "Pneumatic Tire Rollers 0" [ref=f4e1348]
+                              - generic [ref=f4e1350]: Pneumatic Tire Rollers
+                              - generic [ref=f4e1351]: "0"
+                            - generic [ref=f4e1353]:
+                              - checkbox "Pull-Behind Compactors 0" [ref=f4e1357]
+                              - generic [ref=f4e1359]: Pull-Behind Compactors
+                              - generic [ref=f4e1360]: "0"
+                            - generic [ref=f4e1362]:
+                              - checkbox "Rammers 0" [ref=f4e1366]
+                              - generic [ref=f4e1368]: Rammers
+                              - generic [ref=f4e1369]: "0"
+                            - generic [ref=f4e1371]:
+                              - checkbox "Road Reclaimers 0" [ref=f4e1375]
+                              - generic [ref=f4e1377]: Road Reclaimers
+                              - generic [ref=f4e1378]: "0"
+                            - generic [ref=f4e1380]:
+                              - checkbox "Single Drum Padfoot Rollers 0" [ref=f4e1384]
+                              - generic [ref=f4e1386]: Single Drum Padfoot Rollers
+                              - generic [ref=f4e1387]: "0"
+                            - generic [ref=f4e1389]:
+                              - checkbox "Single Drum Smooth Rollers 0" [ref=f4e1393]
+                              - generic [ref=f4e1395]: Single Drum Smooth Rollers
+                              - generic [ref=f4e1396]: "0"
+                            - generic [ref=f4e1398]:
+                              - checkbox "Soil Compactors 1" [ref=f4e1402]
+                              - generic [ref=f4e1404]: Soil Compactors
+                              - generic [ref=f4e1405]: "1"
+                            - generic [ref=f4e1407]:
+                              - checkbox "Soil Stabilizers 0" [ref=f4e1411]
+                              - generic [ref=f4e1413]: Soil Stabilizers
+                              - generic [ref=f4e1414]: "0"
+                            - generic [ref=f4e1416]:
+                              - checkbox "Tandem Drum Rollers 0" [ref=f4e1420]
+                              - generic [ref=f4e1422]: Tandem Drum Rollers
+                              - generic [ref=f4e1423]: "0"
+                            - generic [ref=f4e1425]:
+                              - checkbox "Trench Compactors 0" [ref=f4e1429]
+                              - generic [ref=f4e1431]: Trench Compactors
+                              - generic [ref=f4e1432]: "0"
+                            - generic [ref=f4e1434]:
+                              - checkbox "Walk-Behind Rollers 0" [ref=f4e1438]
+                              - generic [ref=f4e1440]: Walk-Behind Rollers
+                              - generic [ref=f4e1441]: "0"
+                        - generic [ref=f4e1442]:
+                          - generic [ref=f4e1443]:
+                            - checkbox "expand Concrete & Masonry 0" [ref=f4e1447]
+                            - button [ref=f4e1449] [cursor=pointer]:
+                              - img "expand" [ref=f4e1450]
+                            - generic [ref=f4e1451]: Concrete & Masonry
+                            - generic [ref=f4e1452]: "0"
+                          - generic [ref=f4e1453]:
+                            - generic [ref=f4e1455]:
+                              - checkbox "Concrete Buggies 0" [ref=f4e1459]
+                              - generic [ref=f4e1461]: Concrete Buggies
+                              - generic [ref=f4e1462]: "0"
+                            - generic [ref=f4e1464]:
+                              - checkbox "Concrete Grinders & Planers 0" [ref=f4e1468]
+                              - generic [ref=f4e1470]: Concrete Grinders & Planers
+                              - generic [ref=f4e1471]: "0"
+                            - generic [ref=f4e1473]:
+                              - checkbox "Concrete Mixers 0" [ref=f4e1477]
+                              - generic [ref=f4e1479]: Concrete Mixers
+                              - generic [ref=f4e1480]: "0"
+                            - generic [ref=f4e1482]:
+                              - checkbox "Concrete Paving Equipment 0" [ref=f4e1486]
+                              - generic [ref=f4e1488]: Concrete Paving Equipment
+                              - generic [ref=f4e1489]: "0"
+                            - generic [ref=f4e1491]:
+                              - checkbox "Concrete Pumps 0" [ref=f4e1495]
+                              - generic [ref=f4e1497]: Concrete Pumps
+                              - generic [ref=f4e1498]: "0"
+                            - generic [ref=f4e1500]:
+                              - checkbox "Concrete Saws 0" [ref=f4e1504]
+                              - generic [ref=f4e1506]: Concrete Saws
+                              - generic [ref=f4e1507]: "0"
+                            - generic [ref=f4e1509]:
+                              - checkbox "Concrete Screeds 0" [ref=f4e1513]
+                              - generic [ref=f4e1515]: Concrete Screeds
+                              - generic [ref=f4e1516]: "0"
+                            - generic [ref=f4e1518]:
+                              - checkbox "Concrete Vibrators 0" [ref=f4e1522]
+                              - generic [ref=f4e1524]: Concrete Vibrators
+                              - generic [ref=f4e1525]: "0"
+                            - generic [ref=f4e1527]:
+                              - checkbox "Core Drills 0" [ref=f4e1531]
+                              - generic [ref=f4e1533]: Core Drills
+                              - generic [ref=f4e1534]: "0"
+                            - generic [ref=f4e1536]:
+                              - checkbox "Mortar Mixers 0" [ref=f4e1540]
+                              - generic [ref=f4e1542]: Mortar Mixers
+                              - generic [ref=f4e1543]: "0"
+                            - generic [ref=f4e1545]:
+                              - checkbox "Power Trowels 0" [ref=f4e1549]
+                              - generic [ref=f4e1551]: Power Trowels
+                              - generic [ref=f4e1552]: "0"
+                            - generic [ref=f4e1554]:
+                              - checkbox "Shotcrete / Gunite Equipment 0" [ref=f4e1558]
+                              - generic [ref=f4e1560]: Shotcrete / Gunite Equipment
+                              - generic [ref=f4e1561]: "0"
+                        - generic [ref=f4e1562]:
+                          - generic [ref=f4e1563]:
+                            - checkbox "expand Cranes & Lifting 0" [ref=f4e1567]
+                            - button [ref=f4e1569] [cursor=pointer]:
+                              - img "expand" [ref=f4e1570]
+                            - generic [ref=f4e1571]: Cranes & Lifting
+                            - generic [ref=f4e1572]: "0"
+                          - generic [ref=f4e1573]:
+                            - generic [ref=f4e1575]:
+                              - checkbox "All Terrain Cranes 0" [ref=f4e1579]
+                              - generic [ref=f4e1581]: All Terrain Cranes
+                              - generic [ref=f4e1582]: "0"
+                            - generic [ref=f4e1584]:
+                              - checkbox "Boom Truck Cranes 0" [ref=f4e1588]
+                              - generic [ref=f4e1590]: Boom Truck Cranes
+                              - generic [ref=f4e1591]: "0"
+                            - generic [ref=f4e1593]:
+                              - checkbox "Carry Deck Cranes 0" [ref=f4e1597]
+                              - generic [ref=f4e1599]: Carry Deck Cranes
+                              - generic [ref=f4e1600]: "0"
+                            - generic [ref=f4e1602]:
+                              - checkbox "Compact Cranes 0" [ref=f4e1606]
+                              - generic [ref=f4e1608]: Compact Cranes
+                              - generic [ref=f4e1609]: "0"
+                            - generic [ref=f4e1611]:
+                              - checkbox "Crane Attachments 0" [ref=f4e1615]
+                              - generic [ref=f4e1617]: Crane Attachments
+                              - generic [ref=f4e1618]: "0"
+                            - generic [ref=f4e1620]:
+                              - checkbox "Crawler Cranes 0" [ref=f4e1624]
+                              - generic [ref=f4e1626]: Crawler Cranes
+                              - generic [ref=f4e1627]: "0"
+                            - generic [ref=f4e1629]:
+                              - checkbox "Gantry Cranes 0" [ref=f4e1633]
+                              - generic [ref=f4e1635]: Gantry Cranes
+                              - generic [ref=f4e1636]: "0"
+                            - generic [ref=f4e1638]:
+                              - checkbox "Overhead & Bridge Cranes 0" [ref=f4e1642]
+                              - generic [ref=f4e1644]: Overhead & Bridge Cranes
+                              - generic [ref=f4e1645]: "0"
+                            - generic [ref=f4e1647]:
+                              - checkbox "Rough Terrain Cranes 0" [ref=f4e1651]
+                              - generic [ref=f4e1653]: Rough Terrain Cranes
+                              - generic [ref=f4e1654]: "0"
+                            - generic [ref=f4e1656]:
+                              - checkbox "Tower Cranes 0" [ref=f4e1660]
+                              - generic [ref=f4e1662]: Tower Cranes
+                              - generic [ref=f4e1663]: "0"
+                        - generic [ref=f4e1664]:
+                          - generic [ref=f4e1665]:
+                            - checkbox "expand Demolition Equipment 0" [ref=f4e1669]
+                            - button [ref=f4e1671] [cursor=pointer]:
+                              - img "expand" [ref=f4e1672]
+                            - generic [ref=f4e1673]: Demolition Equipment
+                            - generic [ref=f4e1674]: "0"
+                          - generic [ref=f4e1675]:
+                            - generic [ref=f4e1677]:
+                              - checkbox "Chipping & Scaling Hammers 0" [ref=f4e1681]
+                              - generic [ref=f4e1683]: Chipping & Scaling Hammers
+                              - generic [ref=f4e1684]: "0"
+                            - generic [ref=f4e1686]:
+                              - checkbox "Demolition Robots 0" [ref=f4e1690]
+                              - generic [ref=f4e1692]: Demolition Robots
+                              - generic [ref=f4e1693]: "0"
+                            - generic [ref=f4e1695]:
+                              - checkbox "Demolition Shears & Pulverizers 0" [ref=f4e1699]
+                              - generic [ref=f4e1701]: Demolition Shears & Pulverizers
+                              - generic [ref=f4e1702]: "0"
+                            - generic [ref=f4e1704]:
+                              - checkbox "Hydraulic Breakers 0" [ref=f4e1708]
+                              - generic [ref=f4e1710]: Hydraulic Breakers
+                              - generic [ref=f4e1711]: "0"
+                            - generic [ref=f4e1713]:
+                              - checkbox "Wrecking Equipment 0" [ref=f4e1717]
+                              - generic [ref=f4e1719]: Wrecking Equipment
+                              - generic [ref=f4e1720]: "0"
+                        - generic [ref=f4e1721]:
+                          - generic [ref=f4e1722]:
+                            - checkbox "expand Earthmoving 29" [ref=f4e1726]
+                            - button [ref=f4e1728] [cursor=pointer]:
+                              - img "expand" [ref=f4e1729]
+                            - generic [ref=f4e1730]: Earthmoving
+                            - generic [ref=f4e1731]: "29"
+                          - generic [ref=f4e1732]:
+                            - generic [ref=f4e1734]:
+                              - checkbox "Attachments & Accessories 0" [ref=f4e1738]
+                              - generic [ref=f4e1740]: Attachments & Accessories
+                              - generic [ref=f4e1741]: "0"
+                            - generic [ref=f4e1743]:
+                              - checkbox "Backhoe Loaders 0" [ref=f4e1747]
+                              - generic [ref=f4e1749]: Backhoe Loaders
+                              - generic [ref=f4e1750]: "0"
+                            - generic [ref=f4e1752]:
+                              - checkbox "Boring Equipment 0" [ref=f4e1756]
+                              - generic [ref=f4e1758]: Boring Equipment
+                              - generic [ref=f4e1759]: "0"
+                            - generic [ref=f4e1761]:
+                              - checkbox "Compact Track Loaders 0" [ref=f4e1765]
+                              - generic [ref=f4e1767]: Compact Track Loaders
+                              - generic [ref=f4e1768]: "0"
+                            - generic [ref=f4e1770]:
+                              - checkbox "Crawler Carriers 0" [ref=f4e1774]
+                              - generic [ref=f4e1776]: Crawler Carriers
+                              - generic [ref=f4e1777]: "0"
+                            - generic [ref=f4e1779]:
+                              - checkbox "Crawler Dozers 0" [ref=f4e1783]
+                              - generic [ref=f4e1785]: Crawler Dozers
+                              - generic [ref=f4e1786]: "0"
+                            - generic [ref=f4e1788]:
+                              - checkbox "Crawler Excavators 28" [ref=f4e1792]
+                              - generic [ref=f4e1794]: Crawler Excavators
+                              - generic [ref=f4e1795]: "28"
+                            - generic [ref=f4e1797]:
+                              - checkbox "Crawler Loaders 0" [ref=f4e1801]
+                              - generic [ref=f4e1803]: Crawler Loaders
+                              - generic [ref=f4e1804]: "0"
+                            - generic [ref=f4e1806]:
+                              - checkbox "Demolition Excavators 0" [ref=f4e1810]
+                              - generic [ref=f4e1812]: Demolition Excavators
+                              - generic [ref=f4e1813]: "0"
+                            - generic [ref=f4e1815]:
+                              - checkbox "Directional Drills 0" [ref=f4e1819]
+                              - generic [ref=f4e1821]: Directional Drills
+                              - generic [ref=f4e1822]: "0"
+                            - generic [ref=f4e1824]:
+                              - checkbox "Drill Rigs 0" [ref=f4e1828]
+                              - generic [ref=f4e1830]: Drill Rigs
+                              - generic [ref=f4e1831]: "0"
+                            - generic [ref=f4e1833]:
+                              - checkbox "Foundation & Piling Equipment 0" [ref=f4e1837]
+                              - generic [ref=f4e1839]: Foundation & Piling Equipment
+                              - generic [ref=f4e1840]: "0"
+                            - generic [ref=f4e1842]:
+                              - checkbox "Mini Excavators 0" [ref=f4e1846]
+                              - generic [ref=f4e1848]: Mini Excavators
+                              - generic [ref=f4e1849]: "0"
+                            - generic [ref=f4e1851]:
+                              - checkbox "Motor Graders 0" [ref=f4e1855]
+                              - generic [ref=f4e1857]: Motor Graders
+                              - generic [ref=f4e1858]: "0"
+                            - generic [ref=f4e1860]:
+                              - checkbox "Scraper Tractors 0" [ref=f4e1864]
+                              - generic [ref=f4e1866]: Scraper Tractors
+                              - generic [ref=f4e1867]: "0"
+                            - generic [ref=f4e1869]:
+                              - checkbox "Scrapers 0" [ref=f4e1873]
+                              - generic [ref=f4e1875]: Scrapers
+                              - generic [ref=f4e1876]: "0"
+                            - generic [ref=f4e1878]:
+                              - checkbox "Site Dumpers 0" [ref=f4e1882]
+                              - generic [ref=f4e1884]: Site Dumpers
+                              - generic [ref=f4e1885]: "0"
+                            - generic [ref=f4e1887]:
+                              - checkbox "Skid Steer Loaders 1" [ref=f4e1891]
+                              - generic [ref=f4e1893]: Skid Steer Loaders
+                              - generic [ref=f4e1894]: "1"
+                            - generic [ref=f4e1896]:
+                              - checkbox "Trenchers 0" [ref=f4e1900]
+                              - generic [ref=f4e1902]: Trenchers
+                              - generic [ref=f4e1903]: "0"
+                            - generic [ref=f4e1905]:
+                              - checkbox "Wheel Dozers 0" [ref=f4e1909]
+                              - generic [ref=f4e1911]: Wheel Dozers
+                              - generic [ref=f4e1912]: "0"
+                            - generic [ref=f4e1914]:
+                              - checkbox "Wheel Loaders 0" [ref=f4e1918]
+                              - generic [ref=f4e1920]: Wheel Loaders
+                              - generic [ref=f4e1921]: "0"
+                            - generic [ref=f4e1923]:
+                              - checkbox "Wheeled Excavators 0" [ref=f4e1927]
+                              - generic [ref=f4e1929]: Wheeled Excavators
+                              - generic [ref=f4e1930]: "0"
+                        - generic [ref=f4e1931]:
+                          - generic [ref=f4e1932]:
+                            - checkbox "expand Electrical Distribution 0" [ref=f4e1936]
+                            - button [ref=f4e1938] [cursor=pointer]:
+                              - img "expand" [ref=f4e1939]
+                            - generic [ref=f4e1940]: Electrical Distribution
+                            - generic [ref=f4e1941]: "0"
+                          - generic [ref=f4e1942]:
+                            - generic [ref=f4e1944]:
+                              - checkbox "Breaker & Control Panels 0" [ref=f4e1948]
+                              - generic [ref=f4e1950]: Breaker & Control Panels
+                              - generic [ref=f4e1951]: "0"
+                            - generic [ref=f4e1953]:
+                              - checkbox "Transfer Switches 0" [ref=f4e1957]
+                              - generic [ref=f4e1959]: Transfer Switches
+                              - generic [ref=f4e1960]: "0"
+                            - generic [ref=f4e1962]:
+                              - checkbox "Transformers 0" [ref=f4e1966]
+                              - generic [ref=f4e1968]: Transformers
+                              - generic [ref=f4e1969]: "0"
+                            - generic [ref=f4e1971]:
+                              - checkbox "Wire Reels & Cable Equipment 0" [ref=f4e1975]
+                              - generic [ref=f4e1977]: Wire Reels & Cable Equipment
+                              - generic [ref=f4e1978]: "0"
+                        - generic [ref=f4e1979]:
+                          - generic [ref=f4e1980]:
+                            - checkbox "expand Environmental & Recycling 0" [ref=f4e1984]
+                            - button [ref=f4e1986] [cursor=pointer]:
+                              - img "expand" [ref=f4e1987]
+                            - generic [ref=f4e1988]: Environmental & Recycling
+                            - generic [ref=f4e1989]: "0"
+                          - generic [ref=f4e1990]:
+                            - generic [ref=f4e1992]:
+                              - checkbox "Horizontal Grinders 0" [ref=f4e1996]
+                              - generic [ref=f4e1998]: Horizontal Grinders
+                              - generic [ref=f4e1999]: "0"
+                            - generic [ref=f4e2001]:
+                              - checkbox "Scrap Balers 0" [ref=f4e2005]
+                              - generic [ref=f4e2007]: Scrap Balers
+                              - generic [ref=f4e2008]: "0"
+                            - generic [ref=f4e2010]:
+                              - checkbox "Shredders 0" [ref=f4e2014]
+                              - generic [ref=f4e2016]: Shredders
+                              - generic [ref=f4e2017]: "0"
+                            - generic [ref=f4e2019]:
+                              - checkbox "Tub Grinders 0" [ref=f4e2023]
+                              - generic [ref=f4e2025]: Tub Grinders
+                              - generic [ref=f4e2026]: "0"
+                            - generic [ref=f4e2028]:
+                              - checkbox "Wastewater Treatment Systems 0" [ref=f4e2032]
+                              - generic [ref=f4e2034]: Wastewater Treatment Systems
+                              - generic [ref=f4e2035]: "0"
+                        - generic [ref=f4e2036]:
+                          - generic [ref=f4e2037]:
+                            - checkbox "expand General Construction Equipment 22" [checked] [ref=f4e2041]
+                            - button [ref=f4e2045] [cursor=pointer]:
+                              - img "expand" [ref=f4e2046]
+                            - generic [ref=f4e2047]: General Construction Equipment
+                            - generic [ref=f4e2048]: "22"
+                          - generic [ref=f4e2051]:
+                            - checkbox "General Construction Equipment 17" [checked] [ref=f4e2055]
+                            - generic [ref=f4e2059]: General Construction Equipment
+                            - generic [ref=f4e2060]: "17"
+                        - generic [ref=f4e2061]:
+                          - generic [ref=f4e2062]:
+                            - checkbox "expand Off-Highway Trucks 0" [ref=f4e2066]
+                            - button [ref=f4e2068] [cursor=pointer]:
+                              - img "expand" [ref=f4e2069]
+                            - generic [ref=f4e2070]: Off-Highway Trucks
+                            - generic [ref=f4e2071]: "0"
+                          - generic [ref=f4e2072]:
+                            - generic [ref=f4e2074]:
+                              - checkbox "Articulated Dump Trucks 0" [ref=f4e2078]
+                              - generic [ref=f4e2080]: Articulated Dump Trucks
+                              - generic [ref=f4e2081]: "0"
+                            - generic [ref=f4e2083]:
+                              - checkbox "Off-Highway Water Trucks 0" [ref=f4e2087]
+                              - generic [ref=f4e2089]: Off-Highway Water Trucks
+                              - generic [ref=f4e2090]: "0"
+                            - generic [ref=f4e2092]:
+                              - checkbox "Rigid Haul Trucks 0" [ref=f4e2096]
+                              - generic [ref=f4e2098]: Rigid Haul Trucks
+                              - generic [ref=f4e2099]: "0"
+                            - generic [ref=f4e2101]:
+                              - checkbox "Rubber Track Carriers 0" [ref=f4e2105]
+                              - generic [ref=f4e2107]: Rubber Track Carriers
+                              - generic [ref=f4e2108]: "0"
+                            - generic [ref=f4e2110]:
+                              - checkbox "Water Wagons 0" [ref=f4e2114]
+                              - generic [ref=f4e2116]: Water Wagons
+                              - generic [ref=f4e2117]: "0"
+                        - generic [ref=f4e2118]:
+                          - generic [ref=f4e2119]:
+                            - checkbox "expand Pipelaying & Underground 0" [ref=f4e2123]
+                            - button [ref=f4e2125] [cursor=pointer]:
+                              - img "expand" [ref=f4e2126]
+                            - generic [ref=f4e2127]: Pipelaying & Underground
+                            - generic [ref=f4e2128]: "0"
+                          - generic [ref=f4e2129]:
+                            - generic [ref=f4e2131]:
+                              - checkbox "Horizontal Directional Drilling 0" [ref=f4e2135]
+                              - generic [ref=f4e2137]: Horizontal Directional Drilling
+                              - generic [ref=f4e2138]: "0"
+                            - generic [ref=f4e2140]:
+                              - checkbox "Pipe Mandrel Frames 0" [ref=f4e2144]
+                              - generic [ref=f4e2146]: Pipe Mandrel Frames
+                              - generic [ref=f4e2147]: "0"
+                            - generic [ref=f4e2149]:
+                              - checkbox "Pipe Plugs & Testers 0" [ref=f4e2153]
+                              - generic [ref=f4e2155]: Pipe Plugs & Testers
+                              - generic [ref=f4e2156]: "0"
+                            - generic [ref=f4e2158]:
+                              - checkbox "Pipelayers 0" [ref=f4e2162]
+                              - generic [ref=f4e2164]: Pipelayers
+                              - generic [ref=f4e2165]: "0"
+                            - generic [ref=f4e2167]:
+                              - checkbox "Shoring Boxes 0" [ref=f4e2171]
+                              - generic [ref=f4e2173]: Shoring Boxes
+                              - generic [ref=f4e2174]: "0"
+                            - generic [ref=f4e2176]:
+                              - checkbox "Trench Plates & Spreaders 0" [ref=f4e2180]
+                              - generic [ref=f4e2182]: Trench Plates & Spreaders
+                              - generic [ref=f4e2183]: "0"
+                            - generic [ref=f4e2185]:
+                              - checkbox "Vacuum Excavators 0" [ref=f4e2189]
+                              - generic [ref=f4e2191]: Vacuum Excavators
+                              - generic [ref=f4e2192]: "0"
+                    - generic [ref=f4e2194]:
+                      - checkbox "expand Forestry 60" [ref=f4e2198]
+                      - button [ref=f4e2200] [cursor=pointer]:
+                        - img "expand" [ref=f4e2201]
+                      - generic [ref=f4e2202]: Forestry
+                      - generic [ref=f4e2203]: "60"
+                    - generic [ref=f4e2205]:
+                      - checkbox "GEN 4" [ref=f4e2209]
+                      - generic [ref=f4e2211]: GEN
+                      - generic [ref=f4e2212]: "4"
+                    - generic [ref=f4e2214]:
+                      - checkbox "expand HVAC & Climate Control 0" [ref=f4e2218]
+                      - button [ref=f4e2220] [cursor=pointer]:
+                        - img "expand" [ref=f4e2221]
+                      - generic [ref=f4e2222]: HVAC & Climate Control
+                      - generic [ref=f4e2223]: "0"
+                    - generic [ref=f4e2225]:
+                      - checkbox "expand Manufacturing Equipment 0" [ref=f4e2229]
+                      - button [ref=f4e2231] [cursor=pointer]:
+                        - img "expand" [ref=f4e2232]
+                      - generic [ref=f4e2233]: Manufacturing Equipment
+                      - generic [ref=f4e2234]: "0"
+                    - generic [ref=f4e2236]:
+                      - checkbox "expand Material Handling 0" [ref=f4e2240]
+                      - button [ref=f4e2242] [cursor=pointer]:
+                        - img "expand" [ref=f4e2243]
+                      - generic [ref=f4e2244]: Material Handling
+                      - generic [ref=f4e2245]: "0"
+                    - generic [ref=f4e2247]:
+                      - checkbox "expand Oil & Gas 338" [ref=f4e2251]
+                      - button [ref=f4e2253] [cursor=pointer]:
+                        - img "expand" [ref=f4e2254]
+                      - generic [ref=f4e2255]: Oil & Gas
+                      - generic [ref=f4e2256]: "338"
+                    - generic [ref=f4e2258]:
+                      - checkbox "expand Power Generation & Lighting 0" [ref=f4e2262]
+                      - button [ref=f4e2264] [cursor=pointer]:
+                        - img "expand" [ref=f4e2265]
+                      - generic [ref=f4e2266]: Power Generation & Lighting
+                      - generic [ref=f4e2267]: "0"
+                - button "Model toggle" [ref=f4e2269] [cursor=pointer]:
+                  - generic [ref=f4e2270]: Model
+                  - img "toggle" [ref=f4e2271]
+                - button "Location toggle" [ref=f4e2273] [cursor=pointer]:
+                  - generic [ref=f4e2274]: Location
+                  - img "toggle" [ref=f4e2275]
+                - button "Price Range toggle" [ref=f4e2277] [cursor=pointer]:
+                  - generic [ref=f4e2278]: Price Range
+                  - img "toggle" [ref=f4e2279]
+                - button "Year toggle" [ref=f4e2281] [cursor=pointer]:
+                  - generic [ref=f4e2282]: Year
+                  - img "toggle" [ref=f4e2283]
+                - button "Hours / Miles / Kilometers toggle" [ref=f4e2285] [cursor=pointer]:
+                  - generic [ref=f4e2286]: Hours / Miles / Kilometers
+                  - img "toggle" [ref=f4e2287]
+            - button "Apply Filters" [ref=f4e2289] [cursor=pointer]
+          - generic [ref=f4e77]:
+            - generic [ref=f4e80]:
+              - generic [ref=f4e2290]:
+                - generic [ref=f4e2292]:
+                  - generic [ref=f4e2293]: Recently Added
+                  - img "Crary Bear Cat 10320 - 5XGDS2 1788239058928" [ref=f4e2295] [cursor=pointer]
+                  - button "favourite" [ref=f4e2297] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2298]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e2310]:
+                  - heading "Crary Bear Cat 10320 - 5XGDS2 1788239058928" [level=3] [ref=f4e2311]
+                  - generic [ref=f4e2312]:
+                    - img "Hours" [ref=f4e2313]
+                    - generic [ref=f4e2314]:
+                      - generic [ref=f4e2315]: 10,594 kilometers
+                      - generic [ref=f4e2316]: •
+                      - generic [ref=f4e2317]: Ontario, Ontario
+                    - generic [ref=f4e2318]: CAD $39,811
+                - generic [ref=f4e2320]:
+                  - button "Contact Seller" [disabled] [ref=f4e2322]
+                  - button "View Details" [ref=f4e2323] [cursor=pointer]
+              - generic [ref=f4e2324]:
+                - generic [ref=f4e2326]:
+                  - generic [ref=f4e2327]: Popular
+                  - img "Tractor" [ref=f4e2329] [cursor=pointer]
+                  - button "favourite" [ref=f4e2331] [cursor=pointer]:
+                    - img "Favorite" [ref=f4e2332]
+                - generic [ref=f4e2333]:
+                  - heading "Tractor" [level=3] [ref=f4e2334]
+                  - generic [ref=f4e2335]:
+                    - generic [ref=f4e2336]: Brooks, Alberta
+                    - generic [ref=f4e2338]: CAD $100
+                - generic [ref=f4e2340]:
+                  - button "Contact Seller" [ref=f4e2342] [cursor=pointer]
+                  - button "View Details" [ref=f4e2343] [cursor=pointer]
+              - generic [ref=f4e2344]:
+                - generic [ref=f4e2346]:
+                  - generic [ref=f4e2347]: Recently Added
+                  - img "Cat 1320PD-10 - MQ7S5N 1788262853399" [ref=f4e2349] [cursor=pointer]
+                  - button "favourite" [ref=f4e2351] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2352]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e2357]:
+                  - heading "Cat 1320PD-10 - MQ7S5N 1788262853399" [level=3] [ref=f4e2358]
+                  - generic [ref=f4e2359]:
+                    - img "Hours" [ref=f4e2360]
+                    - generic [ref=f4e2361]:
+                      - generic [ref=f4e2362]: 8,348 kilometers
+                      - generic [ref=f4e2363]: •
+                      - generic [ref=f4e2364]: Ontario, Ontario
+                    - generic [ref=f4e2365]: CAD $131,625
+                - generic [ref=f4e2367]:
+                  - button "Contact Seller" [disabled] [ref=f4e2369]
+                  - button "View Details" [ref=f4e2370] [cursor=pointer]
+              - generic [ref=f4e2371]:
+                - generic [ref=f4e2373]:
+                  - generic [ref=f4e2374]: Recently Added
+                  - img "Arctic Cat 1320 - 7SOR2H" [ref=f4e2376] [cursor=pointer]
+                  - button "favourite" [ref=f4e2378] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2379]
+                - generic [ref=f4e2380]:
+                  - heading "Arctic Cat 1320 - 7SOR2H" [level=3] [ref=f4e2381]
+                  - generic [ref=f4e2382]:
+                    - img "Hours" [ref=f4e2383]
+                    - generic [ref=f4e2384]:
+                      - generic [ref=f4e2385]: 17,657 miles
+                      - generic [ref=f4e2386]: •
+                      - generic [ref=f4e2387]: Alaska, Alaska
+                    - generic [ref=f4e2388]: USD $30,225
+                - generic [ref=f4e2390]:
+                  - button "Contact Seller" [disabled] [ref=f4e2392]
+                  - button "View Details" [ref=f4e2393] [cursor=pointer]
+              - generic [ref=f4e2394]:
+                - generic [ref=f4e2396]:
+                  - generic [ref=f4e2397]: Recently Added
+                  - img "Agracat 11320VS - MXZD19 1788326818293" [ref=f4e2399] [cursor=pointer]
+                  - button "favourite" [ref=f4e2401] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2402]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e2407]:
+                  - heading "Agracat 11320VS - MXZD19 1788326818293" [level=3] [ref=f4e2408]
+                  - generic [ref=f4e2409]:
+                    - img "Hours" [ref=f4e2410]
+                    - generic [ref=f4e2411]:
+                      - generic [ref=f4e2412]: 950 hours
+                      - generic [ref=f4e2413]: •
+                      - generic [ref=f4e2414]: Delaware, Delaware
+                    - generic [ref=f4e2415]: USD $94,657
+                - generic [ref=f4e2417]:
+                  - button "Contact Seller" [disabled] [ref=f4e2419]
+                  - button "View Details" [ref=f4e2420] [cursor=pointer]
+              - generic [ref=f4e2421]:
+                - generic [ref=f4e2423]:
+                  - generic [ref=f4e2424]: Recently Added
+                  - img "Agracat 1320H REAR TINE TILLER 13HP - VOWKUM" [ref=f4e2426] [cursor=pointer]
+                  - button "favourite" [ref=f4e2428] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2429]
+                - generic [ref=f4e2430]:
+                  - heading "Agracat 1320H REAR TINE TILLER 13HP - VOWKUM" [level=3] [ref=f4e2431]
+                  - generic [ref=f4e2432]:
+                    - img "Hours" [ref=f4e2433]
+                    - generic [ref=f4e2434]:
+                      - generic [ref=f4e2435]: 11,805 miles
+                      - generic [ref=f4e2436]: •
+                      - generic [ref=f4e2437]: California, California
+                    - generic [ref=f4e2438]: USD $180,709
+                - generic [ref=f4e2440]:
+                  - button "Contact Seller" [disabled] [ref=f4e2442]
+                  - button "View Details" [ref=f4e2443] [cursor=pointer]
+              - generic [ref=f4e2444]:
+                - generic [ref=f4e2446]:
+                  - generic [ref=f4e2447]: Recently Added
+                  - img "Bearcat 11320VS - 4M3IWI" [ref=f4e2449] [cursor=pointer]
+                  - button "favourite" [ref=f4e2451] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2452]
+                - generic [ref=f4e2453]:
+                  - heading "Bearcat 11320VS - 4M3IWI" [level=3] [ref=f4e2454]
+                  - generic [ref=f4e2455]:
+                    - img "Hours" [ref=f4e2456]
+                    - generic [ref=f4e2457]:
+                      - generic [ref=f4e2458]: 16,964 miles
+                      - generic [ref=f4e2459]: •
+                      - generic [ref=f4e2460]: Ontario, Ontario
+                    - generic [ref=f4e2461]: CAD $104,088
+                - generic [ref=f4e2463]:
+                  - button "Contact Seller" [disabled] [ref=f4e2465]
+                  - button "View Details" [ref=f4e2466] [cursor=pointer]
+              - generic [ref=f4e2467]:
+                - generic [ref=f4e2469]:
+                  - generic [ref=f4e2470]: Recently Added
+                  - img "Caterpillar 1320 - GQT0AJ" [ref=f4e2472] [cursor=pointer]
+                  - button "favourite" [ref=f4e2474] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2475]
+                - generic [ref=f4e2476]:
+                  - heading "Caterpillar 1320 - GQT0AJ" [level=3] [ref=f4e2477]
+                  - generic [ref=f4e2478]:
+                    - img "Hours" [ref=f4e2479]
+                    - generic [ref=f4e2480]:
+                      - generic [ref=f4e2481]: 19,670 hours
+                      - generic [ref=f4e2482]: •
+                      - generic [ref=f4e2483]: Nova Scotia, Nova Scotia
+                    - generic [ref=f4e2484]: CAD $56,595
+                - generic [ref=f4e2486]:
+                  - button "Contact Seller" [disabled] [ref=f4e2488]
+                  - button "View Details" [ref=f4e2489] [cursor=pointer]
+              - generic [ref=f4e2490]:
+                - generic [ref=f4e2492]:
+                  - generic [ref=f4e2493]: Recently Added
+                  - img "Cat 1320PD-10 - DY6B9H" [ref=f4e2495] [cursor=pointer]
+                  - button "favourite" [ref=f4e2497] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2498]
+                - generic [ref=f4e2499]:
+                  - heading "Cat 1320PD-10 - DY6B9H" [level=3] [ref=f4e2500]
+                  - generic [ref=f4e2501]:
+                    - img "Hours" [ref=f4e2502]
+                    - generic [ref=f4e2503]:
+                      - generic [ref=f4e2504]: 19,290 hours
+                      - generic [ref=f4e2505]: •
+                      - generic [ref=f4e2506]: New Brunswick, New Brunswick
+                    - generic [ref=f4e2507]: CAD $75,914
+                - generic [ref=f4e2509]:
+                  - button "Contact Seller" [disabled] [ref=f4e2511]
+                  - button "View Details" [ref=f4e2512] [cursor=pointer]
+              - generic [ref=f4e2513]:
+                - generic [ref=f4e2515]:
+                  - img "Carerpilla\\r" [ref=f4e2517] [cursor=pointer]
+                  - button "favourite" [ref=f4e2519] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e2520]
+                - generic [ref=f4e2521]:
+                  - heading "Carerpilla\\r" [level=3] [ref=f4e2522]
+                  - generic [ref=f4e2523]:
+                    - img "Hours" [ref=f4e2524]
+                    - generic [ref=f4e2525]:
+                      - generic [ref=f4e2526]: 500 hours
+                      - generic [ref=f4e2527]: •
+                      - generic [ref=f4e2528]: British Columbia, British Columbia
+                    - generic [ref=f4e2529]: USD $434
+                - generic [ref=f4e2531]:
+                  - button "Contact Seller" [disabled] [ref=f4e2533]
+                  - button "View Details" [ref=f4e2534] [cursor=pointer]
+            - generic [ref=f4e125]:
+              - generic [ref=f4e126]: Showing 1-10 From 25
+              - generic [ref=f4e128]:
+                - button [disabled] [ref=f4e129]:
+                  - img "First" [ref=f4e130]
+                - button [disabled] [ref=f4e131]:
+                  - img "Previous" [ref=f4e132]
+                - generic [ref=f4e133]:
+                  - generic [ref=f4e134]: "1"
+                  - generic [ref=f4e135]: Of 3
+                - button [ref=f4e136] [cursor=pointer]:
+                  - img "Next" [ref=f4e137]
+                - button [ref=f4e138] [cursor=pointer]:
+                  - img "Last" [ref=f4e139]
+              - generic [ref=f4e140]:
+                - generic [ref=f4e141]: Items per page
+                - generic [ref=f4e142]:
+                  - combobox [ref=f4e143]:
+                    - option "5"
+                    - option "10" [selected]
+                    - option "25"
+                    - option "50"
+                  - img "Dropdown"
+    - contentinfo "Site footer" [ref=f4e144]:
+      - generic [ref=f4e146]:
+        - generic [ref=f4e147]:
+          - paragraph [ref=f4e148]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f4e149] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f4e150]
+        - navigation "Footer navigation" [ref=f4e152]:
+          - link "Contact" [ref=f4e153] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f4e154] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f4e155] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f4e157]:
+          - heading "Support" [level=3] [ref=f4e158]
+          - generic [ref=f4e159]:
+            - img "Phone" [ref=f4e160]
+            - link "Call 2064429000" [ref=f4e161] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f4e162]:
+            - img "Email" [ref=f4e163]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f4e164] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f4e167]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f4e168]

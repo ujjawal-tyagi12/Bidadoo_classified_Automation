@@ -1,0 +1,397 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - banner [ref=f4e3]:
+      - paragraph [ref=f4e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f4e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f4e7]:
+        - link [ref=f4e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f4e9]
+        - navigation [ref=f4e10]:
+          - link "Post a listing" [ref=f4e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f4e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f4e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f4e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f4e24]:
+          - link [ref=f4e169] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f4e170]
+          - button "Profile menu" [ref=f4e172] [cursor=pointer]:
+            - img "Account" [ref=f4e173]
+    - main [ref=f4e27]:
+      - main [ref=f4e28]:
+        - generic [ref=f4e30]:
+          - generic [ref=f4e31]:
+            - heading "Search Results" [level=2] [ref=f4e32]
+            - generic [ref=f4e33]: Showing 1 of 1249 results
+          - generic [ref=f4e34]:
+            - generic [ref=f4e35]:
+              - img "Search"
+              - textbox "Search for equipment, make, model..." [ref=f4e36]
+            - 'button "Sort Sort by: Recommended" [ref=f4e38] [cursor=pointer]':
+              - img "Sort" [ref=f4e39]
+              - generic [ref=f4e40]: "Sort by: Recommended"
+        - generic [ref=f4e41]:
+          - complementary [ref=f4e43]:
+            - generic [ref=f4e44]:
+              - generic [ref=f4e46]:
+                - paragraph [ref=f4e47]: Filters
+                - button "Clear All" [ref=f4e48] [cursor=pointer]
+              - generic [ref=f4e50]:
+                - generic [ref=f4e51]:
+                  - button "Category toggle" [active] [ref=f4e52] [cursor=pointer]:
+                    - generic [ref=f4e53]: Category
+                    - img "toggle" [ref=f4e54]
+                  - generic [ref=f4e514]:
+                    - generic [ref=f4e516]:
+                      - checkbox "expand Agriculture 63" [ref=f4e520]
+                      - button [ref=f4e522] [cursor=pointer]:
+                        - img "expand" [ref=f4e523]
+                      - generic [ref=f4e524]: Agriculture
+                      - generic [ref=f4e525]: "63"
+                    - generic [ref=f4e527]:
+                      - checkbox "expand Air Compressors & Tools 0" [ref=f4e531]
+                      - button [ref=f4e533] [cursor=pointer]:
+                        - img "expand" [ref=f4e534]
+                      - generic [ref=f4e535]: Air Compressors & Tools
+                      - generic [ref=f4e536]: "0"
+                    - generic [ref=f4e538]:
+                      - checkbox "expand Construction Equipment 316" [ref=f4e542]
+                      - button [ref=f4e544] [cursor=pointer]:
+                        - img "expand" [ref=f4e545]
+                      - generic [ref=f4e546]: Construction Equipment
+                      - generic [ref=f4e547]: "316"
+                    - generic [ref=f4e549]:
+                      - checkbox "expand Forestry 60" [ref=f4e553]
+                      - button [ref=f4e555] [cursor=pointer]:
+                        - img "expand" [ref=f4e556]
+                      - generic [ref=f4e557]: Forestry
+                      - generic [ref=f4e558]: "60"
+                    - generic [ref=f4e560]:
+                      - checkbox "GEN 4" [ref=f4e564]
+                      - generic [ref=f4e566]: GEN
+                      - generic [ref=f4e567]: "4"
+                    - generic [ref=f4e569]:
+                      - checkbox "expand HVAC & Climate Control 0" [ref=f4e573]
+                      - button [ref=f4e575] [cursor=pointer]:
+                        - img "expand" [ref=f4e576]
+                      - generic [ref=f4e577]: HVAC & Climate Control
+                      - generic [ref=f4e578]: "0"
+                    - generic [ref=f4e580]:
+                      - checkbox "expand Manufacturing Equipment 0" [ref=f4e584]
+                      - button [ref=f4e586] [cursor=pointer]:
+                        - img "expand" [ref=f4e587]
+                      - generic [ref=f4e588]: Manufacturing Equipment
+                      - generic [ref=f4e589]: "0"
+                    - generic [ref=f4e591]:
+                      - checkbox "expand Material Handling 0" [ref=f4e595]
+                      - button [ref=f4e597] [cursor=pointer]:
+                        - img "expand" [ref=f4e598]
+                      - generic [ref=f4e599]: Material Handling
+                      - generic [ref=f4e600]: "0"
+                    - generic [ref=f4e602]:
+                      - checkbox "expand Oil & Gas 338" [ref=f4e606]
+                      - button [ref=f4e608] [cursor=pointer]:
+                        - img "expand" [ref=f4e609]
+                      - generic [ref=f4e610]: Oil & Gas
+                      - generic [ref=f4e611]: "338"
+                    - generic [ref=f4e613]:
+                      - checkbox "expand Power Generation & Lighting 0" [ref=f4e617]
+                      - button [ref=f4e619] [cursor=pointer]:
+                        - img "expand" [ref=f4e620]
+                      - generic [ref=f4e621]: Power Generation & Lighting
+                      - generic [ref=f4e622]: "0"
+                - button "Model toggle" [ref=f4e56] [cursor=pointer]:
+                  - generic [ref=f4e57]: Model
+                  - img "toggle" [ref=f4e58]
+                - button "Location toggle" [ref=f4e60] [cursor=pointer]:
+                  - generic [ref=f4e61]: Location
+                  - img "toggle" [ref=f4e62]
+                - button "Price Range toggle" [ref=f4e64] [cursor=pointer]:
+                  - generic [ref=f4e65]: Price Range
+                  - img "toggle" [ref=f4e66]
+                - button "Year toggle" [ref=f4e68] [cursor=pointer]:
+                  - generic [ref=f4e69]: Year
+                  - img "toggle" [ref=f4e70]
+                - button "Hours / Miles / Kilometers toggle" [ref=f4e72] [cursor=pointer]:
+                  - generic [ref=f4e73]: Hours / Miles / Kilometers
+                  - img "toggle" [ref=f4e74]
+            - button "Apply Filters" [ref=f4e76] [cursor=pointer]
+          - generic [ref=f4e77]:
+            - generic [ref=f4e80]:
+              - generic [ref=f4e174]:
+                - generic [ref=f4e176]:
+                  - generic [ref=f4e177]: Recently Added
+                  - img "Arctic Cat 113-320 - RUK83I 1788169170454" [ref=f4e179] [cursor=pointer]
+                  - button "favourite" [ref=f4e181] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e182]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e194]:
+                  - heading "Arctic Cat 113-320 - RUK83I 1788169170454" [level=3] [ref=f4e195]
+                  - generic [ref=f4e196]:
+                    - img "Hours" [ref=f4e197]
+                    - generic [ref=f4e198]:
+                      - generic [ref=f4e199]: 12,774 hours
+                      - generic [ref=f4e200]: •
+                      - generic [ref=f4e201]: Nova Scotia, Nova Scotia
+                    - generic [ref=f4e202]: CAD $103,534
+                - generic [ref=f4e204]:
+                  - button "Contact Seller" [disabled] [ref=f4e206]
+                  - button "View Details" [ref=f4e207] [cursor=pointer]
+              - generic [ref=f4e208]:
+                - generic [ref=f4e210]:
+                  - generic [ref=f4e211]: Recently Added
+                  - img "Caterpillar/Athey 020/320 - 6JWRC2 1788239677326" [ref=f4e213] [cursor=pointer]
+                  - button "favourite" [ref=f4e215] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e216]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e228]:
+                  - heading "Caterpillar/Athey 020/320 - 6JWRC2 1788239677326" [level=3] [ref=f4e229]
+                  - generic [ref=f4e230]:
+                    - img "Hours" [ref=f4e231]
+                    - generic [ref=f4e232]:
+                      - generic [ref=f4e233]: 943 miles
+                      - generic [ref=f4e234]: •
+                      - generic [ref=f4e235]: Arizona, Arizona
+                    - generic [ref=f4e236]: USD $191,535
+                - generic [ref=f4e238]:
+                  - button "Contact Seller" [disabled] [ref=f4e240]
+                  - button "View Details" [ref=f4e241] [cursor=pointer]
+              - generic [ref=f4e242]:
+                - generic [ref=f4e244]:
+                  - generic [ref=f4e245]: Recently Added
+                  - img "Bearcat 1320 - VTYJHC 1788169164673" [ref=f4e247] [cursor=pointer]
+                  - button "favourite" [ref=f4e249] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e250]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e262]:
+                  - heading "Bearcat 1320 - VTYJHC 1788169164673" [level=3] [ref=f4e263]
+                  - generic [ref=f4e264]:
+                    - img "Hours" [ref=f4e265]
+                    - generic [ref=f4e266]:
+                      - generic [ref=f4e267]: 19,767 miles
+                      - generic [ref=f4e268]: •
+                      - generic [ref=f4e269]: Ontario, Ontario
+                    - generic [ref=f4e270]: CAD $142,691
+                - generic [ref=f4e272]:
+                  - button "Contact Seller" [disabled] [ref=f4e274]
+                  - button "View Details" [ref=f4e275] [cursor=pointer]
+              - generic [ref=f4e276]:
+                - generic [ref=f4e278]:
+                  - generic [ref=f4e279]: Recently Added
+                  - img "Crary Bear Cat 10320 - 5XGDS2 1788239058928" [ref=f4e281] [cursor=pointer]
+                  - button "favourite" [ref=f4e283] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e284]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e296]:
+                  - heading "Crary Bear Cat 10320 - 5XGDS2 1788239058928" [level=3] [ref=f4e297]
+                  - generic [ref=f4e298]:
+                    - img "Hours" [ref=f4e299]
+                    - generic [ref=f4e300]:
+                      - generic [ref=f4e301]: 10,594 kilometers
+                      - generic [ref=f4e302]: •
+                      - generic [ref=f4e303]: Ontario, Ontario
+                    - generic [ref=f4e304]: CAD $39,811
+                - generic [ref=f4e306]:
+                  - button "Contact Seller" [disabled] [ref=f4e308]
+                  - button "View Details" [ref=f4e309] [cursor=pointer]
+              - generic [ref=f4e310]:
+                - generic [ref=f4e312]:
+                  - generic [ref=f4e313]: Recently Added
+                  - img "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [ref=f4e315] [cursor=pointer]
+                  - button "favourite" [ref=f4e317] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e318]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e330]:
+                  - heading "Arctic Cat 1320H REAR TINE TILLER 13HP - HJI1TR 1788156816649" [level=3] [ref=f4e331]
+                  - generic [ref=f4e332]:
+                    - img "Hours" [ref=f4e333]
+                    - generic [ref=f4e334]:
+                      - generic [ref=f4e335]: 17,113 miles
+                      - generic [ref=f4e336]: •
+                      - generic [ref=f4e337]: Newfoundland and Labrador, Newfoundland and Labrador
+                    - generic [ref=f4e338]: CAD $143,652
+                - generic [ref=f4e340]:
+                  - button "Contact Seller" [disabled] [ref=f4e342]
+                  - button "View Details" [ref=f4e343] [cursor=pointer]
+              - generic [ref=f4e344]:
+                - generic [ref=f4e346]:
+                  - generic [ref=f4e347]: Recently Added
+                  - img "Caterpillar/Athey 10320 - DI9VCS 1788174233572" [ref=f4e349] [cursor=pointer]
+                  - button "favourite" [ref=f4e351] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e352]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e364]:
+                  - heading "Caterpillar/Athey 10320 - DI9VCS 1788174233572" [level=3] [ref=f4e365]
+                  - generic [ref=f4e366]:
+                    - img "Hours" [ref=f4e367]
+                    - generic [ref=f4e368]:
+                      - generic [ref=f4e369]: 3,725 miles
+                      - generic [ref=f4e370]: •
+                      - generic [ref=f4e371]: Northwest Territories, Northwest Territories
+                    - generic [ref=f4e372]: CAD $150,771
+                - generic [ref=f4e374]:
+                  - button "Contact Seller" [disabled] [ref=f4e376]
+                  - button "View Details" [ref=f4e377] [cursor=pointer]
+              - generic [ref=f4e378]:
+                - generic [ref=f4e380]:
+                  - generic [ref=f4e381]: Recently Added
+                  - img "Agracat 10320 SILVER - JC4QNA 1788157874190" [ref=f4e383] [cursor=pointer]
+                  - button "favourite" [ref=f4e385] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e386]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e398]:
+                  - heading "Agracat 10320 SILVER - JC4QNA 1788157874190" [level=3] [ref=f4e399]
+                  - generic [ref=f4e400]:
+                    - img "Hours" [ref=f4e401]
+                    - generic [ref=f4e402]:
+                      - generic [ref=f4e403]: 9,749 hours
+                      - generic [ref=f4e404]: •
+                      - generic [ref=f4e405]: Alaska, Alaska
+                    - generic [ref=f4e406]: USD $177,372
+                - generic [ref=f4e408]:
+                  - button "Contact Seller" [disabled] [ref=f4e410]
+                  - button "View Details" [ref=f4e411] [cursor=pointer]
+              - generic [ref=f4e412]:
+                - generic [ref=f4e414]:
+                  - generic [ref=f4e415]: Recently Added
+                  - img "Caterpillar 1320H REAR TINE TILLER 13HP - WJ5TAG 1788261951834" [ref=f4e417] [cursor=pointer]
+                  - button "favourite" [ref=f4e419] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e420]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e432]:
+                  - heading "Caterpillar 1320H REAR TINE TILLER 13HP - WJ5TAG 1788261951834" [level=3] [ref=f4e433]
+                  - generic [ref=f4e434]:
+                    - img "Hours" [ref=f4e435]
+                    - generic [ref=f4e436]:
+                      - generic [ref=f4e437]: 17,159 miles
+                      - generic [ref=f4e438]: •
+                      - generic [ref=f4e439]: New Brunswick, New Brunswick
+                    - generic [ref=f4e440]: CAD $165,379
+                - generic [ref=f4e442]:
+                  - button "Contact Seller" [disabled] [ref=f4e444]
+                  - button "View Details" [ref=f4e445] [cursor=pointer]
+              - generic [ref=f4e446]:
+                - generic [ref=f4e448]:
+                  - generic [ref=f4e449]: Recently Added
+                  - img "Ducati 10320 - XXCFWT 1788162880346" [ref=f4e451] [cursor=pointer]
+                  - button "favourite" [ref=f4e453] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e454]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e466]:
+                  - heading "Ducati 10320 - XXCFWT 1788162880346" [level=3] [ref=f4e467]
+                  - generic [ref=f4e468]:
+                    - img "Hours" [ref=f4e469]
+                    - generic [ref=f4e470]:
+                      - generic [ref=f4e471]: 18,327 kilometers
+                      - generic [ref=f4e472]: •
+                      - generic [ref=f4e473]: California, California
+                    - generic [ref=f4e474]: USD $81,298
+                - generic [ref=f4e476]:
+                  - button "Contact Seller" [disabled] [ref=f4e478]
+                  - button "View Details" [ref=f4e479] [cursor=pointer]
+              - generic [ref=f4e480]:
+                - generic [ref=f4e482]:
+                  - generic [ref=f4e483]: Recently Added
+                  - img "Agracat 11320 - FJXYQT 1788171746769" [ref=f4e485] [cursor=pointer]
+                  - button "favourite" [ref=f4e487] [cursor=pointer]:
+                    - img "favorite-disabled" [ref=f4e488]
+                  - button "Previous Image" [disabled]:
+                    - img "Prev"
+                  - button "Next Image":
+                    - img "Next"
+                - generic [ref=f4e500]:
+                  - heading "Agracat 11320 - FJXYQT 1788171746769" [level=3] [ref=f4e501]
+                  - generic [ref=f4e502]:
+                    - img "Hours" [ref=f4e503]
+                    - generic [ref=f4e504]:
+                      - generic [ref=f4e505]: 1,975 hours
+                      - generic [ref=f4e506]: •
+                      - generic [ref=f4e507]: Newfoundland and Labrador, Newfoundland and Labrador
+                    - generic [ref=f4e508]: CAD $106,327
+                - generic [ref=f4e510]:
+                  - button "Contact Seller" [disabled] [ref=f4e512]
+                  - button "View Details" [ref=f4e513] [cursor=pointer]
+            - generic [ref=f4e125]:
+              - generic [ref=f4e126]: Showing 1-10 From 1249
+              - generic [ref=f4e128]:
+                - button [disabled] [ref=f4e129]:
+                  - img "First" [ref=f4e130]
+                - button [disabled] [ref=f4e131]:
+                  - img "Previous" [ref=f4e132]
+                - generic [ref=f4e133]:
+                  - generic [ref=f4e134]: "1"
+                  - generic [ref=f4e135]: Of 125
+                - button [ref=f4e136] [cursor=pointer]:
+                  - img "Next" [ref=f4e137]
+                - button [ref=f4e138] [cursor=pointer]:
+                  - img "Last" [ref=f4e139]
+              - generic [ref=f4e140]:
+                - generic [ref=f4e141]: Items per page
+                - generic [ref=f4e142]:
+                  - combobox [ref=f4e143]:
+                    - option "5"
+                    - option "10" [selected]
+                    - option "25"
+                    - option "50"
+                  - img "Dropdown"
+    - contentinfo "Site footer" [ref=f4e144]:
+      - generic [ref=f4e146]:
+        - generic [ref=f4e147]:
+          - paragraph [ref=f4e148]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f4e149] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f4e150]
+        - navigation "Footer navigation" [ref=f4e152]:
+          - link "Contact" [ref=f4e153] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f4e154] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f4e155] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f4e157]:
+          - heading "Support" [level=3] [ref=f4e158]
+          - generic [ref=f4e159]:
+            - img "Phone" [ref=f4e160]
+            - link "Call 2064429000" [ref=f4e161] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f4e162]:
+            - img "Email" [ref=f4e163]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f4e164] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f4e167]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f4e168]

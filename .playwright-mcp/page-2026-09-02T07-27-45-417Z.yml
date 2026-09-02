@@ -1,0 +1,247 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - banner [ref=f5e3]:
+      - paragraph [ref=f5e5]:
+        - text: Looking for bidadoo Auctions? Go to
+        - link "www.bidadoo.com" [ref=f5e6] [cursor=pointer]:
+          - /url: https://www.bidadoo.com
+      - generic [ref=f5e7]:
+        - link [ref=f5e8] [cursor=pointer]:
+          - /url: /
+          - img "bidadoo logo" [ref=f5e9]
+        - navigation [ref=f5e10]:
+          - link "Post a listing" [ref=f5e12] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/sell-equipment
+          - button "Browse & Buy" [ref=f5e15] [cursor=pointer]
+          - link "bidadoo Auction" [ref=f5e18] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/
+          - link "About" [ref=f5e21] [cursor=pointer]:
+            - /url: https://qa-website-bidadoocl.appskeeper.in/about-us
+        - generic [ref=f5e24]:
+          - link [ref=f5e106] [cursor=pointer]:
+            - /url: /dashboard?tab=dashboard
+            - img "Dashboard" [ref=f5e107]
+          - button "Profile menu" [ref=f5e109] [cursor=pointer]:
+            - img "Account" [ref=f5e110]
+    - main [ref=f5e27]:
+      - generic [ref=f5e28]:
+        - navigation "Breadcrumb" [ref=f5e29]:
+          - link "Home" [ref=f5e30] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f5e111]: "|"
+          - link "Custom Attributes" [ref=f5e112] [cursor=pointer]:
+            - /url: /dashboard?tab=attributes
+        - generic [ref=f5e34]:
+          - generic [ref=f5e35]:
+            - heading "Seller Dashboard" [level=5] [ref=f5e37]
+            - paragraph [ref=f5e38]: Reach real buyers and manage your listings easily
+          - button "Visit Store" [ref=f5e40]:
+            - img "Location" [ref=f5e41]
+            - paragraph [ref=f5e42]: Visit Store
+        - generic [ref=f5e44]:
+          - button [ref=f5e45] [cursor=pointer]:
+            - img "Dashboard" [ref=f5e46]
+            - paragraph [ref=f5e47]: Dashboard
+          - button [ref=f5e48] [cursor=pointer]:
+            - img "Brand Info" [ref=f5e49]
+            - paragraph [ref=f5e50]: Brand Info
+          - button [ref=f5e51] [cursor=pointer]:
+            - img "Listings" [ref=f5e52]
+            - paragraph [ref=f5e53]: Listings
+          - button [ref=f5e54] [cursor=pointer]:
+            - img "Security" [ref=f5e55]
+            - paragraph [ref=f5e56]: Security
+          - button [ref=f5e57] [cursor=pointer]:
+            - img "Settings" [ref=f5e58]
+            - paragraph [ref=f5e59]: Settings
+          - button [ref=f5e60] [cursor=pointer]:
+            - img "Access Control" [ref=f5e61]
+            - paragraph [ref=f5e62]: Access Control
+          - button [active] [ref=f5e63] [cursor=pointer]:
+            - img "Custom Attributes" [ref=f5e64]
+            - paragraph [ref=f5e65]: Custom Attributes
+          - button [ref=f5e66] [cursor=pointer]:
+            - img "API and Integrations" [ref=f5e67]
+            - paragraph [ref=f5e68]: API and Integrations
+          - button [ref=f5e69] [cursor=pointer]:
+            - img "My Inquiries" [ref=f5e70]
+            - paragraph [ref=f5e71]: My Inquiries
+        - generic [ref=f5e72]:
+          - generic [ref=f5e73]:
+            - img "Listing left border" [ref=f5e74]
+            - generic [ref=f5e75]:
+              - img "Location" [ref=f5e76]
+              - heading "Custom Attributes" [level=1] [ref=f5e113]
+            - button "Plus New Custom Attribute" [ref=f5e116] [cursor=pointer]:
+              - generic [ref=f5e117]:
+                - img "Plus" [ref=f5e119]
+                - generic [ref=f5e120]: New Custom Attribute
+          - generic [ref=f5e121]:
+            - generic [ref=f5e122]: Create internal attributes to assist in inventory tracking and integrations. These fields are for your organization's use only and are never visible to the public.
+            - generic [ref=f5e124]:
+              - img "Search"
+              - textbox "Search for attributes...." [ref=f5e125]
+            - generic [ref=f5e126]:
+              - table [ref=f5e130]:
+                - rowgroup [ref=f5e131]:
+                  - row [ref=f5e132]:
+                    - columnheader "ATTRIBUTES ID" [ref=f5e133]
+                    - columnheader "ATTRIBUTE NAME" [ref=f5e135]
+                    - columnheader [ref=f5e137]:
+                      - button "CREATED ON Sort" [ref=f5e138] [cursor=pointer]:
+                        - generic [ref=f5e139]: CREATED ON
+                        - img "Sort" [ref=f5e140]
+                    - columnheader "STATUS" [ref=f5e141]
+                    - columnheader "ACTION" [ref=f5e143]
+                - rowgroup [ref=f5e145]:
+                  - row [ref=f5e146]:
+                    - cell [ref=f5e147]:
+                      - link "ATT-25GKHRUY1C7CMB0MUN" [ref=f5e148] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c79fda3cada689cf34a6
+                    - cell "Net Horsepower 2QCVEO" [ref=f5e153]
+                    - cell "Sep 02, 2026" [ref=f5e156]
+                    - cell "Active" [ref=f5e159]
+                    - cell [ref=f5e161]:
+                      - button [ref=f5e163] [cursor=pointer]:
+                        - img "More" [ref=f5e164]
+                  - row [ref=f5e165]:
+                    - cell [ref=f5e166]:
+                      - link "ATT-3CJWHBVKL75GUPMCGR" [ref=f5e167] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c795da3cada689cf348f
+                    - cell "Gross Torque V9XPX5" [ref=f5e172]
+                    - cell "Sep 02, 2026" [ref=f5e175]
+                    - cell "Active" [ref=f5e178]
+                    - cell [ref=f5e180]:
+                      - button [ref=f5e182] [cursor=pointer]:
+                        - img "More" [ref=f5e183]
+                  - row [ref=f5e184]:
+                    - cell [ref=f5e185]:
+                      - link "ATT-3Q97E0R61NY81O1TZG" [ref=f5e186] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c792da3cada689cf3486
+                    - cell "Net Horsepower FDKEHU" [ref=f5e191]
+                    - cell "Sep 02, 2026" [ref=f5e194]
+                    - cell "Active" [ref=f5e197]
+                    - cell [ref=f5e199]:
+                      - button [ref=f5e201] [cursor=pointer]:
+                        - img "More" [ref=f5e202]
+                  - row [ref=f5e203]:
+                    - cell [ref=f5e204]:
+                      - link "ATT-YLX93V38SP6KVNTTE0" [ref=f5e205] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c790da3cada689cf347f
+                    - cell "Net Horsepower KNTRCE" [ref=f5e210]
+                    - cell "Sep 02, 2026" [ref=f5e213]
+                    - cell "Active" [ref=f5e216]
+                    - cell [ref=f5e218]:
+                      - button [ref=f5e220] [cursor=pointer]:
+                        - img "More" [ref=f5e221]
+                  - row [ref=f5e222]:
+                    - cell [ref=f5e223]:
+                      - link "ATT-GI7B2P9IS8VSPSIZ07" [ref=f5e224] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c78fda3cada689cf3479
+                    - cell "Net Horsepower VJLS3O" [ref=f5e229]
+                    - cell "Sep 02, 2026" [ref=f5e232]
+                    - cell "Active" [ref=f5e235]
+                    - cell [ref=f5e237]:
+                      - button [ref=f5e239] [cursor=pointer]:
+                        - img "More" [ref=f5e240]
+                  - row [ref=f5e241]:
+                    - cell [ref=f5e242]:
+                      - link "ATT-72PC4L1N1BC1GB1G7J" [ref=f5e243] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c76cda3cada689cf3450
+                    - cell "Net Horsepower LUN7OG" [ref=f5e248]
+                    - cell "Sep 02, 2026" [ref=f5e251]
+                    - cell "Active" [ref=f5e254]
+                    - cell [ref=f5e256]:
+                      - button [ref=f5e258] [cursor=pointer]:
+                        - img "More" [ref=f5e259]
+                  - row [ref=f5e260]:
+                    - cell [ref=f5e261]:
+                      - link "ATT-C6KBQF7E222L6RQJUV" [ref=f5e262] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c760da3cada689cf3434
+                    - cell "Net Horsepower OT3GVW" [ref=f5e267]
+                    - cell "Sep 02, 2026" [ref=f5e270]
+                    - cell "Active" [ref=f5e273]
+                    - cell [ref=f5e275]:
+                      - button [ref=f5e277] [cursor=pointer]:
+                        - img "More" [ref=f5e278]
+                  - row [ref=f5e279]:
+                    - cell [ref=f5e280]:
+                      - link "ATT-XVYV4ZO7T1NP25850M" [ref=f5e281] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c760da3cada689cf3431
+                    - cell "Updated Y6I6UR" [ref=f5e286]
+                    - cell "Sep 02, 2026" [ref=f5e289]
+                    - cell "Active" [ref=f5e292]
+                    - cell [ref=f5e294]:
+                      - button [ref=f5e296] [cursor=pointer]:
+                        - img "More" [ref=f5e297]
+                  - row [ref=f5e298]:
+                    - cell [ref=f5e299]:
+                      - link "ATT-AA7KP848KQ03KY91I4" [ref=f5e300] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c75bda3cada689cf3421
+                    - cell "Net Horsepower BX1V2K" [ref=f5e305]
+                    - cell "Sep 02, 2026" [ref=f5e308]
+                    - cell "Active" [ref=f5e311]
+                    - cell [ref=f5e313]:
+                      - button [ref=f5e315] [cursor=pointer]:
+                        - img "More" [ref=f5e316]
+                  - row [ref=f5e317]:
+                    - cell [ref=f5e318]:
+                      - link "ATT-4FBYJMVVXACID66H0I" [ref=f5e319] [cursor=pointer]:
+                        - /url: /dashboard/custom-attributes/6a97c74ada3cada689cf33ff
+                    - cell "Net Horsepower DVQRRU" [ref=f5e324]
+                    - cell "Sep 02, 2026" [ref=f5e327]
+                    - cell "Active" [ref=f5e330]
+                    - cell [ref=f5e332]:
+                      - button [ref=f5e334] [cursor=pointer]:
+                        - img "More" [ref=f5e335]
+              - generic [ref=f5e337]:
+                - generic [ref=f5e338]: Showing 1-10 From 249
+                - generic [ref=f5e340]:
+                  - button [disabled] [ref=f5e341]:
+                    - img "First" [ref=f5e342]
+                  - button [disabled] [ref=f5e343]:
+                    - img "Previous" [ref=f5e344]
+                  - generic [ref=f5e345]:
+                    - generic [ref=f5e346]: "1"
+                    - generic [ref=f5e347]: Of 25
+                  - button [ref=f5e348] [cursor=pointer]:
+                    - img "Next" [ref=f5e349]
+                  - button [ref=f5e350] [cursor=pointer]:
+                    - img "Last" [ref=f5e351]
+                - generic [ref=f5e352]:
+                  - generic [ref=f5e353]: Rows per pages
+                  - generic [ref=f5e354]:
+                    - combobox [ref=f5e355]:
+                      - option "5"
+                      - option "10" [selected]
+                      - option "25"
+                      - option "50"
+                    - img "Dropdown"
+    - contentinfo "Site footer" [ref=f5e81]:
+      - generic [ref=f5e83]:
+        - generic [ref=f5e84]:
+          - paragraph [ref=f5e85]: The trusted marketplace for buying and selling heavy equipment, construction machinery, and industrial assets.
+          - link "Go to homepage" [ref=f5e86] [cursor=pointer]:
+            - /url: /
+            - img "bidadoo logo" [ref=f5e87]
+        - navigation "Footer navigation" [ref=f5e89]:
+          - link "Contact" [ref=f5e90] [cursor=pointer]:
+            - /url: /contact-us
+          - link "Privacy Policy" [ref=f5e91] [cursor=pointer]:
+            - /url: https://www.bidadoo.com/privacy
+          - link "Terms Of Services" [ref=f5e92] [cursor=pointer]:
+            - /url: /terms-of-service
+        - generic [ref=f5e94]:
+          - heading "Support" [level=3] [ref=f5e95]
+          - generic [ref=f5e96]:
+            - img "Phone" [ref=f5e97]
+            - link "Call 2064429000" [ref=f5e98] [cursor=pointer]:
+              - /url: tel:+12064429000
+              - text: +1 2064429000
+          - generic [ref=f5e99]:
+            - img "Email" [ref=f5e100]
+            - link "Email support@mail.fleetx.bidadoo.com" [ref=f5e101] [cursor=pointer]:
+              - /url: mailto:support@mail.fleetx.bidadoo.com
+              - text: support@mail.fleetx.bidadoo.com
+      - paragraph [ref=f5e104]: 2026 Fleet Exchange by bidadoo. All Rights Reserved
+  - alert [ref=f5e105]

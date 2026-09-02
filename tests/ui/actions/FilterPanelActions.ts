@@ -175,6 +175,16 @@ export class FilterPanelActions {
    * leaf. `path` runs top-level → leaf, e.g.
    * ["Construction Equipment", "Earthmoving", "Crawler Excavators"].
    */
+  /**
+   * Confirmed live: this checkbox's click shares the same click-registration
+   * race as this app's other custom controls (Listings' Status filter, its
+   * Date Range calendar) — retried against the checkbox actually becoming
+   * checked, not just the click resolving. The click itself is also
+   * explicitly time-bounded per attempt: without that, a genuinely-missing
+   * target leaves `.click()` to wait out Playwright's full default action
+   * timeout on its own, consuming almost the entire retry budget on a single
+   * attempt before the loop ever gets a real second try.
+   */
   async selectCategoryLeaf(path: string[]): Promise<void> {
     if (path.length === 0) {
       throw new Error("selectCategoryLeaf requires a non-empty category path");
@@ -185,7 +195,18 @@ export class FilterPanelActions {
       await this.ensureCategoryNodeExpanded(parent);
     }
     const leaf = path[path.length - 1]!;
-    await this.filterPanel.categoryNodeLabel(leaf).click();
+    const maxAttempts = 3;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      const isLastAttempt = attempt === maxAttempts;
+      const timeout = isLastAttempt ? 6000 : 1500;
+      try {
+        await this.filterPanel.categoryNodeLabel(leaf).click({ timeout });
+        await this.filterPanel.categoryNodeCheckboxState(leaf).expect.toBeChecked({ timeout });
+        return;
+      } catch (error) {
+        if (isLastAttempt) throw error;
+      }
+    }
   }
 
   /** Selects a top-level (or any non-leaf) category node, cascading to every descendant leaf. */
@@ -216,9 +237,29 @@ export class FilterPanelActions {
     await this.filterPanel.modelOptionLabel(name).click();
   }
 
+  /**
+   * Confirmed live: shares the same click-registration race as
+   * `selectCategoryLeaf` — retried against the checkbox actually becoming
+   * checked. The click itself is also explicitly time-bounded per attempt:
+   * without that, a genuinely-missing target leaves `.click()` to wait out
+   * Playwright's full default action timeout on its own, consuming almost
+   * the entire retry budget on a single attempt before the loop ever gets a
+   * real second try.
+   */
   async selectLocation(name: string): Promise<void> {
     await this.ensureSectionExpanded(SECTION_LABELS.location);
-    await this.filterPanel.locationOptionLabel(name).click();
+    const maxAttempts = 3;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      const isLastAttempt = attempt === maxAttempts;
+      const timeout = isLastAttempt ? 6000 : 1500;
+      try {
+        await this.filterPanel.locationOptionLabel(name).click({ timeout });
+        await this.filterPanel.locationOptionCheckboxState(name).expect.toBeChecked({ timeout });
+        return;
+      } catch (error) {
+        if (isLastAttempt) throw error;
+      }
+    }
   }
 
   // --- Price / Year / Hours-Miles-Km self-clamping range sliders ---

@@ -5,10 +5,20 @@ import { loadEquipmentFavoriteProps } from "@data/readers/index.js";
 
 const { Given, When, Then } = createBdd(test);
 
-// Reuses "Given Admin logs in with valid credentials" (create-equipment.steps.ts),
-// "Given Admin is on the search results page" and "When Admin opens the first
-// result's detail page" (equipment-listing.steps.ts) — all registered globally
-// by playwright-bdd, so they are not redefined here.
+// Reuses "Given Admin logs in with valid credentials" (create-equipment.steps.ts) and
+// "Given Admin is on the search results page" (equipment-listing.steps.ts) — both
+// registered globally by playwright-bdd, so they are not redefined here.
+//
+// TC2's anonymous-user detail-page scenario deliberately still uses the shared,
+// globally-registered "When Admin opens the first result's detail page" step
+// (equipment-listing.steps.ts) — a signed-out click always opens the sign-in modal
+// regardless of who owns the listing, so ownership doesn't matter there. TC1's
+// logged-in variant below needs a listing the current account does NOT own (see
+// FavoriteActions.getFavoritableResult), so it gets its own step instead.
+
+Given("Admin opens a favoritable result's detail page", async ({ favoriteActions }) => {
+  await favoriteActions.openFavoritableResultDetailPage();
+});
 
 Given("Admin ensures the first result is not marked as favorite", async ({ favoriteActions }) => {
   await favoriteActions.ensureListingFavoriteState("OUTLINE");
